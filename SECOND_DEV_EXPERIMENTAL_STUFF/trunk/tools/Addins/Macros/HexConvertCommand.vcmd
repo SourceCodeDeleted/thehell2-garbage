@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SerializableSnippets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <commands>
+    <Snippet>
+      <id>1</id>
+      <name>HexConvertCommand</name>
+      <code>Imports EnvDTE
+Imports EnvDTE80
+Imports Microsoft.VisualBasic
+
+Public Class C
+	Implements VisualCommanderExt.ICommand
+
+	Sub Run(DTE As EnvDTE80.DTE2, package As Microsoft.VisualStudio.Shell.Package) Implements VisualCommanderExt.ICommand.Run
+        dim line, col, numVal, strVal
+        line = DTE.ActiveDocument.Selection.TopPoint.Line()
+        col = DTE.ActiveDocument.Selection.TopPoint.LineCharOffset
+        DTE.ExecuteCommand("Edit.SelectCurrentWord")
+        strVal = DTE.ActiveDocument.Selection.Text
+        If Left(strVal, 2) = "0x" Then
+            strVal = "&amp;H" + Right(strVal, Len(strVal) - 2)
+        Else
+            If Right(strVal, 1) = "h" Then
+                strVal = "&amp;H" + Left(strVal, Len(strVal) - 1)
+            End If
+        End If
+        numVal = Val(strVal)
+        If numVal &lt;&gt; 0 Then
+            If Left(strVal, 2) = "&amp;H" Then
+                If Len(strVal) = 6 And Val(Left(strVal, 3)) &gt; 7 Then
+                    numVal = Val("&amp;H1" + Right(strVal, 4)) - 65536
+                End If
+                DTE.ActiveDocument.Selection.Text = numVal
+            Else
+                DTE.ActiveDocument.Selection.Text = "0x" + Hex(numVal)
+            End If
+        End If
+        DTE.ActiveDocument.Selection.MoveToLineAndOffset(line, col)
+	End Sub
+
+End Class
+</code>
+      <referencedAssemblies />
+      <type>Command</type>
+      <lang>VB</lang>
+      <langVersion>v4.0</langVersion>
+      <enabled>true</enabled>
+      <includeDebugInformation>false</includeDebugInformation>
+    </Snippet>
+  </commands>
+  <extensions />
+  <commonCode />
+</SerializableSnippets>

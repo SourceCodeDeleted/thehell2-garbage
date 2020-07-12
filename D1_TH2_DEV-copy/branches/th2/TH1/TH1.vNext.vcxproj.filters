@@ -1,0 +1,1962 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\TH1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\lib\TH.exe">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\res\thehell2.mpq">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\lib\standard.snp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\lib\Storm.dll">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\lib\TH.dll">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\lib\hell_loader.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\lib\storm_loader.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\lib\txt\__DATA ADDRESSES.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\__FREESPACE.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\__MOVED_TABLES.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\__POINTERS.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\_FUNCTIONS.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\_MONSTERLIST.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\_SPELL FX.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\_Uniqlist(korean).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\_UNIQLIST.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\_UniquelistCafe.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-11-07, 11-31, Magma &amp; Lite Demons Double melee attacks-related code.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-11-07, 12-59, Double Melee Attackers.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-11-08, 4-37, no drop at death fix try 1.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-11-08, 6-01, thorns improved.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-11-08, 7-14, less AP.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-11-08, 9-29, DATA SEQUENCE (MON, UNI, ITEMS, ETC.).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-11-09, 11-38, spell support.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-11-09, 13-15, trap bugfix (hopefully).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-11-11, 6-38, Lazarus in MP room - shift place (closer to entrance).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-11-13, 22-26, Chain Activation (CA) of TheDark53.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-11-21, 11-39, allowing Wyrms to spit poison.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-07, 19-45, Apocalypse Damage Increase.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-10, 16-17, Arcane Star damage increase.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-11, 3-18, Inferno damage increase.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-11, 15-54, Lightning damage increase.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-12, 21-24, Character Maximum Damage Cap.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-14, 21-01, Traps Damage Increase.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-15, 4-04, Hydra Spellbook damage display Fix.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-15, 16-22, Lightning Demons%27 Lightning attack damage increase.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-15, 17-31, Balrogs%27 Inferno damage increase.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-15, 19-29, Mages%27 Flash Damage Increase.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-16, 2-28, Burning Cross Code.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-16, 3-52, DLVL Difficulty Modifier Code.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-16, 3-56, Single-player Burning Cross Gameload Crash.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-16, 4-36, Exploding Barrel Damage.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-16, 16-23, Anti-dupe Fix.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-19, 15-32, Character class related formulas (notes Azril).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-19, 15-42, CHARACTER POINTERS.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-20, 14-02, Free Space from Gladiator%27s levelup resists gain.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-20, 18-22, Monk%27s HP bonus from Vitality on items set to 2,5x.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-20, 18-47, More Free Space.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-21, 2-50, Boss Name Wrap around Morphing Fix.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-23, 16-01, Credits Update.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-24, 2-37, Holy Bolt.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-25, 18-05, Making Mud &amp; Gold Golems, Bile Demons immune to retreat after getting stunned.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-26, 4-29, Improving Monsters%27 HP, AC &amp; Damage in Purgatory and Doom.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-26, 19-07, Melee vs Monster - Life &amp; Mana Stealing Lowered, + PvM MELEE Code.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-26, 19-07, Melee vs Monster - Life &amp; Mana Stealing Lowered.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-27, 16-42, Free Space Made.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-28, 5-56, [Possibly] Glowing Shrine code - needs attention.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-28, 6-08, Fascinating Shrine code - from DMN.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-28, 16-59, Paladin Lower Inherent Melee ToHit bonus.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-28, 22-50, Monster &amp; Boss Sound Activation.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-29, 22-34, Free Space from Obsolete Hork Demon Amulet Drop Check.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-30, 3-26, Improving Monster Stun Formula (+Monster Stun Code).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-30, 15-26, Black Death%27s Life Drain Code.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-30, 18-37, Free Space from disabled Command.txt file.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-30, 21-00, Dungeon Level Palette Handler Code.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2007-12-30, 21-40, Fix to Scavenging monsters on higher difficulty modes.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-01-03, 22-51, DLVL palette randomness increase.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-01-08, 5-37, MONSTER POINTERS.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-01-08, 21-47, Character Resistances Improvement and Display Changes + Free Space.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-01-09, 4-09, Changing Resolution to 800x600.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-01-10, 3-39, Flash.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-01-10, 9-08, BOSS POINTERS.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-01-10, 9-08, QUEST POINTERS.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-01-10, 20-38, Na-Krul Books [needs fix].txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-01-12, 23-54, Max DFE limitation.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-01-15, 5-24, Modifiying Arkaine%27s Valor Quest.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-01-15, 8-11, Increasing number of Base Items.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-01-16, 6-17, Unique Item Drop Chance.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-01-16, 23-02, Adding Free Space to Mod.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-01-18, 12-03, Character Knockback Avoid.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-01-21, 2-07, Rage (Fury) Code + DMN.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-01-23, 15-15, Bugfixes introduced in Diablo v1.07 but present in Hellfire.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-01-25, 16-09, Hiding Hiddens.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-01-26, 9-00, Less HP from warcries.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-01-26, 17-18, Larger boss packs.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-01-27, 8-12, Monster spell support.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-01-27, 8-12, Monster%27s individual feature support.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-01-31, 12-06, Melee MvP Code.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-01-31, 12-41, Melee PvM Code.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-01-31, 14-50, Missile MvP Code.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-01-31, 14-50, Missile PvM Code.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-01-31, 22-55, More life stealer monsters.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-02-01, 13-19, Hellfire Shrine List.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-02-04, 13-09, Missile MvP Code.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-02-04, 13-38, EBP POINTERS.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-02-04, 23-50, Shop changes.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-02-05, 11-37, Disabling Melee PvP completely + free space.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-02-05, 15-32, Dungeon message code.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-02-05, 17-04, SFX.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-02-06, 19-23, Warping Blood Legion.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-02-18, 17-36, Character Evasion.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-02-20, 0-06, Shared XP disabled.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-02-20, 12-28, Character Lightning Damage Increase Again (rebalancing damage).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-02-20, 12-44, Fire Blast code.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-02-20, 13-55, Bone Spirit damage increase.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-02-22, 12-50, Critical hits caused by all class types.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-02-23, 18-05, Lower Return Prices at Adria.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-02-23, 22-12, Block chances adjusted.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-02-26, 02-07, Character Screen ToHit value code.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-02-26, 21-38, Anti dupe again.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-02-26, 23-39, AP updated.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-02-27, 17-52, Resolution set function.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-02-27, 20-19, Doubled critical damage for Monk and Assassin.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-02-28, 12-17, Peril with no DFE protection.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-03-02, 21-10, HP view.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-03-03, 13-53, Lower repair prices.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-03-03, 17-14, Durability (bows).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-03-03, 17-22, Gladiators Vit bonus to damage with axe.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-03-06, 3-41, Gladiator stunned at same damage as others.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-03-07, 19-08, XP values.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-03-09, 4-08, bind to level monsters.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-03-11, 3-35, Gold drop amount code (probably).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-03-13, 18-50, Looking for a way to increase monster sfx.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-03-13, 21-11, Anti-dupe Fix again - compare d107 + d109 + hf101.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-03-14, Dual wield code support info from Zenda .txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-03-14, dungeon generation by ulmo.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-03-14, ITEM POINTERS.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-03-14, Kp%27s Catacomb morphing bug trace advice.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-03-14, more pointers by ulmo.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-03-14, omlettooos improved item colors when selling at Grizwolds shop.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-03-17, ASM registers by Illusion.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-03-26, MP saves without computer name dependancy.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-04-06, Arcane Shield durability.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-04-08, Monks AC bonus.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-04-16, Golem rebalanced.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-04-19, Charged Bolt.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-04-19, Firebolt.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-04-20, Flash fix.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-04-22, Flame Wave.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-04-27, 4-02, Corruption effect update (stops all regeneration).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-04-27, See Boss HP.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-04-27, Town No Running.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-04-28, See Boss HP.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-03, Automap Radius.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-03, TD feats.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-04, Arcane shield formula update.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-07, Correspondence with Olaf about DFE.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-08, Shrine names obscured.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-12, Golem &amp; Uber resist arrow damage.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-12, Monster Melee Damage resistance.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-13, Base Item table handling function (possibly).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-14, Turning off forced monsters on DLVLs.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-16, Double rewards.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-17, Bosspack fixes.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-17, Double attack support for Bonewing.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-18, Acid puddle (after dying).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-19, additional melee attacks (dual and triple).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-24, Shrine list for bugfix on dlvl 3-4, MP mode.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-24, Spiritual shrine gives more gold.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-25, New free code space by Gladoo - check (successful).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-26, Arrow speeds.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-26, Barrel monsters.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-27, (Monster) arrows speed.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-27, Improved runes%27 SLVLs.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-28, Character Life and Mana Regeneration.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-28, Monster Knockback (KB) immunity.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-28, Monster stun restrictions.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-28, Notes on creating extra code for KB immunes.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-28, Rage (Fury) fix from TheDark53.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-29, Goat shrines + goat check.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-29, New segments in executable.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-29, Starting characters.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-30, All chars always see trapped objects.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-30, Exploding barrel damage.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-30, Healing spell tuning.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-30, Jewelry sold in MP (Shop).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-30, Move unique item table.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-30, OBJECT POINTERS.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-30, Shocking Blast.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-30, Spell mana cost equal for all.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-31, Missile criticals for scout, assy &amp; glad.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-31, PvP Melee Criticals.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-31, PvP Melee.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-05-31, PvP Missile.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-01, Monster advanced stun system.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-01, Monsters%27 slower regenerate rate.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-01, Reapers%27 special extra attacks.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-02, Forcing spell FX 3Ah and 31h to load.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-02, Mage base damage lowered.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-02, SPELLBOOK POINTERS.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-03, Dupefixing again.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-03, Gladiator%27s wrong dual weild combo penalty.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-04, %27Detect Trap%27 bonus.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-04, Firewall+Litewall revision.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-04, Resist MAX showed for 85%s only.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-04, Traps%27 ToHit revised.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-05, Assassin%27s full base damage formulae routine.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-05, Stronger BS in PvP.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-06, Character life &amp; mana formulas.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-06, Character weapon speeds.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-06, New base damage for Assassin.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-07, DLVL-related mods.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-08, PROPS.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-08, Relocating monsters by seeding size.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-10, PvM Melee criticals rewritten.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-11, Relocating base monster data table.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-12, Unique item code.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-13, Introducing new base items.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-13, Introducing new unique items.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-13, Relocating unique item table.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-23, Monster activation sound fix (for all players).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-26, MvM Stun.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-26, Spell KnockBack.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-27, Illusion%27s post about decompilation.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-27, PvM Missile, innate tohit bonuses for classes.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-29, MONSTER AI.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-29, Zombie AI.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-30, Fallen AI.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-30, Hidden AI.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-06-30, Skeleton AI.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-07-01, Horny AI.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-07-01, Shooter AI.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-07-01, Skel Archer AI.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-07-02, Shop data.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-07-10, Goat Mace AI.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-07-10, JG info  about Magma Demon AI.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-07-10, Magma Demon AI.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-07-10, Winged Fiend AI.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-07-11, Overlord AI.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-07-12, Viper AI.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-07-13, Mage AI.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-07-15, XP restriction (allowing for XP from low level monsters).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-07-20, Attempts of implementing VIT requirement on items.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-07-30, Increased Fury duration (new effect).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-08-05, Arcane Nova (creating).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-08-06, Trap viewing with Infra.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-08-07, Implementing smarter recursive formula.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-08-13, CHARACTER TIMINGS.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-08-13, Nova damage balancing.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-08-14, Dualweild for Monk.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-08-15, Spells cancel previous instances of themselves.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-08-17, Blunt-vs-Sharp damage modifiers in PvM Melee.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-08-17, Holy Nova update code.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-08-20, Nova trap damage code.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-08-21, Hotkey 1st part - adding more.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-08-21, Hotkey 2nd part - the one used in TH atm - code comments.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-08-21, HOTKEYZ.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-08-21, Key Handling (from TD notes).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-08-21, New hotkeys in TH.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-08-21, Weird shrine (more damage).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-08-22, Double rewards.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-08-22, Golem stats revision (to do).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-08-22, Grizwold sells Oil.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-08-22, MvM Stun threshold.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-08-22, Sweep penalty.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-08-28, Bone Spirit adjustments.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-09-01, Key codes.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-09-02, New AI ideas.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-09-17, Bonewing dual attack support.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-10-10, Diablo AI heavy modification.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-10-10, Diablo not stopped by walls.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-10-10, Trap vs Monster - ToHit chance.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-10-16, ARD upgrade.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-10-16, Holy Bolt damage formula update.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-10-17, Extra attack on frame 9 (dual attacks addon).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-10-18, Hellfire crash.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-10-18, Mages%27 phase immunity (excluding Imp Rogues).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-10-18, Maximum character damage( update).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-10-18, MP CLVL-based XP cap.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-10-18, Sparkling Shrine boost.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-10-19, Player GFX load function.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-10-19, SHRINES.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-10-20, Cornerstone and UberD bosses at preset places.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-10-21, BossMobs (from TD notes).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-10-21, Lazarus guards (from TD).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-10-21, TH_interesting function about bosses and other stuff.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-10-22, MvP Melee blocking new formula.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-10-22, MvP Missile blocking new formula.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-10-23, Quests.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-10-23, Rewritten Slain Hero quest.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-10-23, Unique item related funcs.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-10-24, Character screen info FUNCTION.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-10-24, Character screen ToHit info upgrade.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-10-25, Automap player arrows.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-10-25, Game end movie (restoring probably).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-11-06, Fire Bolt revised.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-11-27, (TBC)PvM Missile fixes.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2008-12-31, Diablo AI damage modify.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-01-03, Elemental spellbook damage.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-01-03, New character stun formula.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-01-04, PvM Melee - bonus damage to Undead.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-01-05, Mob restrictions.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-01-06, Bosses resist arrow and magic damage (+Uber%27s advanced magic resists).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-01-06, Devastation effect for bows and spells.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-01-06, Oblivion Knight special melee resistance.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-01-06, Special resistance to Fire &amp; Lightning walls.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-01-11, Necromorph - special resistance to arrow damage.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-01-11, Rotting Carcass - special resistance to arrow damage.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-01-11, Soul Burner - special resistance to elemental damage.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-01-17, Bile Demon - special resistance to elemental damage.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-01-18, Bile Demon - special resistance to arrow damage.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-01-18, Lower stun threshold for small monsters.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-01-19, New DFE lmitation.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-01-21, PvM Missile magic tohit formula.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-01-27, PvM Melee Gladiator tohit bonus.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-01-28, PvM Melee - Hidden Evasion.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-01-28, PvM Melee - Vortex Rogue resistance.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-01-28, Unseen arrow resistance.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-01-30, Fallen One.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-01-31, Burned Corpse stun threshold.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-01-31, Elemental resistance for other monsters.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-01-31, Nightmare elemental resists + PvM Missile Elemental damage resist FIX.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-01-31, Pal critical.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-01-31, Stinger vulnerability.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-02-01, Blood Legion complex elemental resistance.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-02-01, Corrected melee resists for monsters in PvM + resists for Lurker and Shadow.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-02-05, Defiler%27s special drop.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-02-07, Advanced handling of Town palettes.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-02-11, Oil changes.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-02-12, Balrog melee resistance.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-02-14, Forced monster selection function.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-02-16, [quest] Lachdanan - ressurection.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-02-16, [quest] Ogden%27s Sign - ressurection.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-02-16, Items that trigger character comments.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-02-17, Black Mushroom quest.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-02-17, Gharbad%27s drop.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-02-17, Lester%27s reward.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-02-18, Modding shrines.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-02-19, Music Expansion v3.1+.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-02-20, Saving private Theodore.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-02-21, Diablo dropping runebomb (in SP).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-02-24, Complete Nut quest recreation.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-02-24, HF Quest activation and deactivation.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-02-24, Torn note quest recreation.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-02-26, Monk special AC.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-02-26, More XP from low level monsters.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-02-27, Diablo + Defiler - wall immunities.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-02-27, Higher stun thresholds for Diablo and Defiler.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-02-27, Mana gain from potions with %27lose all regeneration%27 effect.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-02-28, Dupefix yet again.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-04, Leoric%27s tomb depending on difficulty.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-05, Chamber of Bone depending on difficulty.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-06, Auric amlet.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-06, Dungeon objects.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-06, Dupes detected, blah-blah.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-06, GUI.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-06, Inventory interface, by class.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-06, Inventory object image pntrs.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-06, Item info.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-06, Level loading screens + PALS.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-06, Monster (boss) TRN path.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-06, PlrGFX.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-06, savegame.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-06, Special dungeons.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-06, Special TRNs.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-06, Town portal related func.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-06, Vids.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-07, Bone Creepers immunity.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-07, Zhar sfx fix.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-11, Quasit arrow vulnerability.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-12, Diablo + Defiler - arrow resistance.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-12, Diablo + Defiler - magic dmg resistance.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-12, Diablo + Defiler - melee resistance.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-13, Decapitated body%27s item drop chance.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-13, dungeon objex with unique item drops [unsure].txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-13, New gold drop dlvl set function.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-13, strange function related to monster MP only item drops.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-14, Fast Walk.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-14, Scout base damage.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-14, Warping Demons%27 unusual stun threshold.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-15, Boss unique drop chance.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-15, Gamecrash report.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-16, Gharbad &amp; Warlord - activation sounds in MP.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-19, New quest uniques.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-23, Relocating flip anime.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-26, Balrog AI.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-26, Gargoyle AI.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-27, Skeleton King AI.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-28, BOSS NAME LIST.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-29, Fire Clan melee resistance on PWS level on Horror mode.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-03-31, Psycho-2-Tremain.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-04-04, Correspondence_with_[G]reat_Lady.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-04-14, base item table expansion.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-04-14, lifestealing altered.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-04-14, uniques by Hominicus.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-04-19, unique item drop info by Desert Dragon.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-04-20, extra uniques.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-04-21, Unique item table expansion by Dragon.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-04-22, Correspondence with Dragon about base monster%27s %27unique item drop%27 code.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-04-22, Uniques as quest rewards.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-04-24, Remarks.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-04-28, Hidden shrine fix.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-04-30, Belt fix.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-05-08, Staff base item data.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-05-21, Gold Golem physical damage resistance.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-05-27, Boss mlvl modifier.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-06-03, Inventory Duping bug fix.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-06-10, More screenshots.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-06-12, adria_changes.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-06-18, negativeCoordinateMonster_changes.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-07-02, manashieldfix_changes.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-07-04, Character base arrows.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-07-05, Fuco%27s MPchars conversion.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-07-08, NetworkSaveAutoConvert_changes.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-07-10, ManaShieldNetworkFix_changes.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-07-13, AegisFix.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-07-14, zTHv182gRC4.ERR-MP dlvl 15 crash on loading.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-08-04, attempt to fix HF crash in PvP.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-08-10, item_MLVL improvement.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-08-26, Monster stun formula expanded.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-09-04, MvP Autohit-Automiss functions.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-09-09, Death Guardian special attack.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-09-09, Great trap revisioning.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-09-12, Stone Curse changes.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-09-13, Trap Disarm.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-09-14, Boss table pointers (overflow fixing).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-09-15, Monster target selection.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-09-17, Mana spell.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-09-19, Item flip animation table relocation.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-09-21, PvM Melee - TOHIT bonuses depending on class.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-09-22, Monster varying arrow accuracy .txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-09-22, Monster varying melee accuracy .txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-09-22, MvP Missile - full routine with comments.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-09-22, Zombies - melee &amp; missile damage resistances.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-09-24, Life and manastealing corrections.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-09-25, ToHit and AC negative overflow Fix.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-09-29, Assassin special AC bonus.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-09-30, ARD absorptions according to class.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-10-01, Automap unaffected by Spacebar hitting.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-10-01, Quest rewards varying for character class.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-10-02, Arrays.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-10-02, Comments on character life formulas.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-10-02, Fury fixes.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-10-02, Passive resistances.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-10-13, Fire and Lightning Melee Fix.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-10-17, Gloom clans Firewall vulnerability.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-10-18, Boss mlvl_battle fixing.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-11-02, Randomized damage spells from monsters.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-11-04, Depleting durability on items.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-11-06, boss table relocation.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-12-13, Bosspack Fix.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-12-14, Golem stats code.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-12-14, Optional FF in MP.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-12-14, Ubers drop.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-12-14, Z key disable zooming.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2009-12-25, Golem spellbook damage.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-02-01, Hidden retreat chances.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-02-02, FleshThingSqueek.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-02-03, Golems are not affected by FF in MP.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-02-10, Fixing noHit at melee distance from shooter monsters.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-02-14, Armor racks.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-02-14, Fixing JOG-WALK in town.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-02-19, Horizontal movement invulnerability bug.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-03-11, Unusual autohit chances in MvP Melee (depending on class).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-03-17, Allowing battle suffixes on staves (by Illusion).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-03-19, Teleport (spell code).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-03-19, Town Portal (spell code).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-04-02, Assassin melee critical damage.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-04-02, Sweep attack checks.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-04-21, ACtoSignedWord.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-05-16, Uber special drop.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-05-17, ACtoSignedOneHalfByte.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-05-20, Evasion by character class (1.100 series).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-05-28, CPU performance boost patch.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-07-08, HorizontalHit.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-08-16, Unique item table expanded from 512 to 1024.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-08-17, Relocating base monster data table (attempt 2).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-08-18, Monster arrow damage resistance.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-08-19, Monster redesign.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-08-21, [Desert Dragon] HorizontalHitFix (rev3).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-08-22, [Desert Dragon] HorizontalHitFix (rev4).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-08-22, Fallen%27s retreat support code (adding more Fallen).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-08-23, [Desert Dragon] HorizontalHitFix (rev5).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-08-25, Allowing dungeon objects &amp; bosses to drop cursed items.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-08-26, [BUG] DLVL-21 load level crash.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-08-26, DFE%27s maximum defense.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-08-26, objectDropCurse.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-08-27, Mana damage code.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-08-28, Chamber of Bone spell reward.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-08-29, [DD]Blocking support for monsters.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-08-29, New monsters &amp; combo bosspacks.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-08-31, Monsters%27 lifestealing.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-09-01, RenegadeBlock2.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-09-02, 17-50, [DD]monsterMissBeforeBlock.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-09-02, 19-55, [DD]RenegadeBlockOnlyPhisical.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-09-07, Chargers.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-09-11, [DD] MPwallProtalFix.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-09-17, Player footstep sound restore.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-09-25, Player Walk sounds.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-11-16, DFE limitation in MvP Melee.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-11-17, Mana- and lifesteal cap.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2010-12-09, unique item drop code with comments.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2011-02-11, Uber Diablo placement info from DD.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2011-02-12, CreateBOSS routine with comments.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2011-02-15, Potion life-mana gain variations according to game modes.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2011-02-16, Limit player stats.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2011-02-17, Character stats calculations and elixir codes.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2011-02-22, Anticheating DFE raise (to prevent easy farming sessions in MP).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2011-02-25, MvM.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2011-03-03, Types of base items that bosses can drop.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2011-03-04, Types of base items that monsters can drop.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2011-03-06, BaseMonsterMore200.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2011-03-13, Potions and items sold at Adria and Pepin (+pointers to other NPC shops).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2011-04-07, MvP Melee - full routine with comments.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2011-04-09, base Vitality related life boosts.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2011-04-10, [DD] patch monsterslot expand to 400 - BaseMonsterMax400 (applied AFTER preivous patch).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2011-04-10, Character creation - HP and Mana.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2011-04-12, PvM Accuracy adjusting after Fury revision.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2011-04-19, Restart in Town - life &amp; mana.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2011-04-22, Multiplayer Dynamic Difficulty (MDD).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2011-04-22, Multiplayer game enter restrictions (by difficulty mode and CLVL).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2011-08-09, Boss drop amounts according to number of players.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2011-08-17, Armor piercing code analysis.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2011-08-31, MP menu options.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2011-08-31, MP restart gold loss.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-01-04, Monster AI combinations.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-01-22, Mysterious shrine bug fixed.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-02-24, ManaCostChanges_2.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-02-24, SPELLBOOK POINTERS.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-07-23, Game pace changes.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-07-23, Item pick up routine (connected to unclosed quests).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-07-24, Character melee damage resistance.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-08-12, Trap disarm fix.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-08-13, character Death animation fix.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-08-13, TZ Yarik.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-08-14, Attack speed modifiers.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-08-14, Heal Others todo code by Yarik.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-08-14, Satyr lord charged bolt fix.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-08-15, Dead town respawn (resurrect) fix.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-08-15, SLVL cap (+book read prevent).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-08-15, Telekinesis with LOS check.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-08-20, Automatic stat recalculator.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-08-21, Room generation (and whatnot).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-08-22, Adding VIT req on items (Yarik%27s code log).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-08-22, Inescapable quest areas.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-08-23, Skippable Lazarus cinematic.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-08-24, Drops from dungeon objects (barrels, chests, racks).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-08-25, Fix to getting knocked back out of light radius.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-08-27, Golem update [by Yarik].txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-08-28, Place a boss near the Anvil of Fury.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-08-30, Heal Other manacost.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-09-04, Uber Diablo - new activation.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-09-05, Level enter restrictions.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-09-07, Levelup sound.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-09-10, [undone] Flip animation tables.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-09-12, Champions.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-09-13, Failed Champions.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-09-24, Spell queuing.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-09-24, Stash upgrades.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-10-01, [undone] Puddle update.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-10-01, Hydra update.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-10-11, Version incompatibility insurance.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-10-12, [undone] item break sfx.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-10-12, [undone] Mana shield rework.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-10-12, Blocked Door.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-10-14, Unstoppable Music.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-10-15, Healing info show (HP heal amount instead of NA damage).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-10-15, Scrollable menus.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-10-23, Level architecture generation modding.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-10-29, Text table relocate.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-10-31, Creation of new quest (Infestation of the Worms).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-11-01, Stairs between hell-abyss-crypt.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-11-11, Belt auto placements.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-11-26, Andariel quest creation, part 1.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-11-30, Andariel quest creation, part 2.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-12-03, Creating quest %27Horazon%27s Demons%27 part1.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-12-03, Creating quest %27Horazon%27s Demons%27 part2.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-12-03, Creating quest %27Horazon%27s Demons%27 part3.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-12-03, Creating quest %27Horazon%27s Demons%27 part4.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-12-04, Cornerstone room placing on other floors.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-12-20, Quest randomize rehaul.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-12-21, Reflect bug fix + Item data auto update.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-12-24, Magic drops fixing.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-12-26, Blue item drop fix.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-12-29, Set items synergy.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2012-12-30, Wirt prices.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-01-05, Reflect fix (blocking).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-01-06, ARD fix.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-01-06, Moving ubers to closed rooms.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-01-07, Buffed loading.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-01-07, NPC fixes.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-01-09, AP mod.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-01-13, autoclicker + belt.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-01-18, Damage cap from below in MvP missile.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-01-21, Boss fine-tunings.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-01-24, Chests highlighted by automap.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-01-30, Death toll messages.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-01-31, Cain menu color fix.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-02-11, Win8 support.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-02-14, PvM Melee crits revised, and monster stun threshold new check added.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-04-02, Izual quest, part 1.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-04-03, Izual quest, part 2.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-04-03, MvM melee damage resistance (damage FROM Golem).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-04-05, Cooldown system.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-04-08, Item morphing works.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-04-09, Lost Treasure quest.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-04-12, Lost Treasure quest, part 2 (+dlvl affecting char stats!!!).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-05-20, cooldown for nova spells.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-05-20, Force wave.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-06-04, Footsteps.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-06-10, Island of the Sunless Sea quest.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-06-27, Blood splash.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-07-02, SP save game restrictions.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, (uber) activation fix.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, battle fixes.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, extra info panels.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, fixes.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, footstep sfx.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, hellfire - forcewave.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, main notepad page backup!!!!!!!.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, new affix ideas.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, nova cooldowns.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, NPC fixes.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, quest - ravenholm.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, quest fleshdoom.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, quest iotss.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, quest izual part1.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, quest izual part2.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, quest losttreasure part1.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, quest losttreasure part2.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, reflect test dispelling (todo))).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, special boss parameters.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, traps.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, vise.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, weapon switch (todo).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, быстрый пояс и автокликер.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, отображение AP.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, ударные брызги.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, улучшенные взрывы заклов (сделать).txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, фикс колец огня и молнии плюс шрайны.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, фиксы загрузки с активными бафами.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-09-30, штрафы + говнокод.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-10-08, unused character sounds.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-10-09, character weapon swing sounds.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2013-10-23, Fleshdoom quest part 1.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2014-09-12, towners-smart-drop-latest.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2014-09-13, disable-multi-celia-latest+some fixes.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2014-09-14, elemental-arrows-and-acid-fix-latest.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2014-09-15, boss-special-drop.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2014-09-17, champinions-dev.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2014-10-25, wpn-swap-latest.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2014-11-26, mag-start-latest.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="..\lib\txt\2015-08-19, cooldown.txt">
+      <Filter>Header Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="loader.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

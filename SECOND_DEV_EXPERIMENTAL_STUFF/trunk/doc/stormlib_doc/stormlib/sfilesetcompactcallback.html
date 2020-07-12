@@ -1,0 +1,173 @@
+<!doctype html public "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MPQ Archives - StormLib</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1250" />
+  <meta name="keywords" content="Ladislav Zezula; MPQ format; StormLib; MPQ Editor; Storm.dll" />
+  <meta name="description" content="Ladislav Zezula - Web homepage" />
+  <meta name="robots" content="INDEX, FOLLOW" />
+  <link rel="stylesheet" type="text/css" href="../../../include/styles.css"h />
+</head>
+
+<script language="Javascript" type="text/javascript">
+function RunMailClient(user, domain, ctry)
+{
+    szMailClient = "mail" + "to" + ":" + user + "@" + domain + "." + ctry;
+    document.location = szMailClient;
+}
+function RunMyMailClient()
+{
+    RunMailClient("ladik", "zezula", "net");
+}
+</script>
+
+<body>
+<div class="navigation">
+<!-- Language switches -->
+  <table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="50%" align="center">
+      <p class="image-and-text"><a href="../../../cz/mpq/stormlib/sfilesetcompactcallback.html"h><img src="../../../images/czech.gif"s border="0" width="65" height="41" alt="Cesky" /></a>
+      <a href="../../../cz/mpq/stormlib/sfilesetcompactcallback.html"h>Czech</a></p>
+    </td>
+    <td width="50%" align="center">
+      <p class="image-and-text"><a href="../../../en/mpq/stormlib/sfilesetcompactcallback.html"h><img src="../../../images/english.gif"s border="0" width="65" height="41" alt="English" /></a>
+      <a href="../../../en/mpq/stormlib/sfilesetcompactcallback.html"h>English</a></p>
+    </td>
+  </tr>
+  </table>
+
+  <p class="menuitem">Utilities</p>
+  <p class="submenuitem"><a href="../../../en/fstools/filespy.html"h>FileSpy</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/filetest.html"h>FileTest</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/ioctl.html"h>IOCTL Decoder</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/winsafer.html"h>WinSafer</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/bcdeditor.html"h>BCD Editor</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/bellavista.html"h>BellaVista</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/gamelauncher.html"h>Game Launcher</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/runass.html"h>RunAss</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/kdvmware.html"h>KDVMWARE</a></p>
+  
+  <p class="menuitem">MPQ Archives</p>
+  <p class="submenuitem"><a href="../../../en/mpq/main.html"h>Overview</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/mpqformat.html"h>MPQ Format</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/partialmpq.html"h>Partial MPQs</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/patchfiles.html"h>Patches</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/stormdll.html"h>Storm.dll</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/stormlib.html"h>StormLib</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/namebreak.html"h>Name Breaking</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/download.html"h>Download</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/links.html"h>Links</a></p>
+
+  <p class="menuitem">Programming</p>
+  <p class="submenuitem"><a href="../../../en/prog/main.html"h>Articles</a></p>
+
+  <p class="menuitem">Contact</p>
+  <p class="submenuitem"><a href="javascript:RunMyMailClient()"h>E-mail</a></p>
+  <p class="submenuitem"><a href="http://www.icq.com/153292074"h>ICQ</a></p>
+    
+</div>
+
+<div class="body">
+<!-- Title -->
+<p class="title">StormLib API Reference</p>
+<p class="subtitle">SFileSetCompactCallback</p>
+
+<h2>Description</h2>
+<pre><b>bool WINAPI SFileSetCompactCallback(</b>
+  <b>HANDLE</b> <i>hMpq</i>                         // Handle to an open MPQ.
+  <b>SFILE_COMPACT_CALLBACK</b> <i>pfnCompactCB</i> // Pointer to callback function
+  <b>void *</b> <i>pvUserData</i>                   // Pointer to custom data
+<b>);</b></pre>
+<p>Function <b>SFileSetCompactCallback</b> sets a callback that will be called during operations
+performed by <a href="sfilecompactarchive.html">SFileCompactArchive</a>. Registering a callback will
+help the calling application to show a progress about the operation, which will enhance user experience
+with the application.</p>
+
+<h2>Parameters</h2>
+<dl>
+  <dt>hMpq</dt>
+    <dd>[in] Handle to the MPQ that will be compacted. Current version of StormLib ignores the parameter,
+        but it is recommended to set it to the handle of the archive.</dd>
+  <dt>pfnCompactCB</dt>
+    <dd>[in] Pointer to the callback function. For the prototype and parameters, see below.</dd>
+  <dt>lpData</dt>
+    <dd>[in] User defined data that will be passed to the callback function.</dd>
+</dl>
+
+<h2>Callback Parameters</h2>
+<pre><b>void WINAPI CompactCallback(</b>
+  <b>void *</b> <i>pvUserData</i>,                  // Custom pointer passed to SFileSetCompactCallback
+  <b>DWORD</b> <i>dwWorkType</i>,                   // Work currently being done
+  <b>LARGE_INTEGER *</b> <i>pBytesProcessed</i>,    // Number of bytes already processed
+  <b>LARGE_INTEGER *</b> <i>pTotalBytes</i>         // Total number of bytes to process
+<b>);</b></pre>
+<dl>
+  <dt>pvUserData</dt>
+    <dd>[in] User data pointer that has been passed to <b>SFileSetCompactCallback</b>.</dd>
+  <dt>dwWorkType</dt>
+    <dd>[in] Contains identifier of the work that is currently being done. It can be any of the following values:
+      <table width="100%" border="1" cellspacing="0" cellpadding="2">
+      <tr valign="top">
+        <th align="center" width="40%">Value</th>
+        <th align="center" width="60%">Meaning</th>
+      </tr>
+      <tr>
+        <td align="left">CCB_CHECKING_FILES<br />(1)</td>
+        <td align="left">Checking if all files in the archive are known.</td>
+      </tr>
+      <tr>
+        <td align="left">CCB_CHECKING_HASH_TABLE<br />(2)</td>
+        <td align="left">Checking hash table of the archive.</td>
+      </tr>
+      <tr>
+        <td align="left">CCB_COPYING_NON_MPQ_DATA<br />(3)</td>
+        <td align="left">SFileCompactArchive is copying non-MPQ that precede the archive itself.</td>
+      </tr>
+      <tr>
+        <td align="left">CCB_COMPACTING_FILES<br />(4)</td>
+        <td align="left">SFileCompactArchive is writing the files to the new MPQ.</td>
+      </tr>
+      <tr>
+        <td align="left">CCB_CLOSING_ARCHIVE<br />(5)</td>
+        <td align="left">SFileCompactArchive is closing the MPQ.</td>
+      </tr>
+      </table>
+    </dd>
+  <dt>pBytesProcessed</dt>
+    <dd>[in] Pointer to LARGE_INTEGER, indicating what part of the archive has already been compacted.</dd>
+  <dt>pTotalBytes</dt>
+    <dd>[in] Pointer to LARGE_INTEGER, containing total number of bytes that has to be compacted.</dd>
+</dl>
+
+<h2>Return Value</h2>
+<p>The function never fails and always sets the callback.</p>
+
+<h2>Remarks</h2>
+<p>After <a href="sfilecompactarchive.html">SFileCompactArchive</a> finishes, the compact callback
+is invalidated. For eventual next call to <a href="sfilecompactarchive.html">SFileCompactArchive</a>,
+the calling application must set the compact callback again.</p>
+
+<h2>Availability in Storm.dll</h2>
+<table width="50%" cellspacing="0" border="1">
+<tr valign="top">
+  <td align="left" width="60%">Available in Storm.dll</td>
+  <td align="left" width="40%">No</td>
+</tr>
+<tr>
+  <td align="left">Ordinal number in Storm.dll 1.00</td>
+  <td align="left">N/A</td>
+</tr>
+<tr>
+  <td align="left">Ordinal number in Storm.dll 1.09</td>
+  <td align="left">N/A</td>
+</tr>
+</table>
+
+<!-- Page footer -->
+<p class="copyright">Copyright (c) Ladislav Zezula 2003 - 2010</p>
+
+</div>
+
+</body>
+</html>

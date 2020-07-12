@@ -1,0 +1,172 @@
+<!doctype html public "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MPQ Archives - StormLib</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1250" />
+  <meta name="keywords" content="Ladislav Zezula; MPQ format; StormLib; MPQ Editor; Storm.dll" />
+  <meta name="description" content="Ladislav Zezula - Web homepage" />
+  <meta name="robots" content="INDEX, FOLLOW" />
+  <link rel="stylesheet" type="text/css" href="../../../include/styles.css"h />
+</head>
+
+<script language="Javascript" type="text/javascript">
+function RunMailClient(user, domain, ctry)
+{
+    szMailClient = "mail" + "to" + ":" + user + "@" + domain + "." + ctry;
+    document.location = szMailClient;
+}
+function RunMyMailClient()
+{
+    RunMailClient("ladik", "zezula", "net");
+}
+</script>
+
+<body>
+<div class="navigation">
+<!-- Language switches -->
+  <table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="50%" align="center">
+      <p class="image-and-text"><a href="../../../cz/mpq/stormlib/sfileopenfileex.html"h><img src="../../../images/czech.gif"s border="0" width="65" height="41" alt="Cesky" /></a>
+      <a href="../../../cz/mpq/stormlib/sfileopenfileex.html"h>Czech</a></p>
+    </td>
+    <td width="50%" align="center">
+      <p class="image-and-text"><a href="../../../en/mpq/stormlib/sfileopenfileex.html"h><img src="../../../images/english.gif"s border="0" width="65" height="41" alt="English" /></a>
+      <a href="../../../en/mpq/stormlib/sfileopenfileex.html"h>English</a></p>
+    </td>
+  </tr>
+  </table>
+
+  <p class="menuitem">Utilities</p>
+  <p class="submenuitem"><a href="../../../en/fstools/filespy.html"h>FileSpy</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/filetest.html"h>FileTest</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/ioctl.html"h>IOCTL Decoder</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/winsafer.html"h>WinSafer</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/bcdeditor.html"h>BCD Editor</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/bellavista.html"h>BellaVista</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/gamelauncher.html"h>Game Launcher</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/runass.html"h>RunAss</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/kdvmware.html"h>KDVMWARE</a></p>
+  
+  <p class="menuitem">MPQ Archives</p>
+  <p class="submenuitem"><a href="../../../en/mpq/main.html"h>Overview</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/mpqformat.html"h>MPQ Format</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/partialmpq.html"h>Partial MPQs</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/patchfiles.html"h>Patches</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/stormdll.html"h>Storm.dll</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/stormlib.html"h>StormLib</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/namebreak.html"h>Name Breaking</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/download.html"h>Download</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/links.html"h>Links</a></p>
+
+  <p class="menuitem">Programming</p>
+  <p class="submenuitem"><a href="../../../en/prog/main.html"h>Articles</a></p>
+
+  <p class="menuitem">Contact</p>
+  <p class="submenuitem"><a href="javascript:RunMyMailClient()"h>E-mail</a></p>
+  <p class="submenuitem"><a href="http://www.icq.com/153292074"h>ICQ</a></p>
+    
+</div>
+
+<div class="body">
+<!-- Title -->
+<p class="title">StormLib API Reference</p>
+<p class="subtitle">SFileOpenFileEx</p>
+
+<h2>Description</h2>
+<pre><b>bool WINAPI SFileOpenFileEx(</b>
+  <b>HANDLE</b> <i>hMpq</i>,                      // Archive handle
+  <b>const char *</b> <i>szFileName</i>,          // Name of the file to open
+  <b>DWORD</b> <i>dwSearchScope</i>,              // Specifies the scope for the file.
+  <b>HANDLE *</b> <i>phFile</i>                   // Pointer to file handle
+<b>);</b></pre>
+<p>Function <b>SFileOpenFileEx</b> opens a file from MPQ archive. The file is only open for read.
+The file must be closed by calling <a href="sfileclosefile.html">SFileCloseFile</a>. All files
+must be closed before the MPQ archive is closed.</p>
+
+<h2>Parameters</h2>
+<dl>
+  <dt>hMpq</dt>
+    <dd>[in] Handle to an open archive.</dd>
+  <dt>szFileName</dt>
+    <dd>[in] Name or index of the file to open.</dd>
+  <dt>dwSearchScope</dt>
+    <dd>[in] Value that specifies how exactly the file should be open. It can be one of the following values:
+      <table width="100%" border="1" cellspacing="0" cellpadding="2">
+      <tr valign="top">
+        <th align="center" width="40%">Value</th>
+        <th align="center" width="60%">Meaning</th>
+      </tr>
+      <tr>
+        <td align="left">SFILE_OPEN_FROM_MPQ<br />(0x00000000)</td>
+        <td align="left">The file is open from the MPQ. This is the default value. hMpq must be valid if SFILE_OPEN_FROM_MPQ is specified.</td>
+      </tr>
+      <tr>
+        <td align="left">SFILE_OPEN_PATCHED_FILE<br />(0x00000001)</td>
+        <td align="left">The file will be open as patched. Reading data from the file results in getting patched file data.</td>
+      </tr>
+      <tr>
+        <td align="left">SFILE_OPEN_BY_INDEX<br />(0x00000002)</td>
+        <td align="left">The file is opened by index. See Remarks section for more information.</td>
+      </tr>
+      <tr>
+        <td align="left">SFILE_OPEN_LOCAL_FILE<br />(0xFFFFFFFF)</td>
+        <td align="left">Opens a local file instead. The file is open using CreateFileEx with GENERIC_READ access and FILE_SHARE_READ mode.</td>
+      </tr>
+      </table>    
+    </dd>
+    <dd>When calling this function in Storm.dll, set this parameter to zero.</dd>
+  <dt>phFile</dt>
+    <dd>[out] Pointer to a variable of HANDLE type, that will receive HANDLE to the open file.</dd>
+</dl>
+
+<h2>Return Value</h2>
+<p>When the function succeeds, it returns nonzero and phFile contains the handle of the opened file.
+When the file cannot be open, function returns false and <b>GetLastError</b> gives the error code.</p>
+
+<h2>Remarks</h2>
+<p>The function always tries to open file with the specified locale first. If such file doesn't
+exist in the MPQ, the function tries to open file with neutral language ID.</p>
+<p>When SFILE_OPEN_PATCH_FILE is specified as <i>dwSearchScope</i> parameter, then the following StormLib functions behave dfferently:</p>
+<ul>
+  <li><a href="sfilereadfile.html">SFileReadFile</a> always retrieves patched data</li>
+  <li><a href="sfilegetfilesize.html">SFileGetFileSize</a> returns the size of patched file, which may be different from original file size.</li>
+</ul>
+<p>When SFILE_OPEN_BY_INDEX is specified as <i>dwSearchScope</i> parameter, the <i>szFileName</i> must contain
+file index, cast to <b>const char *</b>. The file index is the index of the block table entry in the MPQ.
+This allows to open a file whose name is not known. The open operation succeeds only if any of the
+following conditions is true:</p>
+<ul>
+  <li>The file is not encrypted</li>
+  <li>The file is encrypted and compressed</li>
+  <li>The file is encrypted and and it's either EXE or WAV file</li>
+</ul>
+<p>When the operation succeeds, <a href="sfilegetfilename.html">SFileGetFileName</a> gives a generic
+file name, which is in the form of "FileXXXXXXXX.ext". "XXXXXXXX" is the file index as decimal number,
+with leading zeros. If the type of the file can be deducted by file content, it will also give the proper
+file extension. If this generic file name is used to open the file from the archive, it has same effect
+like specifying SFILE_OPEN_BY_INDEX as <i>dwSearchScope</i> and file index as <i>szFileName</i>.</p>
+
+<h2>Availability in Storm.dll</h2>
+<table width="50%" cellspacing="0" border="1">
+<tr valign="top">
+  <td align="left" width="60%">Available in Storm.dll</td>
+  <td align="left" width="40%">Yes</td>
+</tr>
+<tr>
+  <td align="left">Ordinal number in Storm.dll 1.00</td>
+  <td align="left">79 (0x04F)</td>
+</tr>
+<tr>
+  <td align="left">Ordinal number in Storm.dll 1.09</td>
+  <td align="left">268 (0x10C)</td>
+</tr>
+</table>
+
+<!-- Page footer -->
+<p class="copyright">Copyright (c) Ladislav Zezula 2003 - 2010</p>
+
+</div>
+
+</body>
+</html>

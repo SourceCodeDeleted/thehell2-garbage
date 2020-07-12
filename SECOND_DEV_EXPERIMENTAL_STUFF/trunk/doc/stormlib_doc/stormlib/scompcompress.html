@@ -1,0 +1,165 @@
+<!doctype html public "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MPQ Archives - StormLib</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1250" />
+  <meta name="keywords" content="Ladislav Zezula; MPQ format; StormLib; MPQ Editor; Storm.dll" />
+  <meta name="description" content="Ladislav Zezula - Web homepage" />
+  <meta name="robots" content="INDEX, FOLLOW" />
+  <link rel="stylesheet" type="text/css" href="../../../include/styles.css"h />
+</head>
+
+<script language="Javascript" type="text/javascript">
+function RunMailClient(user, domain, ctry)
+{
+    szMailClient = "mail" + "to" + ":" + user + "@" + domain + "." + ctry;
+    document.location = szMailClient;
+}
+function RunMyMailClient()
+{
+    RunMailClient("ladik", "zezula", "net");
+}
+</script>
+
+<body>
+<div class="navigation">
+<!-- Language switches -->
+  <table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="50%" align="center">
+      <p class="image-and-text"><a href="../../../cz/mpq/stormlib/scompcompress.html"h><img src="../../../images/czech.gif"s border="0" width="65" height="41" alt="Cesky" /></a>
+      <a href="../../../cz/mpq/stormlib/scompcompress.html"h>Czech</a></p>
+    </td>
+    <td width="50%" align="center">
+      <p class="image-and-text"><a href="../../../en/mpq/stormlib/scompcompress.html"h><img src="../../../images/english.gif"s border="0" width="65" height="41" alt="English" /></a>
+      <a href="../../../en/mpq/stormlib/scompcompress.html"h>English</a></p>
+    </td>
+  </tr>
+  </table>
+
+  <p class="menuitem">Utilities</p>
+  <p class="submenuitem"><a href="../../../en/fstools/filespy.html"h>FileSpy</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/filetest.html"h>FileTest</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/ioctl.html"h>IOCTL Decoder</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/winsafer.html"h>WinSafer</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/bcdeditor.html"h>BCD Editor</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/bellavista.html"h>BellaVista</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/gamelauncher.html"h>Game Launcher</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/runass.html"h>RunAss</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/kdvmware.html"h>KDVMWARE</a></p>
+  
+  <p class="menuitem">MPQ Archives</p>
+  <p class="submenuitem"><a href="../../../en/mpq/main.html"h>Overview</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/mpqformat.html"h>MPQ Format</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/partialmpq.html"h>Partial MPQs</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/patchfiles.html"h>Patches</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/stormdll.html"h>Storm.dll</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/stormlib.html"h>StormLib</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/namebreak.html"h>Name Breaking</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/download.html"h>Download</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/links.html"h>Links</a></p>
+
+  <p class="menuitem">Programming</p>
+  <p class="submenuitem"><a href="../../../en/prog/main.html"h>Articles</a></p>
+
+  <p class="menuitem">Contact</p>
+  <p class="submenuitem"><a href="javascript:RunMyMailClient()"h>E-mail</a></p>
+  <p class="submenuitem"><a href="http://www.icq.com/153292074"h>ICQ</a></p>
+    
+</div>
+
+<div class="body">
+<!-- Title -->
+<p class="title">StormLib API Reference</p>
+<p class="subtitle">SCompCompress</p>
+
+<h2>Description</h2>
+<pre><b>int WINAPI SCompCompress(</b>
+  <b>char *</b> <i>pbOutBuffer</i>,               // Pointer to buffer where imploded data will be stored
+  <b>int *</b> <i>pcbOutBuffer</i>,               // Pointer to size of output buffer
+  <b>char *</b> <i>pbInBuffer</i>,                // Pointer to buffer with data to be imploded
+  <b>int</b> <i>cbInBuffer</i>,                   // Size of the input data
+  <b>unsigned</b> <i>uCompressionMask</i>,        // Compression methods to use
+  <b>int</b> <i>nCmpType</i>,                     // First parameter specific to compression method
+  <b>int</b> <i>nCmpLevel</i>                     // Second parameter specific to compression method
+<b>);</b></pre>
+<p><b>SCompCompress</b> compresses a data buffer, using various compression methods.</p>
+
+<h2>Parameters</h2>
+<dl>
+  <dt>pbOutBuffer</dt>
+    <dd>[out] Pointer to buffer where the compressed data will be stored.</dd>
+  <dt>pcbOutBuffer</dt>
+    <dd>[in, out] On call, pointer to the length of the buffer in <i>pbOutBuffer</i>. When finished, this variable receives
+        length of the compressed data.</dd>
+  <dt>pbInBuffer</dt>
+    <dd>[in] Pointer to data that are to be imploded.</dd>
+  <dt>cbInBuffer</dt>
+    <dd>[in] Length of the data pointed by <i>pbInBuffer</i>.</dd>
+  <dt>uCompressionMask</dt>
+    <dd>[in] Bit mask that specifies compression methods to use. For possible values of this parameter, see <a href="sfileaddfileex.html">SFileAddFileEx</a>.</dd>
+  <dt>nCmpType</dt>
+    <dd>[in] An extra parameter, specific to compression type. This parameter is only used internally
+        by Huffmann compression when applied after an ADPCM compression.</dd>
+  <dt>nCmpLevel</dt>
+    <dd>[in] An extra parameter, specific to compression type. This parameter is used by ADPCM compression
+        and is related to WAVE quality. See Remarks section for additional information.</dd>
+</dl>
+
+<h2>Return Value</h2>
+<p>When the function succeeds, it returns nonzero. On an error, the function returns FALSE
+and <b>GetLastError</b> gives the error code.</p>
+
+<h2>Remarks</h2>
+<p>When the compression library was unable to compress the data, it will copy the input data
+to the output buffer. The caller can determine this by checking size of the output data against
+size of the input data. If cbOutData == cbInData, it means that the data haven't been compressed.</p>
+<p>When compressing WAVE files using ADPCM compression, the first MPQ block of the WAVE file must
+be compressed by a data compression (e.g. MPQ_COMPRESSION_PKWARE). The <i>nCmpLevel</i> can be used
+to control quality of the WAVE files. The following table shows parameters for different WAVE qualities:</p>
+<table width="50%" border="1" cellspacing="0" cellpadding="2">
+<tr valign="top">
+  <th align="center" width="33%">WAVE Quality</th>
+  <th align="center" width="33%"><i>uCompressionMask</i></th>
+  <th align="center" width="33%"><i>nCmpLevel</i></th>
+</tr>
+<tr>
+  <td align="center">High quality, the worst compression</td>
+  <td align="center">0x08 (stereo)<br />0x08 (mono)</td>
+  <td align="center">(ignored)</td>
+</tr>
+<tr>
+  <td align="center">Medium quality, medium compression</td>
+  <td align="center">0x81 (stereo)<br />0x41 (mono)</td>
+  <td align="center">4</td>
+</tr>
+<tr>
+  <td align="center">Low quality, the best compression</td>
+  <td align="center">0x81 (stereo)<br />0x41 (mono)</td>
+  <td align="center">2</td>
+</tr>
+</table>
+
+<h2>Availability in Storm.dll</h2>
+<table width="50%" cellspacing="0" border="1">
+<tr valign="top">
+  <td align="left" width="60%">Available in Storm.dll</td>
+  <td align="left" width="40%">Yes</td>
+</tr>
+<tr>
+  <td align="left">Ordinal number in Storm.dll 1.00</td>
+  <td align="left">N/A</td>
+</tr>
+<tr>
+  <td align="left">Ordinal number in Storm.dll 1.09</td>
+  <td align="left">551 (0x227)</td>
+</tr>
+</table>
+
+<!-- Page footer -->
+<p class="copyright">Copyright (c) Ladislav Zezula 2003 - 2010</p>
+
+</div>
+
+</body>
+</html>

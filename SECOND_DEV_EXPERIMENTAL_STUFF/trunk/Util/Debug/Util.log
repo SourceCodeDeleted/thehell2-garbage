@@ -1,0 +1,7 @@
+﻿  Exceptions.cpp
+  MemoryFrame.cpp
+  Mutex.cpp
+  RemoteProcess.cpp
+  sha1.cpp
+  SharedMemory.cpp
+  Util.vcxproj -> E:\D1_THEHELL2_DEV\SECOND_DEV_EXPERIMENTAL_STUFF\trunk\SNP_DirectIP\Debug\Util.lib

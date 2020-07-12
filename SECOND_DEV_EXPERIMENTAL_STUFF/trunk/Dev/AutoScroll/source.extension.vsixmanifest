@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+	<Metadata>
+		<Identity Id="AutoScroller..4b6e249e-d938-4994-aa82-f6b8e54a7f3d" Version="0.5.6" Language="en-US" Publisher="Colin Bradley" />
+		<DisplayName>AutoScroller</DisplayName>
+		<Description xml:space="preserve">Adds autoscrolling to text editor views.</Description>
+		<MoreInfo>http://vs2010autoscroller.codeplex.com/</MoreInfo>
+		<Icon>SmallIcon.png</Icon>
+		<PreviewImage>SmallIcon.png</PreviewImage>
+		<Tags>scroll, click, autoscroll, autoscroller, auto-scroll, auto scroll, scroller, middle, middle-click scrolling, middle click</Tags>
+	</Metadata>
+	<Installation>
+		<InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[11.0,)" />
+		<InstallationTarget Id="Microsoft.VisualStudio.Premium" Version="[11.0,)" />
+		<InstallationTarget Id="Microsoft.VisualStudio.Ultimate" Version="[11.0,)" />
+	</Installation>
+	<Dependencies>
+		<Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+	</Dependencies>
+	<Assets>
+		<Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
+	</Assets>
+</PackageManifest>

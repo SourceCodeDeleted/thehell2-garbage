@@ -1,0 +1,202 @@
+<!doctype html public "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MPQ Archives - StormLib</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1250" />
+  <meta name="keywords" content="Ladislav Zezula; MPQ format; StormLib; MPQ Editor; Storm.dll" />
+  <meta name="description" content="Ladislav Zezula - Web homepage" />
+  <meta name="robots" content="INDEX, FOLLOW" />
+  <link rel="stylesheet" type="text/css" href="../../../include/styles.css"h />
+</head>
+
+<script language="Javascript" type="text/javascript">
+function RunMailClient(user, domain, ctry)
+{
+    szMailClient = "mail" + "to" + ":" + user + "@" + domain + "." + ctry;
+    document.location = szMailClient;
+}
+function RunMyMailClient()
+{
+    RunMailClient("ladik", "zezula", "net");
+}
+</script>
+
+<body>
+<div class="navigation">
+<!-- Language switches -->
+  <table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="50%" align="center">
+      <p class="image-and-text"><a href="../../../cz/mpq/stormlib/sfileverifyfile.html"h><img src="../../../images/czech.gif"s border="0" width="65" height="41" alt="Cesky" /></a>
+      <a href="../../../cz/mpq/stormlib/sfileverifyfile.html"h>Czech</a></p>
+    </td>
+    <td width="50%" align="center">
+      <p class="image-and-text"><a href="../../../en/mpq/stormlib/sfileverifyfile.html"h><img src="../../../images/english.gif"s border="0" width="65" height="41" alt="English" /></a>
+      <a href="../../../en/mpq/stormlib/sfileverifyfile.html"h>English</a></p>
+    </td>
+  </tr>
+  </table>
+
+  <p class="menuitem">Utilities</p>
+  <p class="submenuitem"><a href="../../../en/fstools/filespy.html"h>FileSpy</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/filetest.html"h>FileTest</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/ioctl.html"h>IOCTL Decoder</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/winsafer.html"h>WinSafer</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/bcdeditor.html"h>BCD Editor</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/bellavista.html"h>BellaVista</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/gamelauncher.html"h>Game Launcher</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/runass.html"h>RunAss</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/kdvmware.html"h>KDVMWARE</a></p>
+  
+  <p class="menuitem">MPQ Archives</p>
+  <p class="submenuitem"><a href="../../../en/mpq/main.html"h>Overview</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/mpqformat.html"h>MPQ Format</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/partialmpq.html"h>Partial MPQs</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/patchfiles.html"h>Patches</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/stormdll.html"h>Storm.dll</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/stormlib.html"h>StormLib</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/namebreak.html"h>Name Breaking</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/download.html"h>Download</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/links.html"h>Links</a></p>
+
+  <p class="menuitem">Programming</p>
+  <p class="submenuitem"><a href="../../../en/prog/main.html"h>Articles</a></p>
+
+  <p class="menuitem">Contact</p>
+  <p class="submenuitem"><a href="javascript:RunMyMailClient()"h>E-mail</a></p>
+  <p class="submenuitem"><a href="http://www.icq.com/153292074"h>ICQ</a></p>
+    
+</div>
+
+<div class="body">
+<!-- Title -->
+<p class="title">StormLib API Reference</p>
+<p class="subtitle">SFileVerifyFile</p>
+
+<h2>Description</h2>
+<pre><b>DWORD WINAPI SFileVerifyFile(</b>
+  <b>HANDLE</b> <i>hMpq</i>,                      // Handle to a file or archive
+  <b>const char *</b> <i>szFileName</i>,          // Name of the file to verify
+  <b>DWORD</b> <i>dwFlags</i>                     // What to verify
+<b>);</b></pre>
+<p>Function <b>SFileVerifyFile</b> verifies the file by its CRC and MD5. The (attributes) file must exist
+in the MPQ and must have been open by <a href="sfileopenarchive.html">SFileOpenArchive</a>
+or created by <a href="sfilecreatearchive.html">SFileCreateArchive</a>. The entire file is always checked
+for readability. Additional flags in <i>dwFlags</i> turn on extra checks on the file.</p>
+
+<h2>Parameters</h2>
+<dl>
+  <dt>hMpq</dt>
+    <dd>[in] Handle to an open MPQ archive.</dd>
+  <dt>szFileName</dt>
+    <dd>[in] Name of a file to verify. </dd>
+  <dt>dwFlags</dt>
+    <dd>[in] Specifies what to verify. This parameter can be a combination of the following values:
+      <table width="100%" border="1" cellspacing="0" cellpadding="2">
+      <tr valign="top">
+        <th align="center" width="40%">Value</th>
+        <th align="center" width="60%">Meaning</th>
+      </tr>
+      <tr>
+        <td align="left">SFILE_VERIFY_SECTOR_CRC<br />(0x0001)</td>
+        <td align="left">Also verify CRC of each file sector.</td>
+      </tr>
+      <tr>
+        <td align="left">SFILE_VERIFY_FILE_CRC<br />(0x0002)</td>
+        <td align="left">Also verify the file by its CRC32.</td>
+      </tr>
+      <tr>
+        <td align="left">SFILE_VERIFY_FILE_MD5<br />(0x0004)</td>
+        <td align="left">Also verify the file by its MD5.</td>
+      </tr>
+      <tr>
+        <td align="left">SFILE_VERIFY_RAW_MD5<br />(0x0008)</td>
+        <td align="left">Also verify the file by the raw data MD5.</td>
+      </tr>
+      </table>
+    </dd>
+</dl>
+
+<h2>Return Value</h2>
+<p>Return value is zero when no problerms were found. Otherwise, return value
+is a bit mask consisting of the following possible found problems:</p>
+<table width="100%" border="1" cellspacing="0" cellpadding="2">
+<tr valign="top">
+  <th align="center" width="40%">Value</th>
+  <th align="center" width="60%">Meaning</th>
+</tr>
+<tr>
+  <td align="left">VERIFY_OPEN_ERROR<br />(0x00000001)</td>
+  <td align="left">Failed to open the file. <b>GetLastError()</b> returns more information.</td>
+</tr>
+<tr>
+  <td align="left">VERIFY_READ_ERROR<br />(0x00000002)</td>
+  <td align="left">Could not read all the data from the file.</td>
+</tr>
+<tr>
+  <td align="left">VERIFY_FILE_HAS_SECTOR_CRC<br />(0x00000004)</td>
+  <td align="left">The checked file has been tested for sector checksum integrity.</td>
+</tr>
+<tr>
+  <td align="left">VERIFY_FILE_SECTOR_CRC_ERROR<br />(0x00000008)</td>
+  <td align="left">
+    Sector checksum verification failed during reading the file.
+    This flag may only be set on files with MPQ_FILE_SECTOR_CRC flag set and with sector checksum available.
+  </td>
+</tr>
+<tr>
+  <td align="left">VERIFY_FILE_HAS_CHECKSUM<br />(0x00000010)</td>
+  <td align="left">The file has valid file CRC32 and was tested using it.
+  </td>
+</tr>
+<tr>
+  <td align="left">VERIFY_FILE_CHECKSUM_ERROR<br />(0x00000020)</td>
+  <td align="left">
+    CRC32 checksum for the entire file doesn't match. This flag may only be set when the MPQ has
+    the "(attributes)" file, and the verified file has a valid CRC32 value there.
+    Note that this check may fail on WAVE files stored using a lossy compression.
+  </td>
+</tr>
+<tr>
+  <td align="left">VERIFY_FILE_HAS_MD5<br />(0x00000040)</td>
+  <td align="left">The file has valid file MD5 and was tested using it.</td>
+</tr>
+<tr>
+  <td align="left">VERIFY_FILE_MD5_ERROR<br />(0x00000080)</td>
+  <td align="left">
+    MD5 for the entire file doesn't match. This flag may only be set when the MPQ has
+    the "(attributes)" file, and the verified file has a valid MD5 hash there.</td>
+</tr>
+<tr>
+  <td align="left">VERIFY_FILE_HAS_RAW_MD5<br />(0x00000040)</td>
+  <td align="left">The file has valid raw MD5 hash was tested using it.</td>
+</tr>
+<tr>
+  <td align="left">VERIFY_FILE_RAW_MD5_ERROR<br />(0x00000040)</td>
+  <td align="left">MD5 for the raw file data doesn't match.</td>
+</tr>
+</table>
+
+<h2>Availability in Storm.dll</h2>
+<table width="50%" cellspacing="0" border="1">
+<tr valign="top">
+  <td align="left" width="60%">Available in Storm.dll</td>
+  <td align="left" width="40%">No</td>
+</tr>
+<tr>
+  <td align="left">Ordinal number in Storm.dll 1.00</td>
+  <td align="left">N/A</td>
+</tr>
+<tr>
+  <td align="left">Ordinal number in Storm.dll 1.09</td>
+  <td align="left">N/A</td>
+</tr>
+</table>
+
+<!-- Page footer -->
+<p class="copyright">Copyright (c) Ladislav Zezula 2003 - 2010</p>
+
+</div>
+
+</body>
+</html>

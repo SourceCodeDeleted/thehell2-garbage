@@ -1,0 +1,14 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(1821,5): warning : The referenced project '..\Storm\Storm.vcxproj' does not exist.
+  CriticalSection.cpp
+  DLLMain.cpp
+  SNPModule.cpp
+  DirectIP.cpp
+  SettingsDialog.cpp
+  UDPSocket.cpp
+  LocalPC.cpp
+  Output.cpp
+     Trwa tworzenie biblioteki E:\D1_THEHELL2_DEV\SECOND_DEV_EXPERIMENTAL_STUFF\trunk\SNP_DirectIP\Debug\SNP_DirectIP.lib i obiektu E:\D1_THEHELL2_DEV\SECOND_DEV_EXPERIMENTAL_STUFF\trunk\SNP_DirectIP\Debug\SNP_DirectIP.exp
+  SNP_DirectIP.vcxproj -> E:\D1_THEHELL2_DEV\SECOND_DEV_EXPERIMENTAL_STUFF\trunk\SNP_DirectIP\Debug\SNP_DirectIP.dll
+  E:\D1_THEHELL2_DEV\SECOND_DEV_EXPERIMENTAL_STUFF\trunk\SNP_DirectIP\Debug\SNP_DirectIP.dll
+  SNP\caps.mpq
+          1 file(s) copied.

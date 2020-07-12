@@ -1,0 +1,8 @@
+[General]
+Name=agent
+Project=1
+[Classes]
+Count=3
+Class0="TForm1","TForm","Unit1","0","C:\Documents and Settings\Разработчик\Рабочий стол\AssemblaAgent\trunk\Unit1.pas"
+Class1="Trequest_form","TForm","request_frm","0","C:\Documents and Settings\Разработчик\Рабочий стол\AssemblaAgent\trunk\request_frm.pas"
+Class2="Tform_edit_deploy","TForm","frm_deploy","0","C:\Documents and Settings\Разработчик\Рабочий стол\AssemblaAgent\trunk\frm_deploy.pas"

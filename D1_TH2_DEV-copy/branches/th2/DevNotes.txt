@@ -1,0 +1,194 @@
+﻿Во всех дьяблах мы наблюдаем нескончамое увеличение урона и жизни. Жирнее мобы, мощнее оружие и так по спирали.
+Это нереалистично и выглядит как беспомощность дизайнеров, достигнуть баланса таким образом достаточно сложно,
+так как с каждым следующим витком амплитуда значений становиться больше.
+И при этом мы видим что в других аспектах таки есть решения, например бутылка лечения в д3 теперь лечит 60% здоровья.
+Возможно что применение аналогичной механики позволит решить проблему бесконечного наращивания урона и здоровья.
+
+как разнобразить и продлить геймплей:
+- постоянно разработавать новое оружие и магию и монстров, новые игровые механики, и балансировать уже имеющиеся, поощряя игроков возвращаться в игру с каждым обновлением
+- уникальные(редкие,магические) предметы должны обладать уникальной механикой, а не завышенными характеристиками
+- уникальные предметы должны быть очень редкими, настолько редкими, чтобы за год ежедневной игры можно было бы найти максимум 5-10 уников
+- как минимум половина уников должны быть классовыми
+- это позволит развить пвп, так как у каждого будет свой уникальный билд
+- это позволит ввести монетизацию, продавая случайный комплект предметов, в которых может оказаться уник (как это предполагалось в изначальном диздоке дьябло)
+  и если продавать не конкретные предметы (как на ауке д3 было), а пак (бустер) из нескольких случайных предметов (например 10 случайных магических предметов
+  из которых 0-2 могут быть уникальными), то тут остается элемент везения (основная характеристика "коробки Скиннера"), который поддерживает интерес
+подравнивание рефлексии энумов
+Replace all "(.{120}[^,]*,)", "$1\n", Match case, Selection, Regular expressions, Find Results 1, Current Document
+  C:\Dev\TheHell\trunk\src\enums.h(2401,22830):	S_147_SFX_MISC_LMAG, S_148_SFX_TOWNERS_BMAID01, S_149_SFX_ITEMS_CP, S_150_SFX_ITEMS_CQ, S_151_SFX_TOWNERS_BMAID04, S_152_SFX_ITEMS_FLIPLTHR,
+
+рефлексия энумов 
+Replace all "[ \t]*\b(_\w+|[\w-[0-9_]]\w*)\b.*,[ \t]*\r?\n", "$1, ", Match case, Selection, Regular expressions, Find Results 1, Current Document
+  C:\Dev\TheHell\trunk\src\enums.h(1647,1):	S_396_SFX_TOWNERS_STORYT14	 = 396,
+
+Replace all "^[ \t]*e[ \t]*\([ \t]*(\b_\w+|[\w-[0-9_]]\w*\b[ \t]*),[ \t]*\b(.*)\b[ \t\)\\]*", "\t$1 = $2,", Match case, Regular expressions, Find Results 1, Current Document
+  C:\Dev\TheHell\trunk\src\enums.h(843,1):	SP_0		 = 0,
+
+
+(?<adr>(00[4-9][0-9a-fA-F]{5})).*\r?\n\b(_\w+|[\w-[0-9_]]\w*)\b(.*)\s\b(?<name>AddButcherHall|AddHall)\b(\s*\(.*\)\s*)(;|/|\{|\r?\n)
+AddButcherHall|AddHall|AddQuestBook86|AddWarpFromDisusedReliquary|AddWarpFromFrozenLoch|AddWarpFromGlacialCaverns|AddWarpFromIzualValey|AddWarpsToSPTown|AllocPopupScreenPtr|ApplyBannerAltDun|ApplyBlindAltDun|ApplyBonechamberDunAndSetWarp|ApplyValorDun|ApplyWarlordDun|AutoPutCursorItemToInventory_Optimized|CloseCurrentPlayerSaveSlot|ClosePopupScreen|CooldownCheck|CountOfActiveQuestInGroup|DelCriticalSection4|DrawPlayersItems|DrawPopupScreen|FillDMapClosedDisusedReliquary|FillDMapOpenedDisusedReliquary|FreePopupScreenPtr|FreeSpeechPanelPtrs|GenerateQuestFloor|GenerateQuestFloor_1_KingLeoricsTomb|GenerateQuestFloor_10_ThePit|GenerateQuestFloor_11_PassageOfFire|GenerateQuestFloor_12_ValleyOfDespair|GenerateQuestFloor_13_DisusedReliquary|GenerateQuestFloor_14_GlacialCaverns|GenerateQuestFloor_15_FrozenLoch|GenerateQuestFloor_2_BoneChamber|GenerateQuestFloor_25_Ravenholm|GenerateQuestFloor_3_TheInfestedCellar|GenerateQuestFloor_4_PoisonedWaterSupply|GenerateQuestFloor_5_ArchbishopLazarusLair|GenerateQuestFloor_6_HallsOfAnguish|GenerateQuestFloor_7_AndarielsThrone|GenerateQuestFloor_8_HorazonsHaven|GenerateQuestFloor_9_SummoningRooms|GetMapOfTheStarsMinutsPassedCount|GetPermMapKeys|GetSlotByHeroName|GetTempMapKeys|HallIsRoom|HallIsRoomRoutine|HandleAdriaItemBuy|HandleAdriaItemRecharge|HandleAdriaItemSell|HandleAdriaMainMenu|HandleBasicalItemBuy|HandleConfirmMenu|HandleFarnhamMainMenu|HandleGilianMainMenu|HandleGriswoldItemRepair|HandleGriswoldItemSale|HandleGriswoldMainMenu|HandleKainIdentifiedItemParamShow|HandleKainItemIdentify|HandleKainMainMenu|HandleMagicalItemBuy|HandleNoGoldOrRoomMenu|HandleOgdenMainMenu|HandlePepinItemBuy|HandlePepinMainMenu|HandleTalkMenu|HandleWirtItemBuy|HandleWirtMainMenu|HorazonQuestCompleteCheck|InitCriticalSection4|IsFloorAroundCellIsFree|IsHashCollision|LoadGame|LoadItemsOnGround|LoadMagicStoreItem|LoadMapFromDun|LoadMissile|LoadObject|LoadObjectLight|LoadPlayerEntryPoint|LoadPlayerVisibility|LoadQuest|LoadSpeechPanelData|MakeAloneRoomType15BurnCrosses|MakeAloneRoomType6Tnudems|NullSub|OffRandQuestFromGroup|OpenPopupScreen|PrintAffixEffectsAndChargesToBuffer_unused|PrintArmorDamageAndDurabilityAtBuffer_unused|PrintRequirementsToBuffer_unused|PutOneGoldPileInInventory|RandomizeQuests|ReadPopupScreen|SaveGame|SaveItemsOnGround|SaveMagicStoreItem|SaveMissile|SaveObject|SaveObjectLight|SavePlayerEntryPoint|SavePlayerVisibility|SaveQuest|SelectClanAndCenterOfRoom|SelectSceletonAndCenterOfRoom|SetCursorToWarp|SetDialogLine|SetDialogRow|SetRoomCursoreToCenterOfRoom|SetRoomCursoreToCenterOfTopWall|SetRoomCursorToCellAtDistanceFromWalls|SetWarpToHorazonQuestFloor|SetWarpToIzualQuestFloor|SetWarpToLeoricQuestFloor|ShiftDialogEnd|ShiftDialogHome|ShowDungeonEnteriesDescriptionsIzual|ShowDungeonEnteriesDescriptionsTreasure|sub_462295|TheInfestedCellarRandomization|UniteAllHalls|WriteHeroDataToSave
+
+ApplyEffectToBufferItemForShowEffect|ApplyFullSetEffectToBufferItem|ArrowKeysHandler|AutomapDrawPlayers|BigArg|BreakItemsAsFine|BreakOneItem|CalcReflectPercent|CalculatePerPixelLight|CheckDistanceToMonsterTarget|CheckDistanceToMonsterTargetLastPosition|CheckGoldOnGround|CheckStatsOnShrine|ClearBufferItemForShowEffect|ClearLogFile|ClearPlayerSpells|ComeHereMrGolem|ConvertPaletteSurfaceToTrueColor|CursorIntoBelt|CursorIntoMainPanelButton|CursorIntoSpellIcon|DispathCursor1|DrawDebugInfo|DrawSceneTownBottom|DumpMap|FindCompleteSetEffect|FormatedOutputPlayerSkillString|FormatedOutputRelicString|FormatedOutputSpellString|FormatedOutputStaffChargesString|FullCreateAndPutItem|GetColorNumber|GetColorNumberWithResistance|GetCooperativeLevel|GetLetterColor|GetNumberOfRelicWithCurrentSpell|GetSlotMouseAbove2|GetSpellIndexByKey|GetTime|GetUniqMonsterSound|InitLoadingScreen|IsChest|IsMainDiagonalNearDoorTile|IsMonsterNearTarget|IsMonsterStealMana|IsUnmainDiagonalNearDoorTile|IsWoodWall|LeverClick|LoadMainMenuPalette|LoadMapFromDun|LoadOneObjectSprite|LoadQuestDungeonAltMapHell|LoadQuestDungeonMainMapAbyss|LoadQuestDungeonMainMapHell|LoadQuestDungeonMainMapTown|LoadSound|MayBeExeUnpacker|MayKnockback|NavigateKeysHandler|NetCommand2|NewStruct|OnMouseWhell|OpenNakrul|PlaceIzualPatternToMap|PlayIntroVideosWhenEnterInQuestLocations|PlayWalkSound|PrintItemArmorToStringBuffer|PrintItemDamageToStringBuffer|PrintItemDurToStringBuffer|PutStartItemToInventory|PutTile|RenegadeBlock|SaveMapToDun|SetCursorPosition|SetPlayerEntryPoint|SetSelectedItemSquare|SetupDisplayObjectsStructs|SetupTownTPForThisPlayer|ShowMonsterBossOrTownerInfo|ShowPlayerInfo|SinglePlayerDialogProc|SomeStrangeFireblastExRoomsCheck|sprints|StartGenerationTesting|StartItemsTesting|TakeCurrentPlayerDeathToll|TraceToFile|UnMarkPatternPositionOnMap
+
+Система боев
+
+отработка на аи, монстры используют такую же механику боя как человек
+механика боя строиться на реалистичной физике, импульс удара зависящий от траектории движения оружия,
+рычагов рук, распределении веса на ноги, инерции частей тела, силы мышц и суставов, всё это расчитывается
+но управляется не напрямую, а косвенно, конкретное движение при атаке, уклонении, защите подбирается автоматически,
+но с возможностью настройки на лету
+
+
+Дизайн управления на сенсорном экране.
+
+Управление в результате должно быть удобнее и проще чем на мыше.
+Пояс можно упростить как в Д3
+Индикатор здоровья, мана, альт атака, хоткей до способности, открыть инвентарь, поместится я думаю.
+восемь клеток по горизонтали - на четырех дьюмах очень хорошо умещаются
+Кнопки типа как инвентаря вообще не нужны, все уже придумано микрософтом в метро интерфейсе - выезд из-за экрана с разных сторон-углов
+
+Наведение
+
+Ведь чтобы посмотреть инфо о вещи, надо на неё навестись
+А для этого кликнуть
+Но блин, на клик же её поднятие
+Как в других играх решается?
+тыкаешь в вешь палцем - высвечивается инфо ( в инветаре )
+Ну а поднимать?
+а на земле инфо и так не видно же пока не поднимешь
+двойной?
+На земле видно. Хотя бы название вещи, по ней тип
+И уник-сет-маг-белая видно
+зачем, одинарным поднимать, в инвентаре смотреть
+если не поместилась - выводить инфо над ней
+Если открывать панель инвентаря выездом за экран то при отрытом инвентаре как открыть окно статов?
+все замечательно укладывается, с небольшими упрощениями
+у экрана четыре стороны (длинных, с возможность разделения по зонам) и четыре угла - это как максиму - 12 разных панелей можно вытаскивать
+в виндоус восемь так интерефейс сделан на планшетах
+очень удобно
+А инфу о монстре как выводить?
+справа из-за экрана пальцев - инвентарь, слева - статы и т.п.
+Невозможность проверки положения курсора создает проблемы
+Для всего
+они все решаемы
+Я не говорю о нерешаемости
+плюс имеются свои плюсы
+Но все таки есть
+инфо выводится по атакуемому монстру - во первых
+для запроса инфо без атаки - можно задейстовать жесты либо двух пальцевое нажатие
+
+Для быстрого просмотра инфо нескольких предметов нажимаем на них по очереди смотрим инфо, герой при этом двигается, это не страшно.
+Также можно зажать стояние на месте, и прощелкать предметы для просмотра инфо, будет стоять на месте, но атаковать воздух. Тоже нормально.
+На такие компромисы можно идит чтобы сохранить простоту "однокнопочности" и не вводить дополнительных, хитрых, действий на вывод инфо.
+
+Передвижение и атака
+
+удержание таки для автоклика лучше использовать
+Так монстром атакуемых у милишника до 3х может быть одномоментно
+Про магов с новами вообще молчу
+на кого тыкаешь - по тому и выводится
+А все таки как бить?
+Тыкать? Ну да наверно, по другому никак.
+самое интересное это таки схема самых базовых действий :)
+передвижение, атака, атака на месте, магия (то что на правой кнопке мыши)
+и чтобы можно было только одним пальцем играть для желающих, и тыкать чтобы не посредственно в точку атаки/передвижения, а не богомерзкий джойстик-стайл, прости господи
+это таки считаю главное ноу-хау, аналогов не видел
+на игровом экране в минималистическом режиме (это будет настраиватся) выводиться только два шара у нижних углах - жизнь и мана - всё, и управление одним пальцем прямое непосресдвенным тычком в цель атаки/объект действия/клетку куда двигаемся, или двумя для фиксации положения\магии (вспомогательный в левом или правом углу)
+все панели, включая пояс - выезжаемые/убираемые, с разных сторон экрана
+ну и всякие настраиваемые автоматы - автовыпивание бутылок и т.п.
+Автовыпивание нельзя. Питье это уже элемент геймплея. А так это будет как чит.
+ну это все в тестах выяснится, клавиатуры с цифрами нету, чтобы сравнять сложность с писи, возможно придется добавить как опцию с настраиваемым процентом минимума, это не будет чит, так как автовыпивание быстрее бутылки потратит во-первых, а во вторых может не успеть сработать
+Так область куда кликать сделать
+оно же не знает что тебе щас удар нанесут больше чем у тебя порог срабатывания стоит
+Чтобы выпить банку
+пояс или инвентарь выдвинул и жми на банки
+а с убраным поясом, никаких областей не должно быть, ибо если ты нажимаешь выстрел в сторону монстра - должен быть выстрел в сторону монстра а не случайное выпивание банки
+это все необходимые переделки в виду другой природы интерфейса
+и никто при этот не мешает играть с выдвинутым поясом для желающих
+используемые предметы на поясе/инвентаре - используются соотвественно нажатие/отпускание, drag and drop их подцепит для перемещения, выбрасывания
+единственные области активные (кроме самого игрового поля для указания цели) - это два нижних угла с шарами, левый - для фиксации положения, правый для магии
+Гениально
+Если ещё и все управление получится сделать адекватным то классно будет
+Никаких неубиремых панелек на полэкрана
+да, на телефоне даже удобнее играть будет чем на планшете с таким управлением - он небольшой и легкий, держать как геймапд - играть двумя большими пальцами - и при этом точность как на мыше и мгновенное переключение на противоположные цели - фишка сенсорной технологии
+плюс инвентарь на пальце таскать/бросать естественным интуитивным движением
+а не тот ужос как в на PS1 в дьябло сделано
+еще вибрацию, добавить разного типа, на блок/попадание/промазывание
+вообще не оторватся будет и удобней и приятней
+Смотря куда телефон засунешь
+странно что четыре года активного распространения сенсора, никто до сих пор не сделал ни одной такой рпг с адекватным управлением
+то есть вообще ни одной
+вибрация бывает очень информативна, я играл в пару игр где она грамотно использовалась, так там в слепую играть можно, настолько это добавляет
+она добавлят тактильности, хочеться нажимать еще и еще
+А где вообще есть вибрация?
+она есть во всех телефонах/планшетах вообще
+в геймпадах на всех консолях современных
+в рулях :)
+Рулем в д1 наверно интересно играть)
+Я слышал кто то в контру умудрялся на нем
+не, руль в д1 это сложно - всего одна ось :)
+Так азбукой морзе команды
+
+------ legacy -----------
+
+1.	Убрать исчезновение вещей при полной поломке, сделать как во второй дьябле.
+	В мультиплеере при смерти полностью ломать броню.
+	
+2.	Переработать действие основных параметров:
+	1) Сила:
+		- максимальное количество здоровья
+		- наносимое повреждение физического удара
+		- общий вес носимых предметов
+		- дальность выстрела и броска магии
+		- скорость движения
+	2) Ловкость:
+		- точность попадания
+		- скорость удара, выстрела, колдовства
+		- вероятность защиты щитом, вторым оружием, посохом 
+			(для лучницы вероятность уклонится от удара)
+	3) Vitality:
+		- скорость лечения, восстановления жизни
+		- резисты от огня, молний, магии
+	4) Магия -> лучше переименовать в Интеллект
+		- максимальный уровень изучаемых умений
+		- максимальная мана
+		- скорость восстановления маны
+		- возможность применения множественных/комбо ударов за раз для воинов
+			( массовое поражение окруживших противников )
+			
+	Таким образом придется делать более сложный выбор при раскачке параметров, что сделает игру более разнообразной и интересной
+	А не как сейчас, качаем один основной и не паримся. 
+	Каждому классу присвоить свои умения, что бы варвар не мог кидаться фаерболами, а маг крутить мельницу :)
+	
+Хитпоинты монстров хранятся в MonstersArray[].MonsterCurrentLife
+при ударе жизнь монстра становится меньше нуля и держится отрицательным пока монстр не подлечится до 0,
+после чего на него перестает реагировать курсор, но он продолжает находится в таблице живых монстров и двигаться как живой,
+хотя через него могут проходить другие монстры
+
+//DEVMODE mode;
+//mode.dmSize = sizeof DEVMODE;
+//mode.dmBitsPerPel = 8;
+//mode.dmPelsWidth = desktopWidth;
+//mode.dmPelsHeight = desktopHeight;
+//mode.dmFields= DM_BITSPERPEL | DM_PELSWIDTH | DM_PELSHEIGHT;
+//ChangeDisplaySettings(&mode, CDS_FULLSCREEN );
+//SetSystemPaletteUse( GetDC(0), SYSPAL_NOSTATIC256 );
+
+/*	1. Run your game at least once and exit out of it.
+2. Go to your registry and navigate to "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\MostRecentApplication" (if you're using 64 bit, go to "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DirectDraw\MostRecentApplication")
+3. Take a note of the name, game.exe, and the ID, which looks similar to this: 0x02e41c67
+4. Remove the '0x' part of the ID and separate the values into pairs, like this: 02 e4 1c 67
+5. Take the pairs and reverse their order, like this: 67 1c e4 02
+6. Open notepad and add this:
+
+32 bit only
+Windows Registry Editor Version 5.00[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw\Compatibility\<NameOfGame>]"Flags"=hex:00,08,00,00"ID"=hex:00,00,00,00"Name"="game.exe" or
+
+64 bit only
+Windows Registry Editor Version 5.00[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DirectDraw\Compatibility\<NameOfGame>]"Flags"=hex:00,08,00,00"ID"=hex:00,00,00,00"Name"="game.exe" *Note: Change <NameOfGame> to whatever you want, leave 'Flags' alone, enter your own ID keeping commas intact, and change 'game.exe' to whatever it is.
+
+7. Save it as 'fix.reg' and run it to import it to the registry.
+
+Here's my example from 'The Hell' mod for Diablo:
+Windows Registry Editor Version 5.00[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DirectDraw\Compatibility\The Hell]"Flags"=hex:00,08,00,00"ID"=hex:8b,c1,c3,34"Name"="TH.exe"
+*/

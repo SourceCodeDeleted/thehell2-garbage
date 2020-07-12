@@ -1,0 +1,158 @@
+<!doctype html public "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MPQ Archives - StormLib</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1250" />
+  <meta name="keywords" content="Ladislav Zezula; MPQ format; StormLib; MPQ Editor; Storm.dll" />
+  <meta name="description" content="Ladislav Zezula - Web homepage" />
+  <meta name="robots" content="INDEX, FOLLOW" />
+  <link rel="stylesheet" type="text/css" href="../../../include/styles.css"h />
+</head>
+
+<script language="Javascript" type="text/javascript">
+function RunMailClient(user, domain, ctry)
+{
+    szMailClient = "mail" + "to" + ":" + user + "@" + domain + "." + ctry;
+    document.location = szMailClient;
+}
+function RunMyMailClient()
+{
+    RunMailClient("ladik", "zezula", "net");
+}
+</script>
+
+<body>
+<div class="navigation">
+<!-- Language switches -->
+  <table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="50%" align="center">
+      <p class="image-and-text"><a href="../../../cz/mpq/stormlib/sfileopenarchive.html"h><img src="../../../images/czech.gif"s border="0" width="65" height="41" alt="Cesky" /></a>
+      <a href="../../../cz/mpq/stormlib/sfileopenarchive.html"h>Czech</a></p>
+    </td>
+    <td width="50%" align="center">
+      <p class="image-and-text"><a href="../../../en/mpq/stormlib/sfileopenarchive.html"h><img src="../../../images/english.gif"s border="0" width="65" height="41" alt="English" /></a>
+      <a href="../../../en/mpq/stormlib/sfileopenarchive.html"h>English</a></p>
+    </td>
+  </tr>
+  </table>
+
+  <p class="menuitem">Utilities</p>
+  <p class="submenuitem"><a href="../../../en/fstools/filespy.html"h>FileSpy</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/filetest.html"h>FileTest</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/ioctl.html"h>IOCTL Decoder</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/winsafer.html"h>WinSafer</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/bcdeditor.html"h>BCD Editor</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/bellavista.html"h>BellaVista</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/gamelauncher.html"h>Game Launcher</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/runass.html"h>RunAss</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/kdvmware.html"h>KDVMWARE</a></p>
+  
+  <p class="menuitem">MPQ Archives</p>
+  <p class="submenuitem"><a href="../../../en/mpq/main.html"h>Overview</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/mpqformat.html"h>MPQ Format</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/partialmpq.html"h>Partial MPQs</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/patchfiles.html"h>Patches</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/stormdll.html"h>Storm.dll</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/stormlib.html"h>StormLib</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/namebreak.html"h>Name Breaking</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/download.html"h>Download</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/links.html"h>Links</a></p>
+
+  <p class="menuitem">Programming</p>
+  <p class="submenuitem"><a href="../../../en/prog/main.html"h>Articles</a></p>
+
+  <p class="menuitem">Contact</p>
+  <p class="submenuitem"><a href="javascript:RunMyMailClient()"h>E-mail</a></p>
+  <p class="submenuitem"><a href="http://www.icq.com/153292074"h>ICQ</a></p>
+    
+</div>
+
+<div class="body">
+<!-- Title -->
+<p class="title">StormLib API Reference</p>
+<p class="subtitle">SFileOpenArchive</p>
+
+<h2>Description</h2>
+<pre><b>bool WINAPI SFileOpenArchive(</b>
+  <b>const char *</b> <i>szMpqName</i>,           // Archive file name
+  <b>DWORD</b> <i>dwPriority</i>,                 // Archive priority
+  <b>DWORD</b> <i>dwFlags</i>,                    // Open flags
+  <b>HANDLE *</b> <i>phMPQ</i>                    // Pointer to result HANDLE
+<b>);</b></pre>
+<p>Function <b>SFileOpenArchive</b> opens a MPQ archive. During the open operation,
+the archive is checked for corruptions, internal (listfile) and (attributes) are loaded, unless specified otherwise.
+The archive is open for read and write operations, unless MPQ_OPEN_READ_ONLY is specified.</p>
+<p>Note that StormLib maintains list of all files within the MPQ, as long as the MPQ is open.
+At the moment of MPQ opening, when the MPQ contains an internal list file, that listfile is parsed and
+all files in the listfile are checked against the hash table. Every file name that exists
+within the MPQ is added to the internal name list. The name list can be fuhrter extended by calling
+<a href="sfileaddlistfile.html">SFileAddListFile</a>.</p>
+
+<h2>Parameters</h2>
+<dl>
+  <dt>szMpqName</dt>
+    <dd>[in] Archive file name to open.</dd>
+  <dt>dwPriority</dt>
+    <dd>[in] Priority of the archive for later search. StormLib does not use this parameter, set it to zero.</dd>
+  <dt>dwFlags</dt>
+    <dd>[in] Flags that specify additional options about how to open the file. They can have these values:
+      <table width="100%" border="1" cellspacing="0" cellpadding="2">
+      <tr valign="top">
+        <th align="center" width="40%">Value</th>
+        <th align="center" width="60%">Meaning</th>
+      </tr>
+      <tr>
+        <td align="left">MPQ_OPEN_NO_LISTFILE<br />(0x0010)</td>
+        <td align="left">Don't read the internal listfile.</td>
+      </tr>
+      <tr>
+        <td align="left">MPQ_OPEN_NO_ATTRIBUTES<br />(0x0020)</td>
+        <td align="left">Don't open the "(attributes)" file.</td>
+      </tr>
+      <tr>
+        <td align="left">MPQ_OPEN_FORCE_MPQ_V1<br />(0x0040)</td>
+        <td align="left">Forces the MPQ to be open as MPQ format 1.0, ignoring "wFormatVersion" variable in the header.</td>
+      </tr>
+      <tr>
+        <td align="left">MPQ_OPEN_CHECK_SECTOR_CRC<br />(0x0080)</td>
+        <td align="left"><a href="sfilereadfile.html">SFileReadFile</a> will check CRC of each file sector on any file in the archive until the archive is closed.</td>
+      </tr>
+      <tr>
+        <td align="left">MPQ_OPEN_READ_ONLY<br />(0x0100)</td>
+        <td align="left">Only reading from the archive is allowed. Any write operation will fail and <b>GetLastError()</b> returns ERROR_ACCESS_DENIED.</td>
+      </tr>
+      </table>
+    </dd>
+    <dd>When calling this function in Storm.dll, set this parameter to zero.</dd>
+  <dt>phMPQ</dt>
+    <dd>[out] Pointer to a variable of HANDLE type, where the opened archive handle will be stored.</dd>
+</dl>
+
+<h2>Return Value</h2>
+<p>When the function succeeds, it returns nonzero and phMPQ contains the handle of the opened archive.
+When the archive cannot be open, function returns false and <b>GetLastError</b> gives the error code.</p>
+
+<h2>Availability in Storm.dll</h2>
+<table width="50%" cellspacing="0" border="1">
+<tr valign="top">
+  <td align="left" width="60%">Available in Storm.dll</td>
+  <td align="left" width="40%">Yes</td>
+</tr>
+<tr>
+  <td align="left">Ordinal number in Storm.dll 1.00</td>
+  <td align="left">63 (0x03F)</td>
+</tr>
+<tr>
+  <td align="left">Ordinal number in Storm.dll 1.09</td>
+  <td align="left">266 (0x10A)</td>
+</tr>
+</table>
+
+<!-- Page footer -->
+<p class="copyright">Copyright (c) Ladislav Zezula 2003 - 2010</p>
+
+</div>
+
+</body>
+</html>

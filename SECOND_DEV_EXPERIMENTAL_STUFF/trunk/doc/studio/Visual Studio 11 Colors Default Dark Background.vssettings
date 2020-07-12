@@ -1,0 +1,134 @@
+<UserSettings>
+	<ApplicationIdentity version="11.0"/>
+	<ToolsOptions>
+		<ToolsOptionsCategory name="Environment" RegisteredName="Environment"/>
+	</ToolsOptions>
+	<Category name="Environment_Group" RegisteredName="Environment_Group">
+		<Category name="Environment_FontsAndColors" Category="{1EDA5DD4-927A-43a7-810E-7FD247D0DA1D}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_FontsAndColors" PackageName="Visual Studio Environment Package">
+			<PropertyValue name="Version">2</PropertyValue>
+			<FontsAndColors Version="2.0">
+				<Categories>
+					<Category GUID="{00CCEE86-3140-4E06-A65A-A92665A40D6F}" FontName="Consolas" FontSize="8" CharSet="0" FontIsDefault="No">
+						<Items>
+							<Item Name="Plain Text" Foreground="0x02000000" Background="0x02000000" BoldFont="No"/>
+						</Items>
+					</Category>
+					<Category GUID="{58E96763-1D3B-4E05-B6BA-FF7115FD0B7B}" FontName="Consolas" FontSize="10" CharSet="0" FontIsDefault="No">
+						<Items>
+							<Item Name="Plain Text" Foreground="0x00C0C0C0" Background="0x001E1E1E" BoldFont="No"/>
+							<Item Name="Selected Text" Foreground="0x02000000" Background="0x00FFFFFF" BoldFont="No"/>
+							<Item Name="Inactive Selected Text" Foreground="0x02000000" Background="0x02000000" BoldFont="No"/>
+							<Item Name="Indicator Margin" Foreground="0x02000000" Background="0x00565656" BoldFont="No"/>
+						</Items>
+					</Category>
+					<Category GUID="{5C48B2CB-0366-4FBF-9786-0BB37E945687}" FontName="Consolas" FontSize="8" CharSet="0" FontIsDefault="No">
+						<Items>
+							<Item Name="Plain Text" Foreground="0x02000000" Background="0x02000000" BoldFont="No"/>
+						</Items>
+					</Category>
+					<Category GUID="{6BB65C5A-2F31-4BDE-9F48-8A38DC0C63E7}" FontName="Consolas" FontSize="8" CharSet="0" FontIsDefault="No">
+						<Items>
+							<Item Name="Plain Text" Foreground="0x02000000" Background="0x02000000" BoldFont="No"/>
+						</Items>
+					</Category>
+					<Category GUID="{75A05685-00A8-4DED-BAE5-E7A50BFA929A}" FontName="Consolas" FontSize="10" CharSet="0" FontIsDefault="No">
+						<Items>
+							<Item Name="MarkerFormatDefinition/HighlightedReference" Foreground="0x02000000" Background="0x00FF0000" BoldFont="No"/>
+							<Item Name="Comment" Foreground="0x00000000" Background="0x00C0C0C0" BoldFont="No"/>
+							<Item Name="Identifier" Foreground="0x0032CD32" Background="0x02000000" BoldFont="No"/>
+							<Item Name="Keyword" Foreground="0x00FFBF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="Preprocessor Keyword" Foreground="0x00D3FFC4" Background="0x02000000" BoldFont="No"/>
+							<Item Name="String" Foreground="0x00FFFF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="Number" Foreground="0x003C3CFF" Background="0x02000000" BoldFont="No"/>
+							<Item Name="CurrentLineActiveFormat" Foreground="0x001E1E1E" Background="0x01000001" BoldFont="No"/>
+							<Item Name="CurrentLineInactiveFormat" Foreground="0x001E1E1E" Background="0x01000001" BoldFont="No"/>
+							<Item Name="outlining.collapsehintadornment" Foreground="0x00E8DDD7" Background="0x0070695A" BoldFont="No"/>
+							<Item Name="Selected Text" Foreground="0x02000000" Background="0x00FFFFFF" BoldFont="No"/>
+							<Item Name="Inactive Selected Text" Foreground="0x02000000" Background="0x02000000" BoldFont="No"/>
+							<Item Name="CppMacroSemanticTokenFormat" Foreground="0x00FF7DFF" Background="0x02000000" BoldFont="No"/>
+							<Item Name="CppEnumSemanticTokenFormat" Foreground="0x00C73ECE" Background="0x02000000" BoldFont="No"/>
+							<Item Name="CppGlobalVariableSemanticTokenFormat" Foreground="0x008080E6" Background="0x02000000" BoldFont="No"/>
+							<Item Name="CppLocalVariableSemanticTokenFormat" Foreground="0x0061F129" Background="0x02000000" BoldFont="No"/>
+							<Item Name="CppParameterSemanticTokenFormat" Foreground="0x0000E8E8" Background="0x02000000" BoldFont="No"/>
+							<Item Name="CppTypeSemanticTokenFormat" Foreground="0x00FFD966" Background="0x02000000" BoldFont="No"/>
+							<Item Name="CppRefTypeSemanticTokenFormat" Foreground="0x00FFD966" Background="0x02000000" BoldFont="No"/>
+							<Item Name="CppValueTypeSemanticTokenFormat" Foreground="0x00FFD966" Background="0x02000000" BoldFont="No"/>
+							<Item Name="CppFunctionSemanticTokenFormat" Foreground="0x002DA0FF" Background="0x02000000" BoldFont="No"/>
+							<Item Name="CppMemberFunctionSemanticTokenFormat" Foreground="0x000079DD" Background="0x02000000" BoldFont="No"/>
+							<Item Name="CppMemberFieldSemanticTokenFormat" Foreground="0x0032CD32" Background="0x02000000" BoldFont="No"/>
+							<Item Name="CppStaticMemberFunctionSemanticTokenFormat" Foreground="0x0046A0FF" Background="0x02000000" BoldFont="No"/>
+							<Item Name="CppStaticMemberFieldSemanticTokenFormat" Foreground="0x0062D9AF" Background="0x02000000" BoldFont="No"/>
+							<Item Name="CppPropertySemanticTokenFormat" Foreground="0x00FF0000" Background="0x0000FFFF" BoldFont="No"/>
+							<Item Name="CppEventSemanticTokenFormat" Foreground="0x00800080" Background="0x0000FFFF" BoldFont="No"/>
+							<Item Name="CppClassTemplateSemanticTokenFormat" Foreground="0x00FFBF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="CppGenericTypeSemanticTokenFormat" Foreground="0x00FFD966" Background="0x02000000" BoldFont="No"/>
+							<Item Name="CppFunctionTemplateSemanticTokenFormat" Foreground="0x000497C8" Background="0x02000000" BoldFont="No"/>
+							<Item Name="CppNamespaceSemanticTokenFormat" Foreground="0x00FFBF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="CppLabelSemanticTokenFormat" Foreground="0x00000000" Background="0x0000FFFF" BoldFont="Yes"/>
+							<Item Name="VBScript Keyword" Foreground="0x00FF8000" Background="0x02000000" BoldFont="No"/>
+							<Item Name="VBScript Comment" Foreground="0x00000000" Background="0x00C0C0C0" BoldFont="No"/>
+							<Item Name="VBScript Number" Foreground="0x000000FF" Background="0x02000000" BoldFont="No"/>
+							<Item Name="VBScript String" Foreground="0x00FFFF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="VBScript Identifier" Foreground="0x0032CD32" Background="0x02000000" BoldFont="No"/>
+							<Item Name="RegularExpressionClassificationFormat" Foreground="0x00FFFF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="FileLineClassificationFormat" Foreground="0x000000FF" Background="0x02000000" BoldFont="No"/>
+							<Item Name="InstructionLineClassificationFormat" Foreground="0x00C0C0C0" Background="0x02000000" BoldFont="No"/>
+							<Item Name="SourceLineClassificationFormat" Foreground="0x0032CD32" Background="0x02000000" BoldFont="No"/>
+							<Item Name="SymbolLineClassificationFormat" Foreground="0x00FFFF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="VA X Variable" Foreground="0x0000C000" Background="0x02000000" BoldFont="No"/>
+							<Item Name="VA X Method" Foreground="0x000080FF" Background="0x02000000" BoldFont="No"/>
+							<Item Name="VA X Class" Foreground="0x00FF8080" Background="0x02000000" BoldFont="No"/>
+							<Item Name="VA X Macro / Enum" Foreground="0x00C000C0" Background="0x02000000" BoldFont="No"/>
+							<Item Name="VA X Brace Matching" Foreground="0x00000000" Background="0x02000000" BoldFont="Yes"/>
+							<Item Name="VA X Brace Error" Foreground="0x000000FF" Background="0x02000000" BoldFont="Yes"/>
+							<Item Name="VA X Find Reference" Foreground="0x00E4E4E4" Background="0x00CE0000" BoldFont="No"/>
+							<Item Name="VA X Find Reference (Modified)" Foreground="0x00E4E4E4" Background="0x00000080" BoldFont="No"/>
+							<Item Name="VA X Find Result" Foreground="0x00000000" Background="0x00B7FFFF" BoldFont="No"/>
+							<Item Name="VA X Current Line" Foreground="0x00808080" Background="0x00232323" BoldFont="No"/>
+						</Items>
+					</Category>
+					<Category GUID="{9973EFDF-317D-431C-8BC1-5E88CBFD4F7F}" FontName="Consolas" FontSize="8" CharSet="0" FontIsDefault="No">
+						<Items>
+							<Item Name="Plain Text" Foreground="0x00F3F2F1" Background="0x00565656" BoldFont="No"/>
+						</Items>
+					</Category>
+					<Category GUID="{B36B0228-DBAD-4DB0-B9C7-2AD3E572010F}" FontName="Segoe UI" FontSize="9" CharSet="1" FontIsDefault="No">
+						<Items>
+							<Item Name="Different content" Foreground="0x000014E5" Background="0x00FFFFFF" BoldFont="No"/>
+							<Item Name="Identical content" Foreground="0x00000000" Background="0x00FFFFFF" BoldFont="No"/>
+							<Item Name="Source Only" Foreground="0x00000000" Background="0x00FFFFFF" BoldFont="No"/>
+							<Item Name="Target Only" Foreground="0x00000000" Background="0x00FFFFFF" BoldFont="No"/>
+							<Item Name="Not Downloaded" Foreground="0x006D6D6D" Background="0x00FFFFFF" BoldFont="No"/>
+							<Item Name="Even Row Items" Foreground="0x00000000" Background="0x00FFFFFF" BoldFont="No"/>
+							<Item Name="Odd Row Items" Foreground="0x00000000" Background="0x00FFFFFF" BoldFont="No"/>
+						</Items>
+					</Category>
+					<Category GUID="{E0187991-B458-4F7E-8CA9-42C9A573B56C}" FontName="Consolas" FontSize="10" CharSet="0" FontIsDefault="No">
+						<Items>
+							<Item Name="Keyword" Foreground="0x00FFBF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="Comment" Foreground="0x00000000" Background="0x00C0C0C0" BoldFont="No"/>
+							<Item Name="Identifier" Foreground="0x0032CD32" Background="0x02000000" BoldFont="No"/>
+							<Item Name="String" Foreground="0x00FFFF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="Number" Foreground="0x003C3CFF" Background="0x02000000" BoldFont="No"/>
+							<Item Name="Preprocessor Keyword" Foreground="0x00D3FFC4" Background="0x02000000" BoldFont="No"/>
+							<Item Name="C/C++ User Keywords" Foreground="0x00FFBF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="String(C# @ Verbatim)" Foreground="0x00FFFF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="Memory Address" Foreground="0x00FFBF00" Background="0x02000000" BoldFont="No"/>
+						</Items>
+					</Category>
+					<Category GUID="{EE1BE240-4E81-4BEB-8EEA-54322B6B1BF5}" FontName="Consolas" FontSize="8" CharSet="0" FontIsDefault="No">
+						<Items>
+							<Item Name="Plain Text" Foreground="0x02000000" Background="0x02000000" BoldFont="No"/>
+						</Items>
+					</Category>
+					<Category GUID="{FF349800-EA43-46C1-8C98-878E78F46501}" FontName="Consolas" FontSize="10" CharSet="0" FontIsDefault="No">
+						<Items>
+							<Item Name="Brace Matching (Rectangle)" Foreground="0x02000000" Background="0x02000000" BoldFont="No"/>
+							<Item Name="Brace Matching (Highlight)" Foreground="0x00000000" Background="0x02000000" BoldFont="No"/>
+						</Items>
+					</Category>
+				</Categories>
+			</FontsAndColors>
+		</Category>
+	</Category>
+</UserSettings>

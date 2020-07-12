@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoadExeData", "LoadData\LoadExeData.vcxproj", "{8E4C348D-5174-48D4-AEE5-5B758297768F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FEA2E91E-87F7-4147-A094-C83351ECF548} = {FEA2E91E-87F7-4147-A094-C83351ECF548}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoadExeDataDll", "LoadDataDll\LoadExeDataDll.vcxproj", "{FEA2E91E-87F7-4147-A094-C83351ECF548}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E4C348D-5174-48D4-AEE5-5B758297768F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8E4C348D-5174-48D4-AEE5-5B758297768F}.Debug|Win32.Build.0 = Debug|Win32
+		{8E4C348D-5174-48D4-AEE5-5B758297768F}.Release|Win32.ActiveCfg = Release|Win32
+		{8E4C348D-5174-48D4-AEE5-5B758297768F}.Release|Win32.Build.0 = Release|Win32
+		{FEA2E91E-87F7-4147-A094-C83351ECF548}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FEA2E91E-87F7-4147-A094-C83351ECF548}.Debug|Win32.Build.0 = Debug|Win32
+		{FEA2E91E-87F7-4147-A094-C83351ECF548}.Release|Win32.ActiveCfg = Release|Win32
+		{FEA2E91E-87F7-4147-A094-C83351ECF548}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

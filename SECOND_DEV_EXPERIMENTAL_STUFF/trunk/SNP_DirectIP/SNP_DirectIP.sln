@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SNP_DirectIP", "SNP_DirectIP.vcxproj", "{452BDDC2-D77B-45C3-991E-7D93DE3638B0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Util", "..\Util\Util.vcxproj", "{C252CA4E-FFA0-404C-B5B4-614CF330C084}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{452BDDC2-D77B-45C3-991E-7D93DE3638B0}.Debug|x86.ActiveCfg = Debug|Win32
+		{452BDDC2-D77B-45C3-991E-7D93DE3638B0}.Debug|x86.Build.0 = Debug|Win32
+		{452BDDC2-D77B-45C3-991E-7D93DE3638B0}.Release|x86.ActiveCfg = Release|Win32
+		{452BDDC2-D77B-45C3-991E-7D93DE3638B0}.Release|x86.Build.0 = Release|Win32
+		{C252CA4E-FFA0-404C-B5B4-614CF330C084}.Debug|x86.ActiveCfg = Debug|Win32
+		{C252CA4E-FFA0-404C-B5B4-614CF330C084}.Debug|x86.Build.0 = Debug|Win32
+		{C252CA4E-FFA0-404C-B5B4-614CF330C084}.Release|x86.ActiveCfg = Release|Win32
+		{C252CA4E-FFA0-404C-B5B4-614CF330C084}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7FBE86E5-0DAB-4E26-B5C3-00F4FE2E9FA1}
+	EndGlobalSection
+EndGlobal

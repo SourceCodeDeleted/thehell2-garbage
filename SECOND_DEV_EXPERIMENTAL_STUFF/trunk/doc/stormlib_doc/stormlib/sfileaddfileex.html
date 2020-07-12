@@ -1,0 +1,218 @@
+<!doctype html public "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MPQ Archives - StormLib</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1250" />
+  <meta name="keywords" content="Ladislav Zezula; MPQ format; StormLib; MPQ Editor; Storm.dll" />
+  <meta name="description" content="Ladislav Zezula - Web homepage" />
+  <meta name="robots" content="INDEX, FOLLOW" />
+  <link rel="stylesheet" type="text/css" href="../../../include/styles.css"h />
+</head>
+
+<script language="Javascript" type="text/javascript">
+function RunMailClient(user, domain, ctry)
+{
+    szMailClient = "mail" + "to" + ":" + user + "@" + domain + "." + ctry;
+    document.location = szMailClient;
+}
+function RunMyMailClient()
+{
+    RunMailClient("ladik", "zezula", "net");
+}
+</script>
+
+<body>
+<div class="navigation">
+<!-- Language switches -->
+  <table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="50%" align="center">
+      <p class="image-and-text"><a href="../../../cz/mpq/stormlib/sfileaddfileex.html"h><img src="../../../images/czech.gif"s border="0" width="65" height="41" alt="Cesky" /></a>
+      <a href="../../../cz/mpq/stormlib/sfileaddfileex.html"h>Czech</a></p>
+    </td>
+    <td width="50%" align="center">
+      <p class="image-and-text"><a href="../../../en/mpq/stormlib/sfileaddfileex.html"h><img src="../../../images/english.gif"s border="0" width="65" height="41" alt="English" /></a>
+      <a href="../../../en/mpq/stormlib/sfileaddfileex.html"h>English</a></p>
+    </td>
+  </tr>
+  </table>
+
+  <p class="menuitem">Utilities</p>
+  <p class="submenuitem"><a href="../../../en/fstools/filespy.html"h>FileSpy</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/filetest.html"h>FileTest</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/ioctl.html"h>IOCTL Decoder</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/winsafer.html"h>WinSafer</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/bcdeditor.html"h>BCD Editor</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/bellavista.html"h>BellaVista</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/gamelauncher.html"h>Game Launcher</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/runass.html"h>RunAss</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/kdvmware.html"h>KDVMWARE</a></p>
+  
+  <p class="menuitem">MPQ Archives</p>
+  <p class="submenuitem"><a href="../../../en/mpq/main.html"h>Overview</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/mpqformat.html"h>MPQ Format</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/partialmpq.html"h>Partial MPQs</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/patchfiles.html"h>Patches</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/stormdll.html"h>Storm.dll</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/stormlib.html"h>StormLib</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/namebreak.html"h>Name Breaking</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/download.html"h>Download</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/links.html"h>Links</a></p>
+
+  <p class="menuitem">Programming</p>
+  <p class="submenuitem"><a href="../../../en/prog/main.html"h>Articles</a></p>
+
+  <p class="menuitem">Contact</p>
+  <p class="submenuitem"><a href="javascript:RunMyMailClient()"h>E-mail</a></p>
+  <p class="submenuitem"><a href="http://www.icq.com/153292074"h>ICQ</a></p>
+    
+</div>
+
+<div class="body">
+<!-- Title -->
+<p class="title">StormLib API Reference</p>
+<p class="subtitle">SFileAddFileEx</p>
+
+<h2>Description</h2>
+<pre><b>bool WINAPI SFileAddFileEx(</b>
+  <b>HANDLE</b> <i>hMpq</i>,                      // Handle to the MPQ
+  <b>const char *</b> <i>szFileName</i>,          // The name of a file to be removed
+  <b>const char *</b> <i>szArchivedName</i>,      // The name under which the file will be stored
+  <b>DWORD</b> <i>dwFlags</i>,                    // Specifies archive flags for the file
+  <b>DWORD</b> <i>dwCompression</i>,              // Compression for the first block of the file
+  <b>DWORD</b> <i>dwCompressionNext</i>           // Compression for rest of the file (except the first block)
+<b>);</b></pre>
+<p>Function <b>SFileAddFileEx</b> adds a file to the MPQ archive. The MPQ must have been open
+by <a href="sfileopenarchive.html">SFileOpenArchive</a> or created by <a href="sfilecreatearchive.html">SFileCreateArchive</a>.
+Note that this operation might cause MPQ fragmentation. To reduce size of the MPQ,
+use <a href="sfilecompactarchive.html">SFileCompactArchive</a>.</p>
+
+<h2>Parameters</h2>
+<dl>
+  <dt>hMpq</dt>
+    <dd>[in] Handle to an open MPQ. This handle must have been obtained by calling <a href="sfileopenarchive.html">SFileOpenArchive</a> or <a href="sfilecreatearchive.html">SFileCreateArchive</a>.</dd>
+  <dt>szFileName</dt>
+    <dd>[in] Name of a file to be added to the MPQ.</dd>
+  <dt>szArchivedName</dt>
+    <dd>[in] A name under which the file will be stored into the MPQ. This does not have to be the same like the original file name.</dd>
+  <dt>dwFlags</dt>
+    <dd>[in] Specifies additional options about how to add the file to the MPQ. The value of this parameter
+        can be a combination of the following values:
+      <table width="100%" border="1" cellspacing="0" cellpadding="2">
+      <tr valign="top">
+        <th align="center" width="40%">Value</th>
+        <th align="center" width="60%">Meaning</th>
+      </tr>
+      <tr>
+        <td align="left">MPQ_FILE_IMPLODE<br />(0x00000100)</td>
+        <td align="left">The file will be compressed using IMPLODE compression method. This flag cannot be used together with MPQ_FILE_COMPRESS. If this flag is present, then the <i>dwCompression</i> and <i>dwCompressionNext</i> parameters are ignored. This flag is obsolete and was used only in Diablo I.</td>
+      </tr>
+      <tr>
+        <td align="left">MPQ_FILE_COMPRESS<br />(0x00000200)</td>
+        <td align="left">The file will be compressed. This flag cannot be used together with MPQ_FILE_IMPLODE.</td>
+      </tr>
+      <tr>
+        <td align="left">MPQ_FILE_ENCRYPTED<br />(0x00010000)</td>
+        <td align="left">The file will be stored as encrypted.</td>
+      </tr>
+      <tr>
+        <td align="left">MPQ_FILE_FIX_KEY<br />(0x00020000)</td>
+        <td align="left">The file's encryption key will be adjusted according to file size in the archive. This flag must be used together with MPQ_FILE_ENCRYPTED.</td>
+      </tr>
+      <tr>
+        <td align="left">MPQ_FILE_DELETE_MARKER<br />(0x02000000)</td>
+        <td align="left">The file will have the deletion marker.</td>
+      </tr>
+      <tr>
+        <td align="left">MPQ_FILE_SECTOR_CRC<br />(0x04000000)</td>
+        <td align="left">The file will have CRC for each file sector. Ignored if the file is not compressed or if the file is stored as single unit.</td>
+      </tr>
+      <tr>
+        <td align="left">MPQ_FILE_SINGLE_UNIT<br />(0x01000000)</td>
+        <td align="left">The file will be added as single unit. Files stored as single unit cannot be encrypted, because Blizzard doesn't support them.</td>
+      </tr>
+      <tr>
+        <td align="left">MPQ_FILE_REPLACEEXISTING<br />(0x80000000)</td>
+        <td align="left">If this flag is specified and the file is already in the MPQ, it will be replaced.</td>
+      </tr>
+      </table>
+    </dd>
+  <dt>dwCompression</dt>
+    <dd>[in] Compression method of the first file block. This parameter is ignored if MPQ_FILE_COMPRESS is not specified in <i>dwFlags</i>. This parameter can be a combination of the following values:
+      <table width="100%" border="1" cellspacing="0" cellpadding="2">
+      <tr valign="top">
+        <th align="center" width="40%">Value</th>
+        <th align="center" width="60%">Meaning</th>
+      </tr>
+      <tr>
+        <td align="left">MPQ_COMPRESSION_HUFFMANN<br />(0x01)</td>
+        <td align="left">Use Huffman compression. This bit can only be combined with MPQ_COMPRESSION_ADPCM_MONO or MPQ_COMPRESSION_ADPCM_STEREO.</td>
+      </tr>
+      <tr>
+        <td align="left">MPQ_COMPRESSION_ZLIB<br />(0x02)</td>
+        <td align="left">Use ZLIB compression library. This bit cannot be combined with MPQ_COMPRESSION_BZIP2 or MPQ_COMPRESSION_LZMA.</td>
+      </tr>
+      <tr>
+        <td align="left">MPQ_COMPRESSION_PKWARE<br />(0x08)</td>
+        <td align="left">Use Pkware Data Compression Library. This bit cannot be combined with MPQ_COMPRESSION_LZMA.</td>
+      </tr>
+      <tr>
+        <td align="left">MPQ_COMPRESSION_BZIP2<br />(0x10)</td>
+        <td align="left">Use BZIP2 compression library. This bit cannot be combined with MPQ_COMPRESSION_ZLIB or MPQ_COMPRESSION_LZMA.</td>
+      </tr>
+      <tr>
+        <td align="left">MPQ_COMPRESSION_SPARSE<br />(0x20)</td>
+        <td align="left">Use SPARSE compression. This bit cannot be combined with MPQ_COMPRESSION_LZMA.</td>
+      </tr>
+      <tr>
+        <td align="left">MPQ_COMPRESSION_ADPCM_MONO<br />(0x40)</td>
+        <td align="left">Use IMA ADPCM compression for 1-channel (mono) WAVE files. This bit can only be combined with MPQ_COMPRESSION_HUFFMANN. This is lossy compression and should only be used for compressing WAVE files.</td>
+      </tr>
+      <tr>
+        <td align="left">MPQ_COMPRESSION_ADPCM_STEREO<br />(0x80)</td>
+        <td align="left">Use IMA ADPCM compression for 2-channel (stereo) WAVE files. This bit can only be combined with MPQ_COMPRESSION_HUFFMANN. This is lossy compression and should only be used for compressing WAVE files.</td>
+      </tr>
+      <tr>
+        <td align="left">MPQ_COMPRESSION_LZMA<br />(0x12)</td>
+        <td align="left">Use LZMA compression. This value can not be combined with any other compression method.</td>
+      </tr>
+      </table>
+    </dd>
+  <dt>dwCompressionNext</dt>
+    <dd>[in] Compression method of rest of the file. This parameter optional and is ignored if MPQ_FILE_COMPRESS is not specified in <i>dwFlags</i>.</dd>
+</dl>
+
+<h2>Return Value</h2>
+<p>When the function succeeds, it returns nonzero. On an error, the function returns false and <b>GetLastError</b> gives the error code.</p>
+
+<h2>Remarks</h2>
+<ul>
+  <li>If the <i>dwCompressionNext</i> parameter is omited, the function uses <i>dwCompression</i> for compressing rest of the file.</li>
+  <li>If the <i>dwCompressionNext</i> contains either MPQ_COMPRESSION_ADPCM_MONO or MPQ_COMPRESSION_ADPCM_STEREO, it sets <i>dwCompression</i> to MPQ_COMPRESSION_PKWARE. This prevents file headers being compressed by a lossy compression.</li>
+  <li>When the file is compressed by ADPCM, the medium WAVE quality is used.</li>
+  <li>ADPCM compression is not used by Blizzard games anymore. It is recommended to compress WAVE files using a data compression, such as MPQ_COMPRESSION_PKWARE or MPQ_COMPRESSION_ZLIB.</li>
+</ul>
+
+<h2>Availability in Storm.dll</h2>
+<table width="50%" cellspacing="0" border="1">
+<tr valign="top">
+  <td align="left" width="60%">Available in Storm.dll</td>
+  <td align="left" width="40%">No</td>
+</tr>
+<tr>
+  <td align="left">Ordinal number in Storm.dll 1.00</td>
+  <td align="left">N/A</td>
+</tr>
+<tr>
+  <td align="left">Ordinal number in Storm.dll 1.09</td>
+  <td align="left">N/A</td>
+</tr>
+</table>
+
+<!-- Page footer -->
+<p class="copyright">Copyright (c) Ladislav Zezula 2003 - 2010</p>
+
+</div>
+
+</body>
+</html>

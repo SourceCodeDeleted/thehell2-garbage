@@ -1,0 +1,3 @@
+Testfile.txt
+This is a test file for comparison to content of testarchive.mpq. 
+Please don't change this file

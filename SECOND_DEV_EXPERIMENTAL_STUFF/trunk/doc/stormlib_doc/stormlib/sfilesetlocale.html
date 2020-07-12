@@ -1,0 +1,172 @@
+<!doctype html public "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MPQ Archives - StormLib</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1250" />
+  <meta name="keywords" content="Ladislav Zezula; MPQ format; StormLib; MPQ Editor; Storm.dll" />
+  <meta name="description" content="Ladislav Zezula - Web homepage" />
+  <meta name="robots" content="INDEX, FOLLOW" />
+  <link rel="stylesheet" type="text/css" href="../../../include/styles.css"h />
+</head>
+
+<script language="Javascript" type="text/javascript">
+function RunMailClient(user, domain, ctry)
+{
+    szMailClient = "mail" + "to" + ":" + user + "@" + domain + "." + ctry;
+    document.location = szMailClient;
+}
+function RunMyMailClient()
+{
+    RunMailClient("ladik", "zezula", "net");
+}
+</script>
+
+<body>
+<div class="navigation">
+<!-- Language switches -->
+  <table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="50%" align="center">
+      <p class="image-and-text"><a href="../../../cz/mpq/stormlib/sfilesetlocale.html"h><img src="../../../images/czech.gif"s border="0" width="65" height="41" alt="Cesky" /></a>
+      <a href="../../../cz/mpq/stormlib/sfilesetlocale.html"h>Czech</a></p>
+    </td>
+    <td width="50%" align="center">
+      <p class="image-and-text"><a href="../../../en/mpq/stormlib/sfilesetlocale.html"h><img src="../../../images/english.gif"s border="0" width="65" height="41" alt="English" /></a>
+      <a href="../../../en/mpq/stormlib/sfilesetlocale.html"h>English</a></p>
+    </td>
+  </tr>
+  </table>
+
+  <p class="menuitem">Utilities</p>
+  <p class="submenuitem"><a href="../../../en/fstools/filespy.html"h>FileSpy</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/filetest.html"h>FileTest</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/ioctl.html"h>IOCTL Decoder</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/winsafer.html"h>WinSafer</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/bcdeditor.html"h>BCD Editor</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/bellavista.html"h>BellaVista</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/gamelauncher.html"h>Game Launcher</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/runass.html"h>RunAss</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/kdvmware.html"h>KDVMWARE</a></p>
+  
+  <p class="menuitem">MPQ Archives</p>
+  <p class="submenuitem"><a href="../../../en/mpq/main.html"h>Overview</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/mpqformat.html"h>MPQ Format</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/partialmpq.html"h>Partial MPQs</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/patchfiles.html"h>Patches</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/stormdll.html"h>Storm.dll</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/stormlib.html"h>StormLib</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/namebreak.html"h>Name Breaking</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/download.html"h>Download</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/links.html"h>Links</a></p>
+
+  <p class="menuitem">Programming</p>
+  <p class="submenuitem"><a href="../../../en/prog/main.html"h>Articles</a></p>
+
+  <p class="menuitem">Contact</p>
+  <p class="submenuitem"><a href="javascript:RunMyMailClient()"h>E-mail</a></p>
+  <p class="submenuitem"><a href="http://www.icq.com/153292074"h>ICQ</a></p>
+    
+</div>
+
+<div class="body">
+<!-- Title -->
+<p class="title">StormLib API Reference</p>
+<p class="subtitle">SFileSetLocale</p>
+
+<h2>Description</h2>
+<pre><b>LCID WINAPI SFileSetLocale(</b>
+  <b>LCID</b> <i>lcNewLocale</i>                  // Locale ID for file operations
+<b>);</b></pre>
+<p>Function <b>SFileSetLocale</b> sets a preferred locale for file functions, such as 
+<a href="sfileopenfileex.html">SFileOpenFileEx</a> or <a href="sfileaddfileex.html">SFileAddFileEx</a>.
+The locale is stored as a global variable and thus affects every open or add operation.</p>
+<p>Note that this function does not change locale ID of any existing file in the MPQ.</p>
+
+<h2>Parameters</h2>
+<dl>
+  <dt>lcNewLocale</dt>
+    <dd>[in] Locale ID to be set.</dd>
+</dl>
+
+<h2>Return Value</h2>
+<p>The function never fails and always returns lcNewLocale.</p>
+
+<h2>Remarks</h2>
+<p>The locale ID corresponds to the country ID. Country IDs are defined in Windows headers.
+The following table shows an example of existing locales:</p>
+<table summary="" cellpadding="1" cellspacing="0" border="1" width="100%">
+<tr>
+  <th width="20%">Value</th>
+  <th width="30%">Language version</th>
+  <th width="20%">Value</th>
+  <th width="30%">Language version</th>
+</tr>
+<tr>
+  <td align="center">0</td><td>Neutral/English (American)</td>
+  <td align="center">0x404</td><td>Chinese (Taiwan)</td>
+</tr>
+<tr>
+  <td align="center">0x405</td><td>Czech</td>
+  <td align="center">0x407</td><td>German</td>
+</tr>
+<tr>               
+  <td align="center">0x409</td><td>English</td>
+  <td align="center">0x40a</td><td>Spanish</td>
+</tr>
+<tr>
+  <td align="center">0x40c</td><td>French</td>
+  <td align="center">0x410</td><td>Italian</td>
+</tr>
+<tr>
+  <td align="center">0x411</td><td>Japanese</td>
+  <td align="center">0x412</td><td>Korean</td>
+</tr>
+<tr>
+  <td align="center">0x415</td><td>Polish</td>
+  <td align="center">0x416</td><td>Portuguese</td>
+</tr>
+<tr>
+  <td align="center">0x419</td><td>Russsian</td>
+  <td align="center">0x809</td><td>English (UK)</td>
+</tr>
+</table>
+<p>Different StormLib functions treat the preferred locale differently:</p>
+<ul>
+  <li>
+    Read-type functions, such as <a href="sfileopenfileex.html">SFileOpenFileEx</a>, look for the preferred locale
+    version first. If such locale version doesn't exist in the MPQ, the function takes file with neutral locale, if any.
+  </li>
+  <li>
+    Write-type functions, such as <a href="sfilerenamefile.html">SFileRenameFile</a> or <a href="sfileremovefile.html">SFileRemoveFile</a>,
+    only work on preferred locale version. If such locale version doesn't exist in the MPQ, the function fails.
+  </li>
+  <li>
+    Add-type functions, such as <a href="sfileaddfileex.html">SFileAddFileEx</a>,
+    only add the preferred locale version of the file to the MPQ. If such file already exists in MPQ,
+    the function either overwrites the old file or fails, depending on parameters. 
+  </li>
+</ul>
+
+<h2>Availability in Storm.dll</h2>
+<table width="50%" cellspacing="0" border="1">
+<tr valign="top">
+  <td align="left" width="60%">Available in Storm.dll</td>
+  <td align="left" width="40%">Yes</td>
+</tr>
+<tr>
+  <td align="left">Ordinal number in Storm.dll 1.00</td>
+  <td align="left">83 (0x053)</td>
+</tr>
+<tr>
+  <td align="left">Ordinal number in Storm.dll 1.09</td>
+  <td align="left">272 (0x110)</td>
+</tr>
+</table>
+
+<!-- Page footer -->
+<p class="copyright">Copyright (c) Ladislav Zezula 2003 - 2010</p>
+
+</div>
+
+</body>
+</html>

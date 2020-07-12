@@ -1,0 +1,389 @@
+<UserSettings>
+	<ApplicationIdentity version="10.0"/>
+	<ToolsOptions>
+		<ToolsOptionsCategory name="Environment" RegisteredName="Environment"/>
+	</ToolsOptions>
+	<Category name="Database Tools" RegisteredName="Database Tools"/>
+	<Category name="Environment_Group" RegisteredName="Environment_Group">
+		<Category name="Environment_FontsAndColors" Category="{1EDA5DD4-927A-43a7-810E-7FD247D0DA1D}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_FontsAndColors" PackageName="Visual Studio Environment Package">
+			<PropertyValue name="Version">2</PropertyValue>
+			<FontsAndColors Version="2.0">
+				<Categories>
+					<Category GUID="{358463D0-D084-400F-997E-A34FC570BC72}" FontName="Tahoma" FontSize="8" CharSet="204" FontIsDefault="No">
+						<Items/>
+					</Category>
+					<Category GUID="{3FFB3681-9B54-42B2-81D5-52453ADF56A6}" FontIsDefault="Yes">
+						<Items>
+							<Item Name="Surface" Foreground="0x00C0C0C0" Background="0x00000000" BoldFont="No"/>
+						</Items>
+					</Category>
+					<Category GUID="{40660F54-80FA-4375-89A3-8D06AA954EBA}" FontIsDefault="Yes">
+						<Items>
+							<Item Name="Plain Text" Foreground="0x00C0C0C0" Background="0x00000000" BoldFont="No"/>
+							<Item Name="Selected Text" Foreground="0x02000000" Background="0x02000000" BoldFont="No"/>
+							<Item Name="Inactive Selected Text" Foreground="0x02000000" Background="0x02000000" BoldFont="No"/>
+						</Items>
+					</Category>
+					<Category GUID="{47724E70-AF55-48FB-A928-BB161C1D0C05}" FontIsDefault="Yes">
+						<Items>
+							<Item Name="Plain Text" Foreground="0x00C0C0C0" Background="0x00000000" BoldFont="No"/>
+						</Items>
+					</Category>
+					<Category GUID="{5A09BC87-5AC8-436B-8B20-6DC5FEA0B6C6}" FontIsDefault="Yes">
+						<Items>
+							<Item Name="ResultsGridText" Foreground="0x02000000" Background="0x00000000" BoldFont="No"/>
+						</Items>
+					</Category>
+					<Category GUID="{5C48B2CB-0366-4FBF-9786-0BB37E945687}" FontName="Consolas" FontSize="6" CharSet="0" FontIsDefault="No">
+						<Items/>
+					</Category>
+					<Category GUID="{6BB65C5A-2F31-4BDE-9F48-8A38DC0C63E7}" FontName="Consolas" FontSize="6" CharSet="0" FontIsDefault="No">
+						<Items/>
+					</Category>
+					<Category GUID="{8259ACED-490A-41B3-A0FB-64C842CCDC80}" FontName="Tahoma" FontSize="8" CharSet="204" FontIsDefault="No">
+						<Items/>
+					</Category>
+					<Category GUID="{9973EFDF-317D-431C-8BC1-5E88CBFD4F7F}" FontName="Consolas" FontSize="6" CharSet="0" FontIsDefault="No">
+						<Items>
+							<Item Name="Plain Text" Foreground="0x00C0C0C0" Background="0x00000000" BoldFont="No"/>
+						</Items>
+					</Category>
+					<Category GUID="{9E632E6E-D786-4F9A-8D3E-B9398836C784}" FontIsDefault="Yes">
+						<Items>
+							<Item Name="Plain Text" Foreground="0x00C0C0C0" Background="0x00000000" BoldFont="No"/>
+							<Item Name="Selected Text" Foreground="0x02000000" Background="0x02000000" BoldFont="No"/>
+							<Item Name="Inactive Selected Text" Foreground="0x02000000" Background="0x02000000" BoldFont="No"/>
+						</Items>
+					</Category>
+					<Category GUID="{A27B4E24-A735-4D1D-B8E7-9716E1E3D8E0}" FontName="Consolas" FontSize="8" CharSet="0" FontIsDefault="No">
+						<Items>
+							<Item Name="Plain Text" Foreground="0x00C0C0C0" Background="0x00000000" BoldFont="No"/>
+							<Item Name="Selected Text" Foreground="0x00000000" Background="0x00FFFFFF" BoldFont="No"/>
+							<Item Name="Brace Matching (Highlight)" Foreground="0x0000FFFF" Background="0x02000000" BoldFont="No"/>
+							<Item Name="Brace Matching (Rectangle)" Foreground="0x02000000" Background="0x0000FFFF" BoldFont="No"/>
+							<Item Name="C/C++ User Keywords" Foreground="0x00FFBF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="Comment" Foreground="0x00000000" Background="0x00C0C0C0" BoldFont="No"/>
+							<Item Name="CSS Keyword" Foreground="0x00FFBF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="CSS Property Value" Foreground="0x00FFBF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="CSS Selector" Foreground="0x00FF00FF" Background="0x02000000" BoldFont="No"/>
+							<Item Name="CSS String Value" Foreground="0x00FFFF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="Definition Window Current Match" Foreground="0x02000000" Background="0x02000000" BoldFont="No"/>
+							<Item Name="FileLineClassificationFormat" Foreground="0x000000FF" Background="0x02000000" BoldFont="No"/>
+							<Item Name="SourceLineClassificationFormat" Foreground="0x0000D700" Background="0x02000000" BoldFont="No"/>
+							<Item Name="SymbolLineClassificationFormat" Foreground="0x00FFFF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="InstructionLineClassificationFormat" Foreground="0x00C0C0C0" Background="0x02000000" BoldFont="No"/>
+							<Item Name="HTML Attribute Value" Foreground="0x00FFFF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="HTML Comment" Foreground="0x00FFFFFF" Background="0x00808080" BoldFont="No"/>
+							<Item Name="HTML Element Name" Foreground="0x0000FF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="HTML Operator" Foreground="0x00FF8000" Background="0x02000000" BoldFont="No"/>
+							<Item Name="HTML Tag Delimiter" Foreground="0x02000000" Background="0x02000000" BoldFont="No"/>
+							<Item Name="Identifier" Foreground="0x00C3C0C3" Background="0x00000000" BoldFont="No"/>
+							<Item Name="Keyword" Foreground="0x00FFBF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="Number" Foreground="0x000000FF" Background="0x02000000" BoldFont="No"/>
+							<Item Name="outlining.square" Foreground="0x02000000" Background="0x00141414" BoldFont="No"/>
+							<Item Name="Preprocessor Keyword" Foreground="0x00FF8000" Background="0x02000000" BoldFont="No"/>
+							<Item Name="Script Keyword" Foreground="0x00FF8000" Background="0x02000000" BoldFont="No"/>
+							<Item Name="String" Foreground="0x00FFFF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="urlformat" Foreground="0x00FFFFFF" Background="0x00808080" BoldFont="No"/>
+							<Item Name="VA X Brace Error" Foreground="0x0000FFFF" Background="0x000000FF" BoldFont="Yes"/>
+							<Item Name="VA X Brace Matching" Foreground="0x00000000" Background="0x0000FFFF" BoldFont="Yes"/>
+							<Item Name="VA X Class" Foreground="0x00FFBF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="VA X Current Line" Foreground="0x00000080" Background="0x02000000" BoldFont="No"/>
+							<Item Name="VA X Find Reference" Foreground="0x00FFFFFF" Background="0x00C00000" BoldFont="No"/>
+							<Item Name="VA X Find Reference (Modified)" Foreground="0x00FFFFFF" Background="0x000000C0" BoldFont="No"/>
+							<Item Name="VA X Find Result" Foreground="0x00000000" Background="0x00B7FFFF" BoldFont="No"/>
+							<Item Name="VA X Macro / Enum" Foreground="0x00D670DA" Background="0x02000000" BoldFont="No"/>
+							<Item Name="VA X Method" Foreground="0x00008CFF" Background="0x02000000" BoldFont="No"/>
+							<Item Name="VA X Variable" Foreground="0x0032CD32" Background="0x02000000" BoldFont="No"/>
+							<Item Name="XAML Attribute Quotes" Foreground="0x00C0C0C0" Background="0x02000000" BoldFont="No"/>
+							<Item Name="XAML Attribute Value" Foreground="0x00FFFF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="XAML CData Section" Foreground="0x00C0C0C0" Background="0x02000000" BoldFont="No"/>
+							<Item Name="XAML Delimiter" Foreground="0x00FFBF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="XAML Keyword" Foreground="0x00FFBF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="XAML Markup Extension Parameter Value" Foreground="0x00FFBF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="XAML Text" Foreground="0x00C0C0C0" Background="0x02000000" BoldFont="No"/>
+							<Item Name="XML Attribute" Foreground="0x0032CD32" Background="0x02000000" BoldFont="No"/>
+							<Item Name="XML Attribute Quotes" Foreground="0x00C0C0C0" Background="0x02000000" BoldFont="No"/>
+							<Item Name="XML Attribute Value" Foreground="0x00FFFF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="XML CData Section" Foreground="0x00C0C0C0" Background="0x02000000" BoldFont="No"/>
+							<Item Name="XML Comment" Foreground="0x00000000" Background="0x00C0C0C0" BoldFont="No"/>
+							<Item Name="XML Delimiter" Foreground="0x02000000" Background="0x02000000" BoldFont="No"/>
+							<Item Name="XML Doc Tag" Foreground="0x02000000" Background="0x02000000" BoldFont="No"/>
+							<Item Name="XML Keyword" Foreground="0x00FFBF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="XML Name" Foreground="0x0000FF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="XML Processing Instruction" Foreground="0x000080FF" Background="0x02000000" BoldFont="No"/>
+							<Item Name="XML Text" Foreground="0x00FFFFFF" Background="0x02000000" BoldFont="No"/>
+							<Item Name="XSLT Keyword" Foreground="0x00FFBF00" Background="0x02000000" BoldFont="No"/>
+							<Item Name="VA X Column Indicator" Foreground="0x00000000" Background="0x02000000" BoldFont="No"/>
+						</Items>
+					</Category>
+					<Category GUID="{A7EE6BEE-D0AA-4B2F-AD9D-748276A725F6}" FontName="Tahoma" FontSize="8" CharSet="204" FontIsDefault="No">
+						<Items/>
+					</Category>
+					<Category GUID="{A9A5637F-B2A8-422E-8FB5-DFB4625F0111}" FontName="Tahoma" FontSize="8" CharSet="204" FontIsDefault="No">
+						<Items/>
+					</Category>
+					<Category GUID="{B20C0001-0836-4535-A5E8-96E595B1F094}" FontName="Tahoma" FontSize="8" CharSet="204" FontIsDefault="No">
+						<Items/>
+					</Category>
+					<Category GUID="{BB8FE807-A186-404A-81FA-D20B908CA93B}" FontName="Tahoma" FontSize="8" CharSet="204" FontIsDefault="No">
+						<Items/>
+					</Category>
+					<Category GUID="{C1614BB1-734F-4A31-BD42-5AE6275E16D2}" FontName="Tahoma" FontSize="8" CharSet="204" FontIsDefault="No">
+						<Items/>
+					</Category>
+					<Category GUID="{CE2ECED5-C21C-464C-9B45-15E10E9F9EF9}" FontIsDefault="Yes">
+						<Items>
+							<Item Name="Plain Text" Foreground="0x00C0C0C0" Background="0x00000000" BoldFont="No"/>
+							<Item Name="Selected Text" Foreground="0x02000000" Background="0x02000000" BoldFont="No"/>
+							<Item Name="Inactive Selected Text" Foreground="0x02000000" Background="0x02000000" BoldFont="No"/>
+						</Items>
+					</Category>
+					<Category GUID="{EE1BE240-4E81-4BEB-8EEA-54322B6B1BF5}" FontName="Consolas" FontSize="8" CharSet="0" FontIsDefault="No">
+						<Items/>
+					</Category>
+					<Category GUID="{F7B7B222-E186-48DF-A5EE-174E8129891B}" FontName="Tahoma" FontSize="8" CharSet="204" FontIsDefault="No">
+						<Items/>
+					</Category>
+					<Category GUID="{FD2219AF-EBF8-4116-A801-3B503C48DFF0}" FontName="Tahoma" FontSize="8" CharSet="204" FontIsDefault="No">
+						<Items/>
+					</Category>
+				</Categories>
+			</FontsAndColors>
+		</Category>
+		<Category name="Environment_KeyBindings" Category="{F09035F1-80D2-4312-8EC4-4D354A4BCB4C}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_KeyBindings" PackageName="Visual Studio Environment Package">
+			<Version>10.0.0.0</Version>
+			<KeyboardShortcuts>
+				<ScopeDefinitions>
+					<Scope Name="VC Dialog Editor" ID="{543E0C02-8C85-4E43-933A-5EF320E3431F}"/>
+					<Scope Name="UML Class Diagram" ID="{FE170F05-DE3A-4067-A3ED-08AE56B31DB3}"/>
+					<Scope Name="Data Generator" ID="{D3936010-2B3A-4B8E-82D1-F4DCE3B5F898}"/>
+					<Scope Name="UML Component Diagram" ID="{13C19B18-BD05-42F3-9D3A-2A55E6E9169F}"/>
+					<Scope Name="XML (Text) Editor" ID="{FA3CD31E-987B-443A-9B81-186104E8DAC1}"/>
+					<Scope Name="Text Editor" ID="{8B382828-6202-11D1-8870-0000F87579D2}"/>
+					<Scope Name="Work Item Results View" ID="{7026002D-01F6-44E7-95CF-A896C00DA3F8}"/>
+					<Scope Name="ADO.NET Entity Data Model Designer" ID="{C99AEA30-8E36-4515-B76F-496F5A48A6AA}"/>
+					<Scope Name="Query Designer" ID="{B2C40B32-3A37-4CA9-97B9-FA44248B69FF}"/>
+					<Scope Name="WebBrowser" ID="{E8B06F41-6D01-11D2-AA7D-00C04F990343}"/>
+					<Scope Name="DataSet Editor" ID="{B334A759-F450-40A5-BE2A-65937BCD5415}"/>
+					<Scope Name="Graph Document Editor" ID="{295A0962-5A59-4F4F-9E12-6BC670C15C3B}"/>
+					<Scope Name="View Designer" ID="{B968E165-98E0-41F0-8FBE-A8ED1D246A90}"/>
+					<Scope Name="Global" ID="{5EFC7975-14BC-11CF-9B2B-00AA00573819}"/>
+					<Scope Name="Class Diagram" ID="{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}"/>
+					<Scope Name="UML Activity Diagram" ID="{950C3878-B510-4BC5-9051-42798A870364}"/>
+					<Scope Name="UML Use Case Diagram" ID="{FCFECC7C-3151-4B48-A85A-909F50500A70}"/>
+					<Scope Name="Work Item Query View" ID="{B6303490-B828-410C-9216-AE727D0E282D}"/>
+					<Scope Name="Team Foundation Build Detail Editor" ID="{86306A97-84F2-4F5A-889B-1318501AEB5F}"/>
+					<Scope Name="CSS Source Editor" ID="{A764E89A-518D-11D2-9A89-00C04F79EFC3}"/>
+					<Scope Name="Database Designer" ID="{CFF78A9B-78A3-45A3-9142-0267AFC261FA}"/>
+					<Scope Name="Work Item Editor" ID="{40A91D9D-8076-4D28-87C5-5AF9F0ACFE0F}"/>
+					<Scope Name="Sequence Diagram" ID="{5028BC9F-844B-4C51-A624-0005945D14AE}"/>
+					<Scope Name="VC String Editor" ID="{58442DA9-10DA-4AA9-A2AF-96E4D481379B}"/>
+					<Scope Name="Settings Designer" ID="{515231AD-C9DC-4AA3-808F-E1B65E72081C}"/>
+					<Scope Name="VisualStudio" ID="{B465B5AD-8799-4507-B90A-EE29ACF36AF9}"/>
+					<Scope Name="Windows Forms Designer" ID="{BA09E2AF-9DF2-4068-B2F0-4C7E5CC19E2F}"/>
+					<Scope Name="VC Accelerator Editor" ID="{EB56D0B5-BEE7-4D0C-8BE6-88A8ED256695}"/>
+					<Scope Name="Report Designer" ID="{CB3675B8-701E-4F56-9167-2714E167FF3F}"/>
+					<Scope Name="Workflow Designer" ID="{D4D9FCBC-B26A-4C41-AB9F-11FD2466829A}"/>
+					<Scope Name="Schema Compare" ID="{CE05A4C2-97F8-465F-9871-8AD72AAE6F20}"/>
+					<Scope Name="Managed Resources Editor" ID="{FEA4DCC9-3645-44CD-92E7-84B55A16465C}"/>
+					<Scope Name="Table Designer" ID="{4194FEE5-6777-419F-A5FC-47A536DF1BDB}"/>
+					<Scope Name="Layer Diagram" ID="{305563E9-FDF9-485B-B73E-D9FEDCC36F2E}"/>
+					<Scope Name="HTML Editor Design View" ID="{CB3FCFEA-03DF-11D1-81D2-00A0C91BBEE3}"/>
+					<Scope Name="HTML Editor Source View" ID="{CB3FCFEB-03DF-11D1-81D2-00A0C91BBEE3}"/>
+					<Scope Name="VC Image Editor" ID="{C0BA70ED-069E-412B-9C06-7442E28A11B9}"/>
+					<Scope Name="XML Schema Designer" ID="{DEE6CEF9-3BCA-449A-82A6-FC757D6956FB}"/>
+					<Scope Name="Transact-SQL Editor" ID="{C5B506FB-13BA-4381-3A48-41275C4CA2B5}"/>
+				</ScopeDefinitions>
+				<DefaultShortcuts/>
+				<ShortcutsScheme/>
+				<UserShortcuts>
+					<RemoveShortcut Command="Image.RectangleTool" Scope="VC Image Editor">Alt+R</RemoveShortcut>
+					<RemoveShortcut Command="View.NextError" Scope="Global">Ctrl+Shift+F12</RemoveShortcut>
+					<RemoveShortcut Command="File.NewFile" Scope="Global">Ctrl+N</RemoveShortcut>
+					<RemoveShortcut Command="Build.BuildSolution" Scope="Global">Ctrl+Shift+B</RemoveShortcut>
+					<RemoveShortcut Command="Edit.FormatSelection" Scope="Text Editor">Ctrl+K, Ctrl+F</RemoveShortcut>
+					<RemoveShortcut Command="Edit.FormatSelection" Scope="Global">Alt+F8</RemoveShortcut>
+					<RemoveShortcut Command="Edit.FormatSelection" Scope="Global">Alt+S</RemoveShortcut>
+					<RemoveShortcut Command="Edit.GoToNextLocation" Scope="Global">F4</RemoveShortcut>
+					<RemoveShortcut Command="View.NavigateBackward" Scope="Global">Ctrl+-</RemoveShortcut>
+					<RemoveShortcut Command="View.NavigateForward" Scope="Global">Ctrl+Shift+-</RemoveShortcut>
+					<RemoveShortcut Command="Edit.ScrollLineUp" Scope="Text Editor">Ctrl+Up Arrow</RemoveShortcut>
+					<RemoveShortcut Command="Edit.ScrollLineDown" Scope="Text Editor">Ctrl+Down Arrow</RemoveShortcut>
+					<RemoveShortcut Command="Edit.FindinFiles" Scope="Global">Ctrl+Shift+F</RemoveShortcut>
+					<RemoveShortcut Command="Edit.Find" Scope="Global">Ctrl+Shift+F</RemoveShortcut>
+					<RemoveShortcut Command="Edit.FindinFiles" Scope="Global">Ctrl+F</RemoveShortcut>
+					<RemoveShortcut Command="Edit.DeleteBlankLines" Scope="Global">Alt+D</RemoveShortcut>
+					<RemoveShortcut Command="Edit.CompleteWord" Scope="Text Editor">Alt+Right Arrow</RemoveShortcut>
+					<RemoveShortcut Command="VisualAssistX.FindReferences" Scope="Text Editor">Shift+Alt+F</RemoveShortcut>
+					<RemoveShortcut Command="VisualAssistX.NavigateBack" Scope="Text Editor">Alt+Left Arrow</RemoveShortcut>
+					<RemoveShortcut Command="Edit.CompleteWord" Scope="Workflow Designer">Alt+Right Arrow</RemoveShortcut>
+					<RemoveShortcut Command="Edit.MoveControlDown" Scope="Global">Ctrl+Down Arrow</RemoveShortcut>
+					<RemoveShortcut Command="Edit.MoveControlUp" Scope="Global">Ctrl+Up Arrow</RemoveShortcut>
+					<RemoveShortcut Command="View.ZoomIn" Scope="Global">Ctrl+Shift+.</RemoveShortcut>
+					<RemoveShortcut Command="View.ShowSmartTag" Scope="Global">Ctrl+.</RemoveShortcut>
+					<RemoveShortcut Command="Edit.NavigateTo" Scope="Global">Ctrl+,</RemoveShortcut>
+					<RemoveShortcut Command="Image.ZoomIn" Scope="Global">Ctrl+.</RemoveShortcut>
+					<RemoveShortcut Command="Image.ZoomOut" Scope="Global">Ctrl+,</RemoveShortcut>
+					<RemoveShortcut Command="View.ZoomOut" Scope="Global">Ctrl+Shift+,</RemoveShortcut>
+					<RemoveShortcut Command="View.Autosize" Scope="Global">Ctrl+Alt+1</RemoveShortcut>
+					<RemoveShortcut Command="View.MarginsandPadding" Scope="Global">Ctrl+Alt+1</RemoveShortcut>
+					<RemoveShortcut Command="Edit.Copy" Scope="Global">Alt+C</RemoveShortcut>
+					<RemoveShortcut Command="VisualAssistX.RefactorRename" Scope="Text Editor">Shift+Alt+R</RemoveShortcut>
+					<RemoveShortcut Command="View.Forward" Scope="Global">Alt+Right Arrow</RemoveShortcut>
+					<RemoveShortcut Command="EditorContextMenus.CodeWindow.RunSelection" Scope="Global">Ctrl+Q</RemoveShortcut>
+					<RemoveShortcut Command="VisualAssistX.FindSymbolDialog" Scope="Text Editor">Shift+Alt+S</RemoveShortcut>
+					<RemoveShortcut Command="VisualAssistX.FindSymbolDialog" Scope="Global">Shift+Alt+S</RemoveShortcut>
+					<RemoveShortcut Command="Edit.Paste" Scope="Global">Alt+X</RemoveShortcut>
+					<RemoveShortcut Command="View.ToggleDesigner" Scope="Global">F7</RemoveShortcut>
+					<RemoveShortcut Command="Macros.MyMacros.Module1.CopyWord" Scope="Global">Alt+C</RemoveShortcut>
+					<RemoveShortcut Command="Edit.GoTo" Scope="Global">Alt+X</RemoveShortcut>
+					<RemoveShortcut Command="View.NextError" Scope="Global">Ctrl+N</RemoveShortcut>
+					<RemoveShortcut Command="View.EditLabel" Scope="Global">F2</RemoveShortcut>
+					<RemoveShortcut Command="Edit.GoToFindCombo" Scope="Global">Ctrl+D</RemoveShortcut>
+					<RemoveShortcut Command="Window.MovetoNavigationBar" Scope="Global">Ctrl+F2</RemoveShortcut>
+					<RemoveShortcut Command="View.ErrorList" Scope="Global">Ctrl+\, Ctrl+E</RemoveShortcut>
+					<RemoveShortcut Command="View.ErrorList" Scope="Global">Ctrl+\, E</RemoveShortcut>
+					<RemoveShortcut Command="View.NavigateBackward" Scope="Global">Alt+Left Arrow</RemoveShortcut>
+					<RemoveShortcut Command="View.Backward" Scope="Global">Alt+Left Arrow</RemoveShortcut>
+					<RemoveShortcut Command="View.NavigateForward" Scope="Global">Alt+Right Arrow</RemoveShortcut>
+					<RemoveShortcut Command="VisualAssistX.ListMethodsInCurrentFile" Scope="Text Editor">Alt+M</RemoveShortcut>
+					<RemoveShortcut Command="Debug.Watch1" Scope="Global">Ctrl+Alt+W, 1</RemoveShortcut>
+					<RemoveShortcut Command="VisualAssistX.VAOutline" Scope="Global">Alt+W</RemoveShortcut>
+					<RemoveShortcut Command="Debug.CallStack" Scope="Global">Ctrl+Alt+C</RemoveShortcut>
+					<RemoveShortcut Command="View.ServerExplorer" Scope="Global">Ctrl+Alt+S</RemoveShortcut>
+					<RemoveShortcut Command="Edit.EmacsCharLeft" Scope="Global">Alt+J</RemoveShortcut>
+					<RemoveShortcut Command="View.ObjectBrowser" Scope="Global">Ctrl+Alt+J</RemoveShortcut>
+					<RemoveShortcut Command="Edit.ListMembers" Scope="Text Editor">Ctrl+J</RemoveShortcut>
+					<RemoveShortcut Command="Edit.CharLeftExtend" Scope="Global">Shift+Alt+J</RemoveShortcut>
+					<RemoveShortcut Command="Edit.LineCut" Scope="Text Editor">Ctrl+L</RemoveShortcut>
+					<RemoveShortcut Command="Edit.LineDelete" Scope="Text Editor">Ctrl+Shift+L</RemoveShortcut>
+					<RemoveShortcut Command="Edit.MoveControlLeft" Scope="Text Editor">Ctrl+J</RemoveShortcut>
+					<RemoveShortcut Command="Edit.SizeControlLeft" Scope="Text Editor">Ctrl+Shift+J</RemoveShortcut>
+					<RemoveShortcut Command="Edit.MoveControlRight" Scope="Text Editor">Ctrl+L</RemoveShortcut>
+					<RemoveShortcut Command="Edit.SizeControlRight" Scope="Text Editor">Ctrl+Shift+L</RemoveShortcut>
+					<RemoveShortcut Command="Edit.Delete" Scope="Global">Ctrl+I</RemoveShortcut>
+					<RemoveShortcut Command="Edit.IncrementalSearch" Scope="Text Editor">Ctrl+I</RemoveShortcut>
+					<RemoveShortcut Command="VisualAssistX.OpenCorrespondingFile" Scope="Text Editor">Alt+O</RemoveShortcut>
+					<RemoveShortcut Command="VisualAssistX.OpenFileInSolutionDialog" Scope="Text Editor">Shift+Alt+O</RemoveShortcut>
+					<RemoveShortcut Command="Edit.ReverseIncrementalSearch" Scope="Text Editor">Ctrl+Shift+I</RemoveShortcut>
+					<RemoveShortcut Command="Edit.NextBookmarkInFolder" Scope="Global">Ctrl+Shift+K, Ctrl+Shift+N</RemoveShortcut>
+					<RemoveShortcut Command="Edit.PreviousBookmarkInFolder" Scope="Global">Ctrl+Shift+K, Ctrl+Shift+P</RemoveShortcut>
+					<RemoveShortcut Command="Edit.LineCut" Scope="Text Editor">Ctrl+;</RemoveShortcut>
+					<RemoveShortcut Command="Edit.Delete" Scope="Text Editor">Ctrl+I</RemoveShortcut>
+					<RemoveShortcut Command="Edit.SwapAnchor" Scope="Text Editor">Ctrl+K, Ctrl+A</RemoveShortcut>
+					<RemoveShortcut Command="Edit.DeleteHorizontalWhiteSpace" Scope="Text Editor">Ctrl+K, Ctrl+\</RemoveShortcut>
+					<RemoveShortcut Command="Edit.ClearBookmarks" Scope="Text Editor">Ctrl+K, Ctrl+L</RemoveShortcut>
+					<RemoveShortcut Command="Edit.ToggleBookmark" Scope="Text Editor">Ctrl+K, Ctrl+K</RemoveShortcut>
+					<RemoveShortcut Command="Edit.ToggleTaskListShortcut" Scope="Text Editor">Ctrl+K, Ctrl+H</RemoveShortcut>
+					<RemoveShortcut Command="Edit.QuickInfo" Scope="Text Editor">Ctrl+K, Ctrl+I</RemoveShortcut>
+					<RemoveShortcut Command="Edit.CommentSelection" Scope="Text Editor">Ctrl+K, Ctrl+C</RemoveShortcut>
+					<RemoveShortcut Command="Edit.UncommentSelection" Scope="Text Editor">Ctrl+K, Ctrl+U</RemoveShortcut>
+					<RemoveShortcut Command="Edit.FormatDocument" Scope="Text Editor">Ctrl+K, Ctrl+D</RemoveShortcut>
+					<RemoveShortcut Command="Edit.Copy" Scope="Global">Alt+U</RemoveShortcut>
+					<RemoveShortcut Command="Edit.MakeLowercase" Scope="Text Editor">Ctrl+U</RemoveShortcut>
+					<RemoveShortcut Command="File.OpenFile" Scope="Global">Ctrl+O</RemoveShortcut>
+					<RemoveShortcut Command="File.OpenProject" Scope="Global">Ctrl+Shift+O</RemoveShortcut>
+					<RemoveShortcut Command="Edit.MakeUppercase" Scope="Text Editor">Ctrl+Shift+U</RemoveShortcut>
+					<RemoveShortcut Command="Edit.IncreaseFilterLevel" Scope="Text Editor">Alt+.</RemoveShortcut>
+					<RemoveShortcut Command="View.ZoomIn" Scope="Global">Ctrl+.</RemoveShortcut>
+					<RemoveShortcut Command="View.ZoomOut" Scope="Global">Ctrl+,</RemoveShortcut>
+					<RemoveShortcut Command="Edit.DecreaseFilterLevel" Scope="Text Editor">Alt+,</RemoveShortcut>
+					<RemoveShortcut Command="View.SolutionExplorer" Scope="Global">Ctrl+Alt+L</RemoveShortcut>
+					<RemoveShortcut Command="Debug.Immediate" Scope="Global">Ctrl+Alt+I</RemoveShortcut>
+					<RemoveShortcut Command="View.CallHierarchy" Scope="Global">Ctrl+Alt+K</RemoveShortcut>
+					<RemoveShortcut Command="Edit.Delete" Scope="Text Editor">Alt+;</RemoveShortcut>
+					<RemoveShortcut Command="Edit.Paste" Scope="Global">Alt+P</RemoveShortcut>
+					<RemoveShortcut Command="Edit.Paste" Scope="Text Editor">Alt+'</RemoveShortcut>
+					<RemoveShortcut Command="{5D7E7F65-A63F-46EE-84F1-990B2CAB23F9},6145" Scope="Global">Ctrl+'</RemoveShortcut>
+					<RemoveShortcut Command="Window.NextSplitPane" Scope="Global">F6</RemoveShortcut>
+					<Shortcut Command="Build.RebuildSolution" Scope="Global">Ctrl+Shift+B</Shortcut>
+					<Shortcut Command="Edit.CycleClipboardRing" Scope="Global">Alt+V</Shortcut>
+					<Shortcut Command="Edit.FormatSelection" Scope="Text Editor">Alt+S</Shortcut>
+					<Shortcut Command="Debug.GoToDisassembly" Scope="Global">Alt+A</Shortcut>
+					<Shortcut Command="Edit.Find" Scope="Global">Ctrl+F</Shortcut>
+					<Shortcut Command="Edit.FindinFiles" Scope="Global">Alt+D</Shortcut>
+					<Shortcut Command="Edit.ReplaceinFiles" Scope="Global">Alt+H</Shortcut>
+					<Shortcut Command="Macros.MyMacros.Module1.ConvertHex" Scope="Global">F4</Shortcut>
+					<Shortcut Command="VisualAssistX.FindReferences" Scope="Global">Alt+F</Shortcut>
+					<Shortcut Command="VisualAssistX.FindNextbyContext" Scope="Global">Ctrl+Down Arrow</Shortcut>
+					<Shortcut Command="VisualAssistX.FindPreviousbyContext" Scope="Global">Ctrl+Up Arrow</Shortcut>
+					<Shortcut Command="Edit.Copy" Scope="Global">Ctrl+C</Shortcut>
+					<Shortcut Command="VisualAssistX.RefactorRename" Scope="Global">Alt+R</Shortcut>
+					<Shortcut Command="VisualAssistX.OpenFileInSolutionDialog" Scope="Global">Ctrl+Q</Shortcut>
+					<Shortcut Command="VisualAssistX.FindSymbolDialog" Scope="Global">Alt+Z</Shortcut>
+					<Shortcut Command="Window.NewWindow" Scope="Global">Alt+N</Shortcut>
+					<Shortcut Command="Build.BuildSolution" Scope="Global">F7</Shortcut>
+					<Shortcut Command="VisualAssistX.CloneFindReferencesResults" Scope="Global">Alt+C</Shortcut>
+					<Shortcut Command="VisualAssistX.FindReferencesResults" Scope="Global">Alt+X</Shortcut>
+					<Shortcut Command="VisualAssistX.RefactorChangeSignature" Scope="Global">Alt+E</Shortcut>
+					<Shortcut Command="VisualAssistX.ReparseCurrentFile" Scope="Global">Ctrl+Alt+F</Shortcut>
+					<Shortcut Command="VisualAssistX.OutlineSelectInEditor" Scope="Global">Alt+Q</Shortcut>
+					<Shortcut Command="Window.Hide" Scope="Global">Alt+`</Shortcut>
+					<Shortcut Command="View.NextError" Scope="Global">F2</Shortcut>
+					<Shortcut Command="View.FindResults1" Scope="Global">Ctrl+D</Shortcut>
+					<Shortcut Command="View.ErrorList" Scope="Global">Ctrl+F2</Shortcut>
+					<Shortcut Command="VisualAssistX.NavigateBack" Scope="Global">Alt+Left Arrow</Shortcut>
+					<Shortcut Command="VisualAssistX.NavigateForward" Scope="Global">Alt+Right Arrow</Shortcut>
+					<Shortcut Command="Debug.NewDataBreakpoint" Scope="Global">Alt+B</Shortcut>
+					<Shortcut Command="VisualAssistX.RefactorExtractMethod" Scope="Text Editor">Alt+M</Shortcut>
+					<Shortcut Command="Debug.Watch1" Scope="Global">Alt+W</Shortcut>
+					<Shortcut Command="Debug.CallStack" Scope="Global">Ctrl+Alt+S</Shortcut>
+					<Shortcut Command="Edit.CharLeft" Scope="Global">Alt+J</Shortcut>
+					<Shortcut Command="Edit.CharLeftExtend" Scope="Text Editor">Shift+Alt+J</Shortcut>
+					<Shortcut Command="Edit.CharLeftExtendColumn" Scope="Text Editor">Ctrl+Shift+Alt+J</Shortcut>
+					<Shortcut Command="Edit.CharRight" Scope="Global">Alt+L</Shortcut>
+					<Shortcut Command="Edit.CharRightExtend" Scope="Text Editor">Shift+Alt+L</Shortcut>
+					<Shortcut Command="Edit.CharRightExtendColumn" Scope="Text Editor">Ctrl+Shift+Alt+L</Shortcut>
+					<Shortcut Command="Edit.WordPrevious" Scope="Text Editor">Ctrl+J</Shortcut>
+					<Shortcut Command="Edit.WordPreviousExtend" Scope="Text Editor">Ctrl+Shift+J</Shortcut>
+					<Shortcut Command="Edit.WordNext" Scope="Text Editor">Ctrl+L</Shortcut>
+					<Shortcut Command="Edit.WordNextExtend" Scope="Text Editor">Ctrl+Shift+L</Shortcut>
+					<Shortcut Command="Edit.LineUp" Scope="Text Editor">Alt+I</Shortcut>
+					<Shortcut Command="Edit.LineUpExtend" Scope="Text Editor">Shift+Alt+I</Shortcut>
+					<Shortcut Command="Edit.LineUpExtendColumn" Scope="Text Editor">Ctrl+Shift+Alt+I</Shortcut>
+					<Shortcut Command="Edit.LineDown" Scope="Text Editor">Alt+K</Shortcut>
+					<Shortcut Command="Edit.LineDownExtend" Scope="Text Editor">Shift+Alt+K</Shortcut>
+					<Shortcut Command="Edit.LineDownExtendColumn" Scope="Text Editor">Ctrl+Shift+Alt+K</Shortcut>
+					<Shortcut Command="Edit.LineStart" Scope="Text Editor">Alt+U</Shortcut>
+					<Shortcut Command="Edit.LineStartExtend" Scope="Text Editor">Shift+Alt+U</Shortcut>
+					<Shortcut Command="Edit.LineStartExtendColumn" Scope="Text Editor">Ctrl+Shift+Alt+U</Shortcut>
+					<Shortcut Command="Edit.LineEnd" Scope="Text Editor">Alt+O</Shortcut>
+					<Shortcut Command="Edit.LineEndExtend" Scope="Text Editor">Shift+Alt+O</Shortcut>
+					<Shortcut Command="VisualAssistX.OpenCorrespondingFile" Scope="Text Editor">Alt+P</Shortcut>
+					<Shortcut Command="Edit.LineUpExtend" Scope="Text Editor">Ctrl+Shift+I</Shortcut>
+					<Shortcut Command="Edit.LineDownExtend" Scope="Text Editor">Ctrl+Shift+K</Shortcut>
+					<Shortcut Command="Edit.Delete" Scope="Text Editor">Ctrl+;</Shortcut>
+					<Shortcut Command="Edit.LineUp" Scope="Text Editor">Ctrl+I</Shortcut>
+					<Shortcut Command="Edit.LineDown" Scope="Text Editor">Ctrl+K</Shortcut>
+					<Shortcut Command="Edit.LineCut" Scope="Text Editor">Shift+Alt+;</Shortcut>
+					<Shortcut Command="Edit.LineCut" Scope="Text Editor">Ctrl+Shift+;</Shortcut>
+					<Shortcut Command="Edit.LineStart" Scope="Text Editor">Ctrl+U</Shortcut>
+					<Shortcut Command="Edit.LineEnd" Scope="Text Editor">Ctrl+O</Shortcut>
+					<Shortcut Command="Edit.LineStartExtend" Scope="Text Editor">Ctrl+Shift+U</Shortcut>
+					<Shortcut Command="Edit.LineEndExtend" Scope="Text Editor">Ctrl+Shift+O</Shortcut>
+					<Shortcut Command="Edit.LineEndExtendColumn" Scope="Text Editor">Ctrl+Shift+Alt+O</Shortcut>
+					<Shortcut Command="Edit.Copy" Scope="Global">Ctrl+Ins</Shortcut>
+					<Shortcut Command="Edit.PageDown" Scope="Text Editor">Alt+.</Shortcut>
+					<Shortcut Command="Edit.PageDownExtend" Scope="Text Editor">Shift+Alt+.</Shortcut>
+					<Shortcut Command="Edit.PageDownExtend" Scope="Text Editor">Ctrl+Shift+.</Shortcut>
+					<Shortcut Command="Edit.PageDown" Scope="Global">Ctrl+.</Shortcut>
+					<Shortcut Command="Edit.PageUp" Scope="Global">Ctrl+,</Shortcut>
+					<Shortcut Command="Edit.PageUp" Scope="Text Editor">Alt+,</Shortcut>
+					<Shortcut Command="Edit.PageUpExtend" Scope="Text Editor">Shift+Alt+,</Shortcut>
+					<Shortcut Command="Edit.PageUpExtend" Scope="Text Editor">Ctrl+Shift+,</Shortcut>
+					<Shortcut Command="VisualAssistX.NavigateBack" Scope="Global">Ctrl+Alt+J</Shortcut>
+					<Shortcut Command="VisualAssistX.NavigateForward" Scope="Global">Ctrl+Alt+L</Shortcut>
+					<Shortcut Command="VisualAssistX.FindPreviousbyContext" Scope="Global">Ctrl+Alt+I</Shortcut>
+					<Shortcut Command="VisualAssistX.FindNextbyContext" Scope="Global">Ctrl+Alt+K</Shortcut>
+					<Shortcut Command="Edit.Cut" Scope="Text Editor">Alt+;</Shortcut>
+					<Shortcut Command="Edit.Paste" Scope="Global">Alt+'</Shortcut>
+					<Shortcut Command="Edit.Copy" Scope="Global">Ctrl+'</Shortcut>
+					<Shortcut Command="Debug.StartWithoutDebugging" Scope="Global">F6</Shortcut>
+					<Shortcut Command="Tools.RunTemporaryMacro" Scope="Global">Ctrl+Shift+Q</Shortcut>
+					<RemoveShortcut Command="View.DocumentOutline" Scope="Global">Ctrl+Alt+T</RemoveShortcut>
+				</UserShortcuts>
+			</KeyboardShortcuts>
+		</Category>
+	</Category>
+</UserSettings>

@@ -1,0 +1,817 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7432D0FB-24E3-4439-A38F-8C000FCA6E49}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TH1-2</RootNamespace>
+    <ProjectName>TH1</ProjectName>
+    <WindowsTargetPlatformVersion>7.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v141_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v141_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\personal.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\personal.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>TH1</TargetName>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <OutDir>$(GameFolder)</OutDir>
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <GenerateManifest>false</GenerateManifest>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>TH1</TargetName>
+    <OutDir>$(GameFolder)</OutDir>
+    <GenerateManifest>false</GenerateManifest>
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StructMemberAlignment>1Byte</StructMemberAlignment>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(TargetPath)</OutputFile>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <BaseAddress>0x00400000</BaseAddress>
+      <DelayLoadDLLs>
+      </DelayLoadDLLs>
+      <AdditionalDependencies>kernel32.lib;$(TargetDir)th1.lib;..\lib\storm_loader.lib</AdditionalDependencies>
+      <FixedBaseAddress>true</FixedBaseAddress>
+      <EntryPointSymbol>WinMainLoader</EntryPointSymbol>
+      <DataExecutionPrevention>false</DataExecutionPrevention>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>DebugFastLink</GenerateDebugInformation>
+      <StackReserveSize>10485760</StackReserveSize>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StructMemberAlignment>1Byte</StructMemberAlignment>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <OutputFile>$(TargetPath)</OutputFile>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>false</DataExecutionPrevention>
+      <BaseAddress>0x00400000</BaseAddress>
+      <AdditionalDependencies>kernel32.lib;$(TargetDir)th1.lib;..\lib\storm_loader.lib</AdditionalDependencies>
+      <FixedBaseAddress>true</FixedBaseAddress>
+      <GenerateDebugInformation>DebugFastLink</GenerateDebugInformation>
+      <EntryPointSymbol>WinMainLoader</EntryPointSymbol>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <ImageHasSafeExceptionHandlers />
+      <LinkTimeCodeGeneration />
+      <StackReserveSize>10485760</StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\TH1.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\lib\TH.exe">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">xcopy "%(FullPath)" "$(GameFolder)" /D /Y /R</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">xcopy "%(FullPath)" "$(GameFolder)" /D /Y /R</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(GameFolder)%(FileName)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(GameFolder)%(FileName)%(Extension)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\res\thehell2.mpq">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">xcopy "%(FullPath)" "$(GameFolder)" /D /Y /R</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(GameFolder)%(FileName)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(GameFolder)%(FileName)%(Extension)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">xcopy "%(FullPath)" "$(GameFolder)" /D /Y /R</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\lib\standard.snp">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">xcopy "%(FullPath)" "$(GameFolder)" /D /Y /R</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">xcopy "%(FullPath)" "$(GameFolder)" /D /Y /R</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(GameFolder)%(FileName)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(GameFolder)%(FileName)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\lib\Storm.dll">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">xcopy "%(FullPath)" "$(GameFolder)" /D /Y /R</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">xcopy "%(FullPath)" "$(GameFolder)" /D /Y /R</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(GameFolder)%(FileName)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(GameFolder)%(FileName)%(Extension)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\lib\TH.dll">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">xcopy "%(FullPath)" "$(GameFolder)" /D /Y /R</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">xcopy "%(FullPath)" "$(GameFolder)" /D /Y /R</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(GameFolder)%(FileName)%(Extension)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(GameFolder)%(FileName)%(Extension)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\lib\hell_loader.def" />
+    <None Include="..\lib\storm_loader.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\lib\txt\2007-11-07, 11-31, Magma &amp; Lite Demons Double melee attacks-related code.txt" />
+    <Text Include="..\lib\txt\2007-11-07, 12-59, Double Melee Attackers.txt" />
+    <Text Include="..\lib\txt\2007-11-08, 4-37, no drop at death fix try 1.txt" />
+    <Text Include="..\lib\txt\2007-11-08, 6-01, thorns improved.txt" />
+    <Text Include="..\lib\txt\2007-11-08, 7-14, less AP.txt" />
+    <Text Include="..\lib\txt\2007-11-08, 9-29, DATA SEQUENCE (MON, UNI, ITEMS, ETC.).txt" />
+    <Text Include="..\lib\txt\2007-11-09, 11-38, spell support.txt" />
+    <Text Include="..\lib\txt\2007-11-09, 13-15, trap bugfix (hopefully).txt" />
+    <Text Include="..\lib\txt\2007-11-11, 6-38, Lazarus in MP room - shift place (closer to entrance).txt" />
+    <Text Include="..\lib\txt\2007-11-13, 22-26, Chain Activation (CA) of TheDark53.txt" />
+    <Text Include="..\lib\txt\2007-11-21, 11-39, allowing Wyrms to spit poison.txt" />
+    <Text Include="..\lib\txt\2007-12-07, 19-45, Apocalypse Damage Increase.txt" />
+    <Text Include="..\lib\txt\2007-12-10, 16-17, Arcane Star damage increase.txt" />
+    <Text Include="..\lib\txt\2007-12-11, 15-54, Lightning damage increase.txt" />
+    <Text Include="..\lib\txt\2007-12-11, 3-18, Inferno damage increase.txt" />
+    <Text Include="..\lib\txt\2007-12-12, 21-24, Character Maximum Damage Cap.txt" />
+    <Text Include="..\lib\txt\2007-12-14, 21-01, Traps Damage Increase.txt" />
+    <Text Include="..\lib\txt\2007-12-15, 16-22, Lightning Demons%27 Lightning attack damage increase.txt" />
+    <Text Include="..\lib\txt\2007-12-15, 17-31, Balrogs%27 Inferno damage increase.txt" />
+    <Text Include="..\lib\txt\2007-12-15, 19-29, Mages%27 Flash Damage Increase.txt" />
+    <Text Include="..\lib\txt\2007-12-15, 4-04, Hydra Spellbook damage display Fix.txt" />
+    <Text Include="..\lib\txt\2007-12-16, 16-23, Anti-dupe Fix.txt" />
+    <Text Include="..\lib\txt\2007-12-16, 2-28, Burning Cross Code.txt" />
+    <Text Include="..\lib\txt\2007-12-16, 3-52, DLVL Difficulty Modifier Code.txt" />
+    <Text Include="..\lib\txt\2007-12-16, 3-56, Single-player Burning Cross Gameload Crash.txt" />
+    <Text Include="..\lib\txt\2007-12-16, 4-36, Exploding Barrel Damage.txt" />
+    <Text Include="..\lib\txt\2007-12-19, 15-32, Character class related formulas (notes Azril).txt" />
+    <Text Include="..\lib\txt\2007-12-19, 15-42, CHARACTER POINTERS.txt" />
+    <Text Include="..\lib\txt\2007-12-20, 14-02, Free Space from Gladiator%27s levelup resists gain.txt" />
+    <Text Include="..\lib\txt\2007-12-20, 18-22, Monk%27s HP bonus from Vitality on items set to 2,5x.txt" />
+    <Text Include="..\lib\txt\2007-12-20, 18-47, More Free Space.txt" />
+    <Text Include="..\lib\txt\2007-12-21, 2-50, Boss Name Wrap around Morphing Fix.txt" />
+    <Text Include="..\lib\txt\2007-12-23, 16-01, Credits Update.txt" />
+    <Text Include="..\lib\txt\2007-12-24, 2-37, Holy Bolt.txt" />
+    <Text Include="..\lib\txt\2007-12-25, 18-05, Making Mud &amp; Gold Golems, Bile Demons immune to retreat after getting stunned.txt" />
+    <Text Include="..\lib\txt\2007-12-26, 19-07, Melee vs Monster - Life &amp; Mana Stealing Lowered, + PvM MELEE Code.txt" />
+    <Text Include="..\lib\txt\2007-12-26, 19-07, Melee vs Monster - Life &amp; Mana Stealing Lowered.txt" />
+    <Text Include="..\lib\txt\2007-12-26, 4-29, Improving Monsters%27 HP, AC &amp; Damage in Purgatory and Doom.txt" />
+    <Text Include="..\lib\txt\2007-12-27, 16-42, Free Space Made.txt" />
+    <Text Include="..\lib\txt\2007-12-28, 16-59, Paladin Lower Inherent Melee ToHit bonus.txt" />
+    <Text Include="..\lib\txt\2007-12-28, 22-50, Monster &amp; Boss Sound Activation.txt" />
+    <Text Include="..\lib\txt\2007-12-28, 5-56, [Possibly] Glowing Shrine code - needs attention.txt" />
+    <Text Include="..\lib\txt\2007-12-28, 6-08, Fascinating Shrine code - from DMN.txt" />
+    <Text Include="..\lib\txt\2007-12-29, 22-34, Free Space from Obsolete Hork Demon Amulet Drop Check.txt" />
+    <Text Include="..\lib\txt\2007-12-30, 15-26, Black Death%27s Life Drain Code.txt" />
+    <Text Include="..\lib\txt\2007-12-30, 18-37, Free Space from disabled Command.txt file.txt" />
+    <Text Include="..\lib\txt\2007-12-30, 21-00, Dungeon Level Palette Handler Code.txt" />
+    <Text Include="..\lib\txt\2007-12-30, 21-40, Fix to Scavenging monsters on higher difficulty modes.txt" />
+    <Text Include="..\lib\txt\2007-12-30, 3-26, Improving Monster Stun Formula (+Monster Stun Code).txt" />
+    <Text Include="..\lib\txt\2008-01-03, 22-51, DLVL palette randomness increase.txt" />
+    <Text Include="..\lib\txt\2008-01-08, 21-47, Character Resistances Improvement and Display Changes + Free Space.txt" />
+    <Text Include="..\lib\txt\2008-01-08, 5-37, MONSTER POINTERS.txt" />
+    <Text Include="..\lib\txt\2008-01-09, 4-09, Changing Resolution to 800x600.txt" />
+    <Text Include="..\lib\txt\2008-01-10, 20-38, Na-Krul Books [needs fix].txt" />
+    <Text Include="..\lib\txt\2008-01-10, 3-39, Flash.txt" />
+    <Text Include="..\lib\txt\2008-01-10, 9-08, BOSS POINTERS.txt" />
+    <Text Include="..\lib\txt\2008-01-10, 9-08, QUEST POINTERS.txt" />
+    <Text Include="..\lib\txt\2008-01-12, 23-54, Max DFE limitation.txt" />
+    <Text Include="..\lib\txt\2008-01-15, 5-24, Modifiying Arkaine%27s Valor Quest.txt" />
+    <Text Include="..\lib\txt\2008-01-15, 8-11, Increasing number of Base Items.txt" />
+    <Text Include="..\lib\txt\2008-01-16, 23-02, Adding Free Space to Mod.txt" />
+    <Text Include="..\lib\txt\2008-01-16, 6-17, Unique Item Drop Chance.txt" />
+    <Text Include="..\lib\txt\2008-01-18, 12-03, Character Knockback Avoid.txt" />
+    <Text Include="..\lib\txt\2008-01-21, 2-07, Rage (Fury) Code + DMN.txt" />
+    <Text Include="..\lib\txt\2008-01-23, 15-15, Bugfixes introduced in Diablo v1.07 but present in Hellfire.txt" />
+    <Text Include="..\lib\txt\2008-01-25, 16-09, Hiding Hiddens.txt" />
+    <Text Include="..\lib\txt\2008-01-26, 17-18, Larger boss packs.txt" />
+    <Text Include="..\lib\txt\2008-01-26, 9-00, Less HP from warcries.txt" />
+    <Text Include="..\lib\txt\2008-01-27, 8-12, Monster spell support.txt" />
+    <Text Include="..\lib\txt\2008-01-27, 8-12, Monster%27s individual feature support.txt" />
+    <Text Include="..\lib\txt\2008-01-31, 12-06, Melee MvP Code.txt" />
+    <Text Include="..\lib\txt\2008-01-31, 12-41, Melee PvM Code.txt" />
+    <Text Include="..\lib\txt\2008-01-31, 14-50, Missile MvP Code.txt" />
+    <Text Include="..\lib\txt\2008-01-31, 14-50, Missile PvM Code.txt" />
+    <Text Include="..\lib\txt\2008-01-31, 22-55, More life stealer monsters.txt" />
+    <Text Include="..\lib\txt\2008-02-01, 13-19, Hellfire Shrine List.txt" />
+    <Text Include="..\lib\txt\2008-02-04, 13-09, Missile MvP Code.txt" />
+    <Text Include="..\lib\txt\2008-02-04, 13-38, EBP POINTERS.txt" />
+    <Text Include="..\lib\txt\2008-02-04, 23-50, Shop changes.txt" />
+    <Text Include="..\lib\txt\2008-02-05, 11-37, Disabling Melee PvP completely + free space.txt" />
+    <Text Include="..\lib\txt\2008-02-05, 15-32, Dungeon message code.txt" />
+    <Text Include="..\lib\txt\2008-02-05, 17-04, SFX.txt" />
+    <Text Include="..\lib\txt\2008-02-06, 19-23, Warping Blood Legion.txt" />
+    <Text Include="..\lib\txt\2008-02-18, 17-36, Character Evasion.txt" />
+    <Text Include="..\lib\txt\2008-02-20, 0-06, Shared XP disabled.txt" />
+    <Text Include="..\lib\txt\2008-02-20, 12-28, Character Lightning Damage Increase Again (rebalancing damage).txt" />
+    <Text Include="..\lib\txt\2008-02-20, 12-44, Fire Blast code.txt" />
+    <Text Include="..\lib\txt\2008-02-20, 13-55, Bone Spirit damage increase.txt" />
+    <Text Include="..\lib\txt\2008-02-22, 12-50, Critical hits caused by all class types.txt" />
+    <Text Include="..\lib\txt\2008-02-23, 18-05, Lower Return Prices at Adria.txt" />
+    <Text Include="..\lib\txt\2008-02-23, 22-12, Block chances adjusted.txt" />
+    <Text Include="..\lib\txt\2008-02-26, 02-07, Character Screen ToHit value code.txt" />
+    <Text Include="..\lib\txt\2008-02-26, 21-38, Anti dupe again.txt" />
+    <Text Include="..\lib\txt\2008-02-26, 23-39, AP updated.txt" />
+    <Text Include="..\lib\txt\2008-02-27, 17-52, Resolution set function.txt" />
+    <Text Include="..\lib\txt\2008-02-27, 20-19, Doubled critical damage for Monk and Assassin.txt" />
+    <Text Include="..\lib\txt\2008-02-28, 12-17, Peril with no DFE protection.txt" />
+    <Text Include="..\lib\txt\2008-03-02, 21-10, HP view.txt" />
+    <Text Include="..\lib\txt\2008-03-03, 13-53, Lower repair prices.txt" />
+    <Text Include="..\lib\txt\2008-03-03, 17-14, Durability (bows).txt" />
+    <Text Include="..\lib\txt\2008-03-03, 17-22, Gladiators Vit bonus to damage with axe.txt" />
+    <Text Include="..\lib\txt\2008-03-06, 3-41, Gladiator stunned at same damage as others.txt" />
+    <Text Include="..\lib\txt\2008-03-07, 19-08, XP values.txt" />
+    <Text Include="..\lib\txt\2008-03-09, 4-08, bind to level monsters.txt" />
+    <Text Include="..\lib\txt\2008-03-11, 3-35, Gold drop amount code (probably).txt" />
+    <Text Include="..\lib\txt\2008-03-13, 18-50, Looking for a way to increase monster sfx.txt" />
+    <Text Include="..\lib\txt\2008-03-13, 21-11, Anti-dupe Fix again - compare d107 + d109 + hf101.txt" />
+    <Text Include="..\lib\txt\2008-03-14, Dual wield code support info from Zenda .txt" />
+    <Text Include="..\lib\txt\2008-03-14, dungeon generation by ulmo.txt" />
+    <Text Include="..\lib\txt\2008-03-14, ITEM POINTERS.txt" />
+    <Text Include="..\lib\txt\2008-03-14, Kp%27s Catacomb morphing bug trace advice.txt" />
+    <Text Include="..\lib\txt\2008-03-14, more pointers by ulmo.txt" />
+    <Text Include="..\lib\txt\2008-03-14, omlettooos improved item colors when selling at Grizwolds shop.txt" />
+    <Text Include="..\lib\txt\2008-03-17, ASM registers by Illusion.txt" />
+    <Text Include="..\lib\txt\2008-03-26, MP saves without computer name dependancy.txt" />
+    <Text Include="..\lib\txt\2008-04-06, Arcane Shield durability.txt" />
+    <Text Include="..\lib\txt\2008-04-08, Monks AC bonus.txt" />
+    <Text Include="..\lib\txt\2008-04-16, Golem rebalanced.txt" />
+    <Text Include="..\lib\txt\2008-04-19, Charged Bolt.txt" />
+    <Text Include="..\lib\txt\2008-04-19, Firebolt.txt" />
+    <Text Include="..\lib\txt\2008-04-20, Flash fix.txt" />
+    <Text Include="..\lib\txt\2008-04-22, Flame Wave.txt" />
+    <Text Include="..\lib\txt\2008-04-27, 4-02, Corruption effect update (stops all regeneration).txt" />
+    <Text Include="..\lib\txt\2008-04-27, See Boss HP.txt" />
+    <Text Include="..\lib\txt\2008-04-27, Town No Running.txt" />
+    <Text Include="..\lib\txt\2008-04-28, See Boss HP.txt" />
+    <Text Include="..\lib\txt\2008-05-03, Automap Radius.txt" />
+    <Text Include="..\lib\txt\2008-05-03, TD feats.txt" />
+    <Text Include="..\lib\txt\2008-05-04, Arcane shield formula update.txt" />
+    <Text Include="..\lib\txt\2008-05-07, Correspondence with Olaf about DFE.txt" />
+    <Text Include="..\lib\txt\2008-05-08, Shrine names obscured.txt" />
+    <Text Include="..\lib\txt\2008-05-12, Golem &amp; Uber resist arrow damage.txt" />
+    <Text Include="..\lib\txt\2008-05-12, Monster Melee Damage resistance.txt" />
+    <Text Include="..\lib\txt\2008-05-13, Base Item table handling function (possibly).txt" />
+    <Text Include="..\lib\txt\2008-05-14, Turning off forced monsters on DLVLs.txt" />
+    <Text Include="..\lib\txt\2008-05-16, Double rewards.txt" />
+    <Text Include="..\lib\txt\2008-05-17, Bosspack fixes.txt" />
+    <Text Include="..\lib\txt\2008-05-17, Double attack support for Bonewing.txt" />
+    <Text Include="..\lib\txt\2008-05-18, Acid puddle (after dying).txt" />
+    <Text Include="..\lib\txt\2008-05-19, additional melee attacks (dual and triple).txt" />
+    <Text Include="..\lib\txt\2008-05-24, Shrine list for bugfix on dlvl 3-4, MP mode.txt" />
+    <Text Include="..\lib\txt\2008-05-24, Spiritual shrine gives more gold.txt" />
+    <Text Include="..\lib\txt\2008-05-25, New free code space by Gladoo - check (successful).txt" />
+    <Text Include="..\lib\txt\2008-05-26, Arrow speeds.txt" />
+    <Text Include="..\lib\txt\2008-05-26, Barrel monsters.txt" />
+    <Text Include="..\lib\txt\2008-05-27, (Monster) arrows speed.txt" />
+    <Text Include="..\lib\txt\2008-05-27, Improved runes%27 SLVLs.txt" />
+    <Text Include="..\lib\txt\2008-05-28, Character Life and Mana Regeneration.txt" />
+    <Text Include="..\lib\txt\2008-05-28, Monster Knockback (KB) immunity.txt" />
+    <Text Include="..\lib\txt\2008-05-28, Monster stun restrictions.txt" />
+    <Text Include="..\lib\txt\2008-05-28, Notes on creating extra code for KB immunes.txt" />
+    <Text Include="..\lib\txt\2008-05-28, Rage (Fury) fix from TheDark53.txt" />
+    <Text Include="..\lib\txt\2008-05-29, Goat shrines + goat check.txt" />
+    <Text Include="..\lib\txt\2008-05-29, New segments in executable.txt" />
+    <Text Include="..\lib\txt\2008-05-29, Starting characters.txt" />
+    <Text Include="..\lib\txt\2008-05-30, All chars always see trapped objects.txt" />
+    <Text Include="..\lib\txt\2008-05-30, Exploding barrel damage.txt" />
+    <Text Include="..\lib\txt\2008-05-30, Healing spell tuning.txt" />
+    <Text Include="..\lib\txt\2008-05-30, Jewelry sold in MP (Shop).txt" />
+    <Text Include="..\lib\txt\2008-05-30, Move unique item table.txt" />
+    <Text Include="..\lib\txt\2008-05-30, OBJECT POINTERS.txt" />
+    <Text Include="..\lib\txt\2008-05-30, Shocking Blast.txt" />
+    <Text Include="..\lib\txt\2008-05-30, Spell mana cost equal for all.txt" />
+    <Text Include="..\lib\txt\2008-05-31, Missile criticals for scout, assy &amp; glad.txt" />
+    <Text Include="..\lib\txt\2008-05-31, PvP Melee Criticals.txt" />
+    <Text Include="..\lib\txt\2008-05-31, PvP Melee.txt" />
+    <Text Include="..\lib\txt\2008-05-31, PvP Missile.txt" />
+    <Text Include="..\lib\txt\2008-06-01, Monster advanced stun system.txt" />
+    <Text Include="..\lib\txt\2008-06-01, Monsters%27 slower regenerate rate.txt" />
+    <Text Include="..\lib\txt\2008-06-01, Reapers%27 special extra attacks.txt" />
+    <Text Include="..\lib\txt\2008-06-02, Forcing spell FX 3Ah and 31h to load.txt" />
+    <Text Include="..\lib\txt\2008-06-02, Mage base damage lowered.txt" />
+    <Text Include="..\lib\txt\2008-06-02, SPELLBOOK POINTERS.txt" />
+    <Text Include="..\lib\txt\2008-06-03, Dupefixing again.txt" />
+    <Text Include="..\lib\txt\2008-06-03, Gladiator%27s wrong dual weild combo penalty.txt" />
+    <Text Include="..\lib\txt\2008-06-04, %27Detect Trap%27 bonus.txt" />
+    <Text Include="..\lib\txt\2008-06-04, Firewall+Litewall revision.txt" />
+    <Text Include="..\lib\txt\2008-06-04, Resist MAX showed for 85%s only.txt" />
+    <Text Include="..\lib\txt\2008-06-04, Traps%27 ToHit revised.txt" />
+    <Text Include="..\lib\txt\2008-06-05, Assassin%27s full base damage formulae routine.txt" />
+    <Text Include="..\lib\txt\2008-06-05, Stronger BS in PvP.txt" />
+    <Text Include="..\lib\txt\2008-06-06, Character life &amp; mana formulas.txt" />
+    <Text Include="..\lib\txt\2008-06-06, Character weapon speeds.txt" />
+    <Text Include="..\lib\txt\2008-06-06, New base damage for Assassin.txt" />
+    <Text Include="..\lib\txt\2008-06-07, DLVL-related mods.txt" />
+    <Text Include="..\lib\txt\2008-06-08, PROPS.txt" />
+    <Text Include="..\lib\txt\2008-06-08, Relocating monsters by seeding size.txt" />
+    <Text Include="..\lib\txt\2008-06-10, PvM Melee criticals rewritten.txt" />
+    <Text Include="..\lib\txt\2008-06-11, Relocating base monster data table.txt" />
+    <Text Include="..\lib\txt\2008-06-12, Unique item code.txt" />
+    <Text Include="..\lib\txt\2008-06-13, Introducing new base items.txt" />
+    <Text Include="..\lib\txt\2008-06-13, Introducing new unique items.txt" />
+    <Text Include="..\lib\txt\2008-06-13, Relocating unique item table.txt" />
+    <Text Include="..\lib\txt\2008-06-23, Monster activation sound fix (for all players).txt" />
+    <Text Include="..\lib\txt\2008-06-26, MvM Stun.txt" />
+    <Text Include="..\lib\txt\2008-06-26, Spell KnockBack.txt" />
+    <Text Include="..\lib\txt\2008-06-27, Illusion%27s post about decompilation.txt" />
+    <Text Include="..\lib\txt\2008-06-27, PvM Missile, innate tohit bonuses for classes.txt" />
+    <Text Include="..\lib\txt\2008-06-29, MONSTER AI.txt" />
+    <Text Include="..\lib\txt\2008-06-29, Zombie AI.txt" />
+    <Text Include="..\lib\txt\2008-06-30, Fallen AI.txt" />
+    <Text Include="..\lib\txt\2008-06-30, Hidden AI.txt" />
+    <Text Include="..\lib\txt\2008-06-30, Skeleton AI.txt" />
+    <Text Include="..\lib\txt\2008-07-01, Horny AI.txt" />
+    <Text Include="..\lib\txt\2008-07-01, Shooter AI.txt" />
+    <Text Include="..\lib\txt\2008-07-01, Skel Archer AI.txt" />
+    <Text Include="..\lib\txt\2008-07-02, Shop data.txt" />
+    <Text Include="..\lib\txt\2008-07-10, Goat Mace AI.txt" />
+    <Text Include="..\lib\txt\2008-07-10, JG info  about Magma Demon AI.txt" />
+    <Text Include="..\lib\txt\2008-07-10, Magma Demon AI.txt" />
+    <Text Include="..\lib\txt\2008-07-10, Winged Fiend AI.txt" />
+    <Text Include="..\lib\txt\2008-07-11, Overlord AI.txt" />
+    <Text Include="..\lib\txt\2008-07-12, Viper AI.txt" />
+    <Text Include="..\lib\txt\2008-07-13, Mage AI.txt" />
+    <Text Include="..\lib\txt\2008-07-15, XP restriction (allowing for XP from low level monsters).txt" />
+    <Text Include="..\lib\txt\2008-07-20, Attempts of implementing VIT requirement on items.txt" />
+    <Text Include="..\lib\txt\2008-07-30, Increased Fury duration (new effect).txt" />
+    <Text Include="..\lib\txt\2008-08-05, Arcane Nova (creating).txt" />
+    <Text Include="..\lib\txt\2008-08-06, Trap viewing with Infra.txt" />
+    <Text Include="..\lib\txt\2008-08-07, Implementing smarter recursive formula.txt" />
+    <Text Include="..\lib\txt\2008-08-13, CHARACTER TIMINGS.txt" />
+    <Text Include="..\lib\txt\2008-08-13, Nova damage balancing.txt" />
+    <Text Include="..\lib\txt\2008-08-14, Dualweild for Monk.txt" />
+    <Text Include="..\lib\txt\2008-08-15, Spells cancel previous instances of themselves.txt" />
+    <Text Include="..\lib\txt\2008-08-17, Blunt-vs-Sharp damage modifiers in PvM Melee.txt" />
+    <Text Include="..\lib\txt\2008-08-17, Holy Nova update code.txt" />
+    <Text Include="..\lib\txt\2008-08-20, Nova trap damage code.txt" />
+    <Text Include="..\lib\txt\2008-08-21, Hotkey 1st part - adding more.txt" />
+    <Text Include="..\lib\txt\2008-08-21, Hotkey 2nd part - the one used in TH atm - code comments.txt" />
+    <Text Include="..\lib\txt\2008-08-21, HOTKEYZ.txt" />
+    <Text Include="..\lib\txt\2008-08-21, Key Handling (from TD notes).txt" />
+    <Text Include="..\lib\txt\2008-08-21, New hotkeys in TH.txt" />
+    <Text Include="..\lib\txt\2008-08-21, Weird shrine (more damage).txt" />
+    <Text Include="..\lib\txt\2008-08-22, Double rewards.txt" />
+    <Text Include="..\lib\txt\2008-08-22, Golem stats revision (to do).txt" />
+    <Text Include="..\lib\txt\2008-08-22, Grizwold sells Oil.txt" />
+    <Text Include="..\lib\txt\2008-08-22, MvM Stun threshold.txt" />
+    <Text Include="..\lib\txt\2008-08-22, Sweep penalty.txt" />
+    <Text Include="..\lib\txt\2008-08-28, Bone Spirit adjustments.txt" />
+    <Text Include="..\lib\txt\2008-09-01, Key codes.txt" />
+    <Text Include="..\lib\txt\2008-09-02, New AI ideas.txt" />
+    <Text Include="..\lib\txt\2008-09-17, Bonewing dual attack support.txt" />
+    <Text Include="..\lib\txt\2008-10-10, Diablo AI heavy modification.txt" />
+    <Text Include="..\lib\txt\2008-10-10, Diablo not stopped by walls.txt" />
+    <Text Include="..\lib\txt\2008-10-10, Trap vs Monster - ToHit chance.txt" />
+    <Text Include="..\lib\txt\2008-10-16, ARD upgrade.txt" />
+    <Text Include="..\lib\txt\2008-10-16, Holy Bolt damage formula update.txt" />
+    <Text Include="..\lib\txt\2008-10-17, Extra attack on frame 9 (dual attacks addon).txt" />
+    <Text Include="..\lib\txt\2008-10-18, Hellfire crash.txt" />
+    <Text Include="..\lib\txt\2008-10-18, Mages%27 phase immunity (excluding Imp Rogues).txt" />
+    <Text Include="..\lib\txt\2008-10-18, Maximum character damage( update).txt" />
+    <Text Include="..\lib\txt\2008-10-18, MP CLVL-based XP cap.txt" />
+    <Text Include="..\lib\txt\2008-10-18, Sparkling Shrine boost.txt" />
+    <Text Include="..\lib\txt\2008-10-19, Player GFX load function.txt" />
+    <Text Include="..\lib\txt\2008-10-19, SHRINES.txt" />
+    <Text Include="..\lib\txt\2008-10-20, Cornerstone and UberD bosses at preset places.txt" />
+    <Text Include="..\lib\txt\2008-10-21, BossMobs (from TD notes).txt" />
+    <Text Include="..\lib\txt\2008-10-21, Lazarus guards (from TD).txt" />
+    <Text Include="..\lib\txt\2008-10-21, TH_interesting function about bosses and other stuff.txt" />
+    <Text Include="..\lib\txt\2008-10-22, MvP Melee blocking new formula.txt" />
+    <Text Include="..\lib\txt\2008-10-22, MvP Missile blocking new formula.txt" />
+    <Text Include="..\lib\txt\2008-10-23, Quests.txt" />
+    <Text Include="..\lib\txt\2008-10-23, Rewritten Slain Hero quest.txt" />
+    <Text Include="..\lib\txt\2008-10-23, Unique item related funcs.txt" />
+    <Text Include="..\lib\txt\2008-10-24, Character screen info FUNCTION.txt" />
+    <Text Include="..\lib\txt\2008-10-24, Character screen ToHit info upgrade.txt" />
+    <Text Include="..\lib\txt\2008-10-25, Automap player arrows.txt" />
+    <Text Include="..\lib\txt\2008-10-25, Game end movie (restoring probably).txt" />
+    <Text Include="..\lib\txt\2008-11-06, Fire Bolt revised.txt" />
+    <Text Include="..\lib\txt\2008-11-27, (TBC)PvM Missile fixes.txt" />
+    <Text Include="..\lib\txt\2008-12-31, Diablo AI damage modify.txt" />
+    <Text Include="..\lib\txt\2009-01-03, Elemental spellbook damage.txt" />
+    <Text Include="..\lib\txt\2009-01-03, New character stun formula.txt" />
+    <Text Include="..\lib\txt\2009-01-04, PvM Melee - bonus damage to Undead.txt" />
+    <Text Include="..\lib\txt\2009-01-05, Mob restrictions.txt" />
+    <Text Include="..\lib\txt\2009-01-06, Bosses resist arrow and magic damage (+Uber%27s advanced magic resists).txt" />
+    <Text Include="..\lib\txt\2009-01-06, Devastation effect for bows and spells.txt" />
+    <Text Include="..\lib\txt\2009-01-06, Oblivion Knight special melee resistance.txt" />
+    <Text Include="..\lib\txt\2009-01-06, Special resistance to Fire &amp; Lightning walls.txt" />
+    <Text Include="..\lib\txt\2009-01-11, Necromorph - special resistance to arrow damage.txt" />
+    <Text Include="..\lib\txt\2009-01-11, Rotting Carcass - special resistance to arrow damage.txt" />
+    <Text Include="..\lib\txt\2009-01-11, Soul Burner - special resistance to elemental damage.txt" />
+    <Text Include="..\lib\txt\2009-01-17, Bile Demon - special resistance to elemental damage.txt" />
+    <Text Include="..\lib\txt\2009-01-18, Bile Demon - special resistance to arrow damage.txt" />
+    <Text Include="..\lib\txt\2009-01-18, Lower stun threshold for small monsters.txt" />
+    <Text Include="..\lib\txt\2009-01-19, New DFE lmitation.txt" />
+    <Text Include="..\lib\txt\2009-01-21, PvM Missile magic tohit formula.txt" />
+    <Text Include="..\lib\txt\2009-01-27, PvM Melee Gladiator tohit bonus.txt" />
+    <Text Include="..\lib\txt\2009-01-28, PvM Melee - Hidden Evasion.txt" />
+    <Text Include="..\lib\txt\2009-01-28, PvM Melee - Vortex Rogue resistance.txt" />
+    <Text Include="..\lib\txt\2009-01-28, Unseen arrow resistance.txt" />
+    <Text Include="..\lib\txt\2009-01-30, Fallen One.txt" />
+    <Text Include="..\lib\txt\2009-01-31, Burned Corpse stun threshold.txt" />
+    <Text Include="..\lib\txt\2009-01-31, Elemental resistance for other monsters.txt" />
+    <Text Include="..\lib\txt\2009-01-31, Nightmare elemental resists + PvM Missile Elemental damage resist FIX.txt" />
+    <Text Include="..\lib\txt\2009-01-31, Pal critical.txt" />
+    <Text Include="..\lib\txt\2009-01-31, Stinger vulnerability.txt" />
+    <Text Include="..\lib\txt\2009-02-01, Blood Legion complex elemental resistance.txt" />
+    <Text Include="..\lib\txt\2009-02-01, Corrected melee resists for monsters in PvM + resists for Lurker and Shadow.txt" />
+    <Text Include="..\lib\txt\2009-02-05, Defiler%27s special drop.txt" />
+    <Text Include="..\lib\txt\2009-02-07, Advanced handling of Town palettes.txt" />
+    <Text Include="..\lib\txt\2009-02-11, Oil changes.txt" />
+    <Text Include="..\lib\txt\2009-02-12, Balrog melee resistance.txt" />
+    <Text Include="..\lib\txt\2009-02-14, Forced monster selection function.txt" />
+    <Text Include="..\lib\txt\2009-02-16, Items that trigger character comments.txt" />
+    <Text Include="..\lib\txt\2009-02-16, [quest] Lachdanan - ressurection.txt" />
+    <Text Include="..\lib\txt\2009-02-16, [quest] Ogden%27s Sign - ressurection.txt" />
+    <Text Include="..\lib\txt\2009-02-17, Black Mushroom quest.txt" />
+    <Text Include="..\lib\txt\2009-02-17, Gharbad%27s drop.txt" />
+    <Text Include="..\lib\txt\2009-02-17, Lester%27s reward.txt" />
+    <Text Include="..\lib\txt\2009-02-18, Modding shrines.txt" />
+    <Text Include="..\lib\txt\2009-02-19, Music Expansion v3.1+.txt" />
+    <Text Include="..\lib\txt\2009-02-20, Saving private Theodore.txt" />
+    <Text Include="..\lib\txt\2009-02-21, Diablo dropping runebomb (in SP).txt" />
+    <Text Include="..\lib\txt\2009-02-24, Complete Nut quest recreation.txt" />
+    <Text Include="..\lib\txt\2009-02-24, HF Quest activation and deactivation.txt" />
+    <Text Include="..\lib\txt\2009-02-24, Torn note quest recreation.txt" />
+    <Text Include="..\lib\txt\2009-02-26, Monk special AC.txt" />
+    <Text Include="..\lib\txt\2009-02-26, More XP from low level monsters.txt" />
+    <Text Include="..\lib\txt\2009-02-27, Diablo + Defiler - wall immunities.txt" />
+    <Text Include="..\lib\txt\2009-02-27, Higher stun thresholds for Diablo and Defiler.txt" />
+    <Text Include="..\lib\txt\2009-02-27, Mana gain from potions with %27lose all regeneration%27 effect.txt" />
+    <Text Include="..\lib\txt\2009-02-28, Dupefix yet again.txt" />
+    <Text Include="..\lib\txt\2009-03-04, Leoric%27s tomb depending on difficulty.txt" />
+    <Text Include="..\lib\txt\2009-03-05, Chamber of Bone depending on difficulty.txt" />
+    <Text Include="..\lib\txt\2009-03-06, Auric amlet.txt" />
+    <Text Include="..\lib\txt\2009-03-06, Dungeon objects.txt" />
+    <Text Include="..\lib\txt\2009-03-06, Dupes detected, blah-blah.txt" />
+    <Text Include="..\lib\txt\2009-03-06, GUI.txt" />
+    <Text Include="..\lib\txt\2009-03-06, Inventory interface, by class.txt" />
+    <Text Include="..\lib\txt\2009-03-06, Inventory object image pntrs.txt" />
+    <Text Include="..\lib\txt\2009-03-06, Item info.txt" />
+    <Text Include="..\lib\txt\2009-03-06, Level loading screens + PALS.txt" />
+    <Text Include="..\lib\txt\2009-03-06, Monster (boss) TRN path.txt" />
+    <Text Include="..\lib\txt\2009-03-06, PlrGFX.txt" />
+    <Text Include="..\lib\txt\2009-03-06, savegame.txt" />
+    <Text Include="..\lib\txt\2009-03-06, Special dungeons.txt" />
+    <Text Include="..\lib\txt\2009-03-06, Special TRNs.txt" />
+    <Text Include="..\lib\txt\2009-03-06, Town portal related func.txt" />
+    <Text Include="..\lib\txt\2009-03-06, Vids.txt" />
+    <Text Include="..\lib\txt\2009-03-07, Bone Creepers immunity.txt" />
+    <Text Include="..\lib\txt\2009-03-07, Zhar sfx fix.txt" />
+    <Text Include="..\lib\txt\2009-03-11, Quasit arrow vulnerability.txt" />
+    <Text Include="..\lib\txt\2009-03-12, Diablo + Defiler - arrow resistance.txt" />
+    <Text Include="..\lib\txt\2009-03-12, Diablo + Defiler - magic dmg resistance.txt" />
+    <Text Include="..\lib\txt\2009-03-12, Diablo + Defiler - melee resistance.txt" />
+    <Text Include="..\lib\txt\2009-03-13, Decapitated body%27s item drop chance.txt" />
+    <Text Include="..\lib\txt\2009-03-13, dungeon objex with unique item drops [unsure].txt" />
+    <Text Include="..\lib\txt\2009-03-13, New gold drop dlvl set function.txt" />
+    <Text Include="..\lib\txt\2009-03-13, strange function related to monster MP only item drops.txt" />
+    <Text Include="..\lib\txt\2009-03-14, Fast Walk.txt" />
+    <Text Include="..\lib\txt\2009-03-14, Scout base damage.txt" />
+    <Text Include="..\lib\txt\2009-03-14, Warping Demons%27 unusual stun threshold.txt" />
+    <Text Include="..\lib\txt\2009-03-15, Boss unique drop chance.txt" />
+    <Text Include="..\lib\txt\2009-03-15, Gamecrash report.txt" />
+    <Text Include="..\lib\txt\2009-03-16, Gharbad &amp; Warlord - activation sounds in MP.txt" />
+    <Text Include="..\lib\txt\2009-03-19, New quest uniques.txt" />
+    <Text Include="..\lib\txt\2009-03-23, Relocating flip anime.txt" />
+    <Text Include="..\lib\txt\2009-03-26, Balrog AI.txt" />
+    <Text Include="..\lib\txt\2009-03-26, Gargoyle AI.txt" />
+    <Text Include="..\lib\txt\2009-03-27, Skeleton King AI.txt" />
+    <Text Include="..\lib\txt\2009-03-28, BOSS NAME LIST.txt" />
+    <Text Include="..\lib\txt\2009-03-29, Fire Clan melee resistance on PWS level on Horror mode.txt" />
+    <Text Include="..\lib\txt\2009-03-31, Psycho-2-Tremain.txt" />
+    <Text Include="..\lib\txt\2009-04-04, Correspondence_with_[G]reat_Lady.txt" />
+    <Text Include="..\lib\txt\2009-04-14, base item table expansion.txt" />
+    <Text Include="..\lib\txt\2009-04-14, lifestealing altered.txt" />
+    <Text Include="..\lib\txt\2009-04-14, uniques by Hominicus.txt" />
+    <Text Include="..\lib\txt\2009-04-19, unique item drop info by Desert Dragon.txt" />
+    <Text Include="..\lib\txt\2009-04-20, extra uniques.txt" />
+    <Text Include="..\lib\txt\2009-04-21, Unique item table expansion by Dragon.txt" />
+    <Text Include="..\lib\txt\2009-04-22, Correspondence with Dragon about base monster%27s %27unique item drop%27 code.txt" />
+    <Text Include="..\lib\txt\2009-04-22, Uniques as quest rewards.txt" />
+    <Text Include="..\lib\txt\2009-04-24, Remarks.txt" />
+    <Text Include="..\lib\txt\2009-04-28, Hidden shrine fix.txt" />
+    <Text Include="..\lib\txt\2009-04-30, Belt fix.txt" />
+    <Text Include="..\lib\txt\2009-05-08, Staff base item data.txt" />
+    <Text Include="..\lib\txt\2009-05-21, Gold Golem physical damage resistance.txt" />
+    <Text Include="..\lib\txt\2009-05-27, Boss mlvl modifier.txt" />
+    <Text Include="..\lib\txt\2009-06-03, Inventory Duping bug fix.txt" />
+    <Text Include="..\lib\txt\2009-06-10, More screenshots.txt" />
+    <Text Include="..\lib\txt\2009-06-12, adria_changes.txt" />
+    <Text Include="..\lib\txt\2009-06-18, negativeCoordinateMonster_changes.txt" />
+    <Text Include="..\lib\txt\2009-07-02, manashieldfix_changes.txt" />
+    <Text Include="..\lib\txt\2009-07-04, Character base arrows.txt" />
+    <Text Include="..\lib\txt\2009-07-05, Fuco%27s MPchars conversion.txt" />
+    <Text Include="..\lib\txt\2009-07-08, NetworkSaveAutoConvert_changes.txt" />
+    <Text Include="..\lib\txt\2009-07-10, ManaShieldNetworkFix_changes.txt" />
+    <Text Include="..\lib\txt\2009-07-13, AegisFix.txt" />
+    <Text Include="..\lib\txt\2009-07-14, zTHv182gRC4.ERR-MP dlvl 15 crash on loading.txt" />
+    <Text Include="..\lib\txt\2009-08-04, attempt to fix HF crash in PvP.txt" />
+    <Text Include="..\lib\txt\2009-08-10, item_MLVL improvement.txt" />
+    <Text Include="..\lib\txt\2009-08-26, Monster stun formula expanded.txt" />
+    <Text Include="..\lib\txt\2009-09-04, MvP Autohit-Automiss functions.txt" />
+    <Text Include="..\lib\txt\2009-09-09, Death Guardian special attack.txt" />
+    <Text Include="..\lib\txt\2009-09-09, Great trap revisioning.txt" />
+    <Text Include="..\lib\txt\2009-09-12, Stone Curse changes.txt" />
+    <Text Include="..\lib\txt\2009-09-13, Trap Disarm.txt" />
+    <Text Include="..\lib\txt\2009-09-14, Boss table pointers (overflow fixing).txt" />
+    <Text Include="..\lib\txt\2009-09-15, Monster target selection.txt" />
+    <Text Include="..\lib\txt\2009-09-17, Mana spell.txt" />
+    <Text Include="..\lib\txt\2009-09-19, Item flip animation table relocation.txt" />
+    <Text Include="..\lib\txt\2009-09-21, PvM Melee - TOHIT bonuses depending on class.txt" />
+    <Text Include="..\lib\txt\2009-09-22, Monster varying arrow accuracy .txt" />
+    <Text Include="..\lib\txt\2009-09-22, Monster varying melee accuracy .txt" />
+    <Text Include="..\lib\txt\2009-09-22, MvP Missile - full routine with comments.txt" />
+    <Text Include="..\lib\txt\2009-09-22, Zombies - melee &amp; missile damage resistances.txt" />
+    <Text Include="..\lib\txt\2009-09-24, Life and manastealing corrections.txt" />
+    <Text Include="..\lib\txt\2009-09-25, ToHit and AC negative overflow Fix.txt" />
+    <Text Include="..\lib\txt\2009-09-29, Assassin special AC bonus.txt" />
+    <Text Include="..\lib\txt\2009-09-30, ARD absorptions according to class.txt" />
+    <Text Include="..\lib\txt\2009-10-01, Automap unaffected by Spacebar hitting.txt" />
+    <Text Include="..\lib\txt\2009-10-01, Quest rewards varying for character class.txt" />
+    <Text Include="..\lib\txt\2009-10-02, Arrays.txt" />
+    <Text Include="..\lib\txt\2009-10-02, Comments on character life formulas.txt" />
+    <Text Include="..\lib\txt\2009-10-02, Fury fixes.txt" />
+    <Text Include="..\lib\txt\2009-10-02, Passive resistances.txt" />
+    <Text Include="..\lib\txt\2009-10-13, Fire and Lightning Melee Fix.txt" />
+    <Text Include="..\lib\txt\2009-10-17, Gloom clans Firewall vulnerability.txt" />
+    <Text Include="..\lib\txt\2009-10-18, Boss mlvl_battle fixing.txt" />
+    <Text Include="..\lib\txt\2009-11-02, Randomized damage spells from monsters.txt" />
+    <Text Include="..\lib\txt\2009-11-04, Depleting durability on items.txt" />
+    <Text Include="..\lib\txt\2009-11-06, boss table relocation.txt" />
+    <Text Include="..\lib\txt\2009-12-13, Bosspack Fix.txt" />
+    <Text Include="..\lib\txt\2009-12-14, Golem stats code.txt" />
+    <Text Include="..\lib\txt\2009-12-14, Optional FF in MP.txt" />
+    <Text Include="..\lib\txt\2009-12-14, Ubers drop.txt" />
+    <Text Include="..\lib\txt\2009-12-14, Z key disable zooming.txt" />
+    <Text Include="..\lib\txt\2009-12-25, Golem spellbook damage.txt" />
+    <Text Include="..\lib\txt\2010-02-01, Hidden retreat chances.txt" />
+    <Text Include="..\lib\txt\2010-02-02, FleshThingSqueek.txt" />
+    <Text Include="..\lib\txt\2010-02-03, Golems are not affected by FF in MP.txt" />
+    <Text Include="..\lib\txt\2010-02-10, Fixing noHit at melee distance from shooter monsters.txt" />
+    <Text Include="..\lib\txt\2010-02-14, Armor racks.txt" />
+    <Text Include="..\lib\txt\2010-02-14, Fixing JOG-WALK in town.txt" />
+    <Text Include="..\lib\txt\2010-02-19, Horizontal movement invulnerability bug.txt" />
+    <Text Include="..\lib\txt\2010-03-11, Unusual autohit chances in MvP Melee (depending on class).txt" />
+    <Text Include="..\lib\txt\2010-03-17, Allowing battle suffixes on staves (by Illusion).txt" />
+    <Text Include="..\lib\txt\2010-03-19, Teleport (spell code).txt" />
+    <Text Include="..\lib\txt\2010-03-19, Town Portal (spell code).txt" />
+    <Text Include="..\lib\txt\2010-04-02, Assassin melee critical damage.txt" />
+    <Text Include="..\lib\txt\2010-04-02, Sweep attack checks.txt" />
+    <Text Include="..\lib\txt\2010-04-21, ACtoSignedWord.txt" />
+    <Text Include="..\lib\txt\2010-05-16, Uber special drop.txt" />
+    <Text Include="..\lib\txt\2010-05-17, ACtoSignedOneHalfByte.txt" />
+    <Text Include="..\lib\txt\2010-05-20, Evasion by character class (1.100 series).txt" />
+    <Text Include="..\lib\txt\2010-05-28, CPU performance boost patch.txt" />
+    <Text Include="..\lib\txt\2010-07-08, HorizontalHit.txt" />
+    <Text Include="..\lib\txt\2010-08-16, Unique item table expanded from 512 to 1024.txt" />
+    <Text Include="..\lib\txt\2010-08-17, Relocating base monster data table (attempt 2).txt" />
+    <Text Include="..\lib\txt\2010-08-18, Monster arrow damage resistance.txt" />
+    <Text Include="..\lib\txt\2010-08-19, Monster redesign.txt" />
+    <Text Include="..\lib\txt\2010-08-21, [Desert Dragon] HorizontalHitFix (rev3).txt" />
+    <Text Include="..\lib\txt\2010-08-22, Fallen%27s retreat support code (adding more Fallen).txt" />
+    <Text Include="..\lib\txt\2010-08-22, [Desert Dragon] HorizontalHitFix (rev4).txt" />
+    <Text Include="..\lib\txt\2010-08-23, [Desert Dragon] HorizontalHitFix (rev5).txt" />
+    <Text Include="..\lib\txt\2010-08-25, Allowing dungeon objects &amp; bosses to drop cursed items.txt" />
+    <Text Include="..\lib\txt\2010-08-26, DFE%27s maximum defense.txt" />
+    <Text Include="..\lib\txt\2010-08-26, objectDropCurse.txt" />
+    <Text Include="..\lib\txt\2010-08-26, [BUG] DLVL-21 load level crash.txt" />
+    <Text Include="..\lib\txt\2010-08-27, Mana damage code.txt" />
+    <Text Include="..\lib\txt\2010-08-28, Chamber of Bone spell reward.txt" />
+    <Text Include="..\lib\txt\2010-08-29, New monsters &amp; combo bosspacks.txt" />
+    <Text Include="..\lib\txt\2010-08-29, [DD]Blocking support for monsters.txt" />
+    <Text Include="..\lib\txt\2010-08-31, Monsters%27 lifestealing.txt" />
+    <Text Include="..\lib\txt\2010-09-01, RenegadeBlock2.txt" />
+    <Text Include="..\lib\txt\2010-09-02, 17-50, [DD]monsterMissBeforeBlock.txt" />
+    <Text Include="..\lib\txt\2010-09-02, 19-55, [DD]RenegadeBlockOnlyPhisical.txt" />
+    <Text Include="..\lib\txt\2010-09-07, Chargers.txt" />
+    <Text Include="..\lib\txt\2010-09-11, [DD] MPwallProtalFix.txt" />
+    <Text Include="..\lib\txt\2010-09-17, Player footstep sound restore.txt" />
+    <Text Include="..\lib\txt\2010-09-25, Player Walk sounds.txt" />
+    <Text Include="..\lib\txt\2010-11-16, DFE limitation in MvP Melee.txt" />
+    <Text Include="..\lib\txt\2010-11-17, Mana- and lifesteal cap.txt" />
+    <Text Include="..\lib\txt\2010-12-09, unique item drop code with comments.txt" />
+    <Text Include="..\lib\txt\2011-02-11, Uber Diablo placement info from DD.txt" />
+    <Text Include="..\lib\txt\2011-02-12, CreateBOSS routine with comments.txt" />
+    <Text Include="..\lib\txt\2011-02-15, Potion life-mana gain variations according to game modes.txt" />
+    <Text Include="..\lib\txt\2011-02-16, Limit player stats.txt" />
+    <Text Include="..\lib\txt\2011-02-17, Character stats calculations and elixir codes.txt" />
+    <Text Include="..\lib\txt\2011-02-22, Anticheating DFE raise (to prevent easy farming sessions in MP).txt" />
+    <Text Include="..\lib\txt\2011-02-25, MvM.txt" />
+    <Text Include="..\lib\txt\2011-03-03, Types of base items that bosses can drop.txt" />
+    <Text Include="..\lib\txt\2011-03-04, Types of base items that monsters can drop.txt" />
+    <Text Include="..\lib\txt\2011-03-06, BaseMonsterMore200.txt" />
+    <Text Include="..\lib\txt\2011-03-13, Potions and items sold at Adria and Pepin (+pointers to other NPC shops).txt" />
+    <Text Include="..\lib\txt\2011-04-07, MvP Melee - full routine with comments.txt" />
+    <Text Include="..\lib\txt\2011-04-09, base Vitality related life boosts.txt" />
+    <Text Include="..\lib\txt\2011-04-10, Character creation - HP and Mana.txt" />
+    <Text Include="..\lib\txt\2011-04-10, [DD] patch monsterslot expand to 400 - BaseMonsterMax400 (applied AFTER preivous patch).txt" />
+    <Text Include="..\lib\txt\2011-04-12, PvM Accuracy adjusting after Fury revision.txt" />
+    <Text Include="..\lib\txt\2011-04-19, Restart in Town - life &amp; mana.txt" />
+    <Text Include="..\lib\txt\2011-04-22, Multiplayer Dynamic Difficulty (MDD).txt" />
+    <Text Include="..\lib\txt\2011-04-22, Multiplayer game enter restrictions (by difficulty mode and CLVL).txt" />
+    <Text Include="..\lib\txt\2011-08-09, Boss drop amounts according to number of players.txt" />
+    <Text Include="..\lib\txt\2011-08-17, Armor piercing code analysis.txt" />
+    <Text Include="..\lib\txt\2011-08-31, MP menu options.txt" />
+    <Text Include="..\lib\txt\2011-08-31, MP restart gold loss.txt" />
+    <Text Include="..\lib\txt\2012-01-04, Monster AI combinations.txt" />
+    <Text Include="..\lib\txt\2012-01-22, Mysterious shrine bug fixed.txt" />
+    <Text Include="..\lib\txt\2012-02-24, ManaCostChanges_2.txt" />
+    <Text Include="..\lib\txt\2012-02-24, SPELLBOOK POINTERS.txt" />
+    <Text Include="..\lib\txt\2012-07-23, Game pace changes.txt" />
+    <Text Include="..\lib\txt\2012-07-23, Item pick up routine (connected to unclosed quests).txt" />
+    <Text Include="..\lib\txt\2012-07-24, Character melee damage resistance.txt" />
+    <Text Include="..\lib\txt\2012-08-12, Trap disarm fix.txt" />
+    <Text Include="..\lib\txt\2012-08-13, character Death animation fix.txt" />
+    <Text Include="..\lib\txt\2012-08-13, TZ Yarik.txt" />
+    <Text Include="..\lib\txt\2012-08-14, Attack speed modifiers.txt" />
+    <Text Include="..\lib\txt\2012-08-14, Heal Others todo code by Yarik.txt" />
+    <Text Include="..\lib\txt\2012-08-14, Satyr lord charged bolt fix.txt" />
+    <Text Include="..\lib\txt\2012-08-15, Dead town respawn (resurrect) fix.txt" />
+    <Text Include="..\lib\txt\2012-08-15, SLVL cap (+book read prevent).txt" />
+    <Text Include="..\lib\txt\2012-08-15, Telekinesis with LOS check.txt" />
+    <Text Include="..\lib\txt\2012-08-20, Automatic stat recalculator.txt" />
+    <Text Include="..\lib\txt\2012-08-21, Room generation (and whatnot).txt" />
+    <Text Include="..\lib\txt\2012-08-22, Adding VIT req on items (Yarik%27s code log).txt" />
+    <Text Include="..\lib\txt\2012-08-22, Inescapable quest areas.txt" />
+    <Text Include="..\lib\txt\2012-08-23, Skippable Lazarus cinematic.txt" />
+    <Text Include="..\lib\txt\2012-08-24, Drops from dungeon objects (barrels, chests, racks).txt" />
+    <Text Include="..\lib\txt\2012-08-25, Fix to getting knocked back out of light radius.txt" />
+    <Text Include="..\lib\txt\2012-08-27, Golem update [by Yarik].txt" />
+    <Text Include="..\lib\txt\2012-08-28, Place a boss near the Anvil of Fury.txt" />
+    <Text Include="..\lib\txt\2012-08-30, Heal Other manacost.txt" />
+    <Text Include="..\lib\txt\2012-09-04, Uber Diablo - new activation.txt" />
+    <Text Include="..\lib\txt\2012-09-05, Level enter restrictions.txt" />
+    <Text Include="..\lib\txt\2012-09-07, Levelup sound.txt" />
+    <Text Include="..\lib\txt\2012-09-10, [undone] Flip animation tables.txt" />
+    <Text Include="..\lib\txt\2012-09-12, Champions.txt" />
+    <Text Include="..\lib\txt\2012-09-13, Failed Champions.txt" />
+    <Text Include="..\lib\txt\2012-09-24, Spell queuing.txt" />
+    <Text Include="..\lib\txt\2012-09-24, Stash upgrades.txt" />
+    <Text Include="..\lib\txt\2012-10-01, Hydra update.txt" />
+    <Text Include="..\lib\txt\2012-10-01, [undone] Puddle update.txt" />
+    <Text Include="..\lib\txt\2012-10-11, Version incompatibility insurance.txt" />
+    <Text Include="..\lib\txt\2012-10-12, Blocked Door.txt" />
+    <Text Include="..\lib\txt\2012-10-12, [undone] item break sfx.txt" />
+    <Text Include="..\lib\txt\2012-10-12, [undone] Mana shield rework.txt" />
+    <Text Include="..\lib\txt\2012-10-14, Unstoppable Music.txt" />
+    <Text Include="..\lib\txt\2012-10-15, Healing info show (HP heal amount instead of NA damage).txt" />
+    <Text Include="..\lib\txt\2012-10-15, Scrollable menus.txt" />
+    <Text Include="..\lib\txt\2012-10-23, Level architecture generation modding.txt" />
+    <Text Include="..\lib\txt\2012-10-29, Text table relocate.txt" />
+    <Text Include="..\lib\txt\2012-10-31, Creation of new quest (Infestation of the Worms).txt" />
+    <Text Include="..\lib\txt\2012-11-01, Stairs between hell-abyss-crypt.txt" />
+    <Text Include="..\lib\txt\2012-11-11, Belt auto placements.txt" />
+    <Text Include="..\lib\txt\2012-11-26, Andariel quest creation, part 1.txt" />
+    <Text Include="..\lib\txt\2012-11-30, Andariel quest creation, part 2.txt" />
+    <Text Include="..\lib\txt\2012-12-03, Creating quest %27Horazon%27s Demons%27 part1.txt" />
+    <Text Include="..\lib\txt\2012-12-03, Creating quest %27Horazon%27s Demons%27 part2.txt" />
+    <Text Include="..\lib\txt\2012-12-03, Creating quest %27Horazon%27s Demons%27 part3.txt" />
+    <Text Include="..\lib\txt\2012-12-03, Creating quest %27Horazon%27s Demons%27 part4.txt" />
+    <Text Include="..\lib\txt\2012-12-04, Cornerstone room placing on other floors.txt" />
+    <Text Include="..\lib\txt\2012-12-20, Quest randomize rehaul.txt" />
+    <Text Include="..\lib\txt\2012-12-21, Reflect bug fix + Item data auto update.txt" />
+    <Text Include="..\lib\txt\2012-12-24, Magic drops fixing.txt" />
+    <Text Include="..\lib\txt\2012-12-26, Blue item drop fix.txt" />
+    <Text Include="..\lib\txt\2012-12-29, Set items synergy.txt" />
+    <Text Include="..\lib\txt\2012-12-30, Wirt prices.txt" />
+    <Text Include="..\lib\txt\2013-01-05, Reflect fix (blocking).txt" />
+    <Text Include="..\lib\txt\2013-01-06, ARD fix.txt" />
+    <Text Include="..\lib\txt\2013-01-06, Moving ubers to closed rooms.txt" />
+    <Text Include="..\lib\txt\2013-01-07, Buffed loading.txt" />
+    <Text Include="..\lib\txt\2013-01-07, NPC fixes.txt" />
+    <Text Include="..\lib\txt\2013-01-09, AP mod.txt" />
+    <Text Include="..\lib\txt\2013-01-13, autoclicker + belt.txt" />
+    <Text Include="..\lib\txt\2013-01-18, Damage cap from below in MvP missile.txt" />
+    <Text Include="..\lib\txt\2013-01-21, Boss fine-tunings.txt" />
+    <Text Include="..\lib\txt\2013-01-24, Chests highlighted by automap.txt" />
+    <Text Include="..\lib\txt\2013-01-30, Death toll messages.txt" />
+    <Text Include="..\lib\txt\2013-01-31, Cain menu color fix.txt" />
+    <Text Include="..\lib\txt\2013-02-11, Win8 support.txt" />
+    <Text Include="..\lib\txt\2013-02-14, PvM Melee crits revised, and monster stun threshold new check added.txt" />
+    <Text Include="..\lib\txt\2013-04-02, Izual quest, part 1.txt" />
+    <Text Include="..\lib\txt\2013-04-03, Izual quest, part 2.txt" />
+    <Text Include="..\lib\txt\2013-04-03, MvM melee damage resistance (damage FROM Golem).txt" />
+    <Text Include="..\lib\txt\2013-04-05, Cooldown system.txt" />
+    <Text Include="..\lib\txt\2013-04-08, Item morphing works.txt" />
+    <Text Include="..\lib\txt\2013-04-09, Lost Treasure quest.txt" />
+    <Text Include="..\lib\txt\2013-04-12, Lost Treasure quest, part 2 (+dlvl affecting char stats!!!).txt" />
+    <Text Include="..\lib\txt\2013-05-20, cooldown for nova spells.txt" />
+    <Text Include="..\lib\txt\2013-05-20, Force wave.txt" />
+    <Text Include="..\lib\txt\2013-06-04, Footsteps.txt" />
+    <Text Include="..\lib\txt\2013-06-10, Island of the Sunless Sea quest.txt" />
+    <Text Include="..\lib\txt\2013-06-27, Blood splash.txt" />
+    <Text Include="..\lib\txt\2013-07-02, SP save game restrictions.txt" />
+    <Text Include="..\lib\txt\2013-09-30, (uber) activation fix.txt" />
+    <Text Include="..\lib\txt\2013-09-30, battle fixes.txt" />
+    <Text Include="..\lib\txt\2013-09-30, extra info panels.txt" />
+    <Text Include="..\lib\txt\2013-09-30, fixes.txt" />
+    <Text Include="..\lib\txt\2013-09-30, footstep sfx.txt" />
+    <Text Include="..\lib\txt\2013-09-30, hellfire - forcewave.txt" />
+    <Text Include="..\lib\txt\2013-09-30, main notepad page backup!!!!!!!.txt" />
+    <Text Include="..\lib\txt\2013-09-30, new affix ideas.txt" />
+    <Text Include="..\lib\txt\2013-09-30, nova cooldowns.txt" />
+    <Text Include="..\lib\txt\2013-09-30, NPC fixes.txt" />
+    <Text Include="..\lib\txt\2013-09-30, quest - ravenholm.txt" />
+    <Text Include="..\lib\txt\2013-09-30, quest fleshdoom.txt" />
+    <Text Include="..\lib\txt\2013-09-30, quest iotss.txt" />
+    <Text Include="..\lib\txt\2013-09-30, quest izual part1.txt" />
+    <Text Include="..\lib\txt\2013-09-30, quest izual part2.txt" />
+    <Text Include="..\lib\txt\2013-09-30, quest losttreasure part1.txt" />
+    <Text Include="..\lib\txt\2013-09-30, quest losttreasure part2.txt" />
+    <Text Include="..\lib\txt\2013-09-30, reflect test dispelling (todo))).txt" />
+    <Text Include="..\lib\txt\2013-09-30, special boss parameters.txt" />
+    <Text Include="..\lib\txt\2013-09-30, traps.txt" />
+    <Text Include="..\lib\txt\2013-09-30, vise.txt" />
+    <Text Include="..\lib\txt\2013-09-30, weapon switch (todo).txt" />
+    <Text Include="..\lib\txt\2013-09-30, быстрый пояс и автокликер.txt" />
+    <Text Include="..\lib\txt\2013-09-30, отображение AP.txt" />
+    <Text Include="..\lib\txt\2013-09-30, ударные брызги.txt" />
+    <Text Include="..\lib\txt\2013-09-30, улучшенные взрывы заклов (сделать).txt" />
+    <Text Include="..\lib\txt\2013-09-30, фикс колец огня и молнии плюс шрайны.txt" />
+    <Text Include="..\lib\txt\2013-09-30, фиксы загрузки с активными бафами.txt" />
+    <Text Include="..\lib\txt\2013-09-30, штрафы + говнокод.txt" />
+    <Text Include="..\lib\txt\2013-10-08, unused character sounds.txt" />
+    <Text Include="..\lib\txt\2013-10-09, character weapon swing sounds.txt" />
+    <Text Include="..\lib\txt\2013-10-23, Fleshdoom quest part 1.txt" />
+    <Text Include="..\lib\txt\2014-09-12, towners-smart-drop-latest.txt" />
+    <Text Include="..\lib\txt\2014-09-13, disable-multi-celia-latest+some fixes.txt" />
+    <Text Include="..\lib\txt\2014-09-14, elemental-arrows-and-acid-fix-latest.txt" />
+    <Text Include="..\lib\txt\2014-09-15, boss-special-drop.txt" />
+    <Text Include="..\lib\txt\2014-09-17, champinions-dev.txt" />
+    <Text Include="..\lib\txt\2014-10-25, wpn-swap-latest.txt" />
+    <Text Include="..\lib\txt\2014-11-26, mag-start-latest.txt" />
+    <Text Include="..\lib\txt\2015-08-19, cooldown.txt" />
+    <Text Include="..\lib\txt\_FUNCTIONS.txt" />
+    <Text Include="..\lib\txt\_MONSTERLIST.txt" />
+    <Text Include="..\lib\txt\_SPELL FX.txt" />
+    <Text Include="..\lib\txt\_Uniqlist(korean).txt" />
+    <Text Include="..\lib\txt\_UNIQLIST.txt" />
+    <Text Include="..\lib\txt\_UniquelistCafe.txt" />
+    <Text Include="..\lib\txt\__DATA ADDRESSES.txt" />
+    <Text Include="..\lib\txt\__FREESPACE.txt" />
+    <Text Include="..\lib\txt\__MOVED_TABLES.txt" />
+    <Text Include="..\lib\txt\__POINTERS.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="loader.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

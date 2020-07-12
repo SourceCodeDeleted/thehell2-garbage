@@ -1,0 +1,146 @@
+<!doctype html public "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MPQ Archives - StormLib</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1250" />
+  <meta name="keywords" content="Ladislav Zezula; MPQ format; StormLib; MPQ Editor; Storm.dll" />
+  <meta name="description" content="Ladislav Zezula - Web homepage" />
+  <meta name="robots" content="INDEX, FOLLOW" />
+  <link rel="stylesheet" type="text/css" href="../../../include/styles.css"h />
+</head>
+
+<script language="Javascript" type="text/javascript">
+function RunMailClient(user, domain, ctry)
+{
+    szMailClient = "mail" + "to" + ":" + user + "@" + domain + "." + ctry;
+    document.location = szMailClient;
+}
+function RunMyMailClient()
+{
+    RunMailClient("ladik", "zezula", "net");
+}
+</script>
+
+<body>
+<div class="navigation">
+<!-- Language switches -->
+  <table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="50%" align="center">
+      <p class="image-and-text"><a href="../../../cz/mpq/stormlib/sfilesetaddfilecallback.html"h><img src="../../../images/czech.gif"s border="0" width="65" height="41" alt="Cesky" /></a>
+      <a href="../../../cz/mpq/stormlib/sfilesetaddfilecallback.html"h>Czech</a></p>
+    </td>
+    <td width="50%" align="center">
+      <p class="image-and-text"><a href="../../../en/mpq/stormlib/sfilesetaddfilecallback.html"h><img src="../../../images/english.gif"s border="0" width="65" height="41" alt="English" /></a>
+      <a href="../../../en/mpq/stormlib/sfilesetaddfilecallback.html"h>English</a></p>
+    </td>
+  </tr>
+  </table>
+
+  <p class="menuitem">Utilities</p>
+  <p class="submenuitem"><a href="../../../en/fstools/filespy.html"h>FileSpy</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/filetest.html"h>FileTest</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/ioctl.html"h>IOCTL Decoder</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/winsafer.html"h>WinSafer</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/bcdeditor.html"h>BCD Editor</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/bellavista.html"h>BellaVista</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/gamelauncher.html"h>Game Launcher</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/runass.html"h>RunAss</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/kdvmware.html"h>KDVMWARE</a></p>
+  
+  <p class="menuitem">MPQ Archives</p>
+  <p class="submenuitem"><a href="../../../en/mpq/main.html"h>Overview</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/mpqformat.html"h>MPQ Format</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/partialmpq.html"h>Partial MPQs</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/patchfiles.html"h>Patches</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/stormdll.html"h>Storm.dll</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/stormlib.html"h>StormLib</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/namebreak.html"h>Name Breaking</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/download.html"h>Download</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/links.html"h>Links</a></p>
+
+  <p class="menuitem">Programming</p>
+  <p class="submenuitem"><a href="../../../en/prog/main.html"h>Articles</a></p>
+
+  <p class="menuitem">Contact</p>
+  <p class="submenuitem"><a href="javascript:RunMyMailClient()"h>E-mail</a></p>
+  <p class="submenuitem"><a href="http://www.icq.com/153292074"h>ICQ</a></p>
+    
+</div>
+
+<div class="body">
+<!-- Title -->
+<p class="title">StormLib API Reference</p>
+<p class="subtitle">SFileSetAddFileCallback</p>
+
+<h2>Description</h2>
+<pre><b>bool WINAPI SFileSetAddFileCallback(</b>
+  <b>HANDLE</b> <i>hMpq</i>                         // Handle to an open MPQ.
+  <b>SFILE_ADDFILE_CALLBACK</b> <i>pfnAddFileCB</i> // Pointer to callback function
+  <b>void *</b> <i>pvUserData</i>                   // Pointer to custom data
+<b>);</b></pre>
+<p>Function <b>SFileSetAddFileCallback</b> sets a callback that will be called during operations
+performed by <a href="sfileaddfileex.html">SFileAddFileEx</a>. Registering a callback will
+help the calling application to show a progress about the operation, which enhances user experience
+with the application.</p>
+
+<h2>Parameters</h2>
+<dl>
+  <dt>hMpq</dt>
+    <dd>[in] Handle to the MPQ that will be compacted. Current version of StormLib ignores the parameter,
+        but it is recommended to set it to the handle of the archive.</dd>
+  <dt>pfnAddFileCB</dt>
+    <dd>[in] Pointer to the callback function. For the prototype and parameters, see below.</dd>
+  <dt>lpData</dt>
+    <dd>[in] User defined data that will be passed to the callback function.</dd>
+</dl>
+
+<h2>Callback Parameters</h2>
+<pre><b>void WINAPI AddFileCallback(</b>
+  <b>void *</b> <i>pvUserData</i>,                  // Custom pointer passed to SFileSetAddFileCallback
+  <b>DWORD</b> <i>dwBytesWritten</i>,               // Number of bytes already written
+  <b>DWORD</b> <i>dwTotalBytes</i>,                 // Total number of bytes to be written
+  <b>bool</b> <i>bFinalCall</i>                     // If true, this is the last call to the callback function
+<b>);</b></pre>
+<dl>
+  <dt>pvUserData</dt>
+    <dd>[in] User data pointer that has been passed to <b>SFileSetAddFileCallback</b>.</dd>
+  <dt>dwBytesWritten</dt>
+    <dd>[in] Contains number of bytes that has already been written to the MPQ</dd>
+  <dt>dwTotalBytes</dt>
+    <dd>[in] Contains total number of bytes to be written to the MPQ. It is the size of the file being added.</dd>
+  <dt>bFinalCall</dt>
+    <dd>[in] If this parameter is true, it means that the operation is complete and succeeded. It also means that this is the last call to the callback function.</dd>
+</dl>
+
+<h2>Return Value</h2>
+<p>The function never fails and always sets the callback.</p>
+
+<h2>Remarks</h2>
+<p>After <a href="sfileaddfileex.html">SFileAddFileEx</a> finishes, the compact callback
+is invalidated. For eventual next call to <a href="sfileaddfileex.html">SFileAddFileEx</a>,
+the calling application must set the compact callback again.</p>
+
+<h2>Availability in Storm.dll</h2>
+<table width="50%" cellspacing="0" border="1">
+<tr valign="top">
+  <td align="left" width="60%">Available in Storm.dll</td>
+  <td align="left" width="40%">No</td>
+</tr>
+<tr>
+  <td align="left">Ordinal number in Storm.dll 1.00</td>
+  <td align="left">N/A</td>
+</tr>
+<tr>
+  <td align="left">Ordinal number in Storm.dll 1.09</td>
+  <td align="left">N/A</td>
+</tr>
+</table>
+
+<!-- Page footer -->
+<p class="copyright">Copyright (c) Ladislav Zezula 2003 - 2010</p>
+
+</div>
+
+</body>
+</html>

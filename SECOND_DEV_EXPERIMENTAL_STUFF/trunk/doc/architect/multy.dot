@@ -1,0 +1,29 @@
+digraph G
+{
+	subgraph cluster_c1
+	{
+		"GameWorld\n(Server)"
+	}
+	subgraph cluster_c0
+	{
+		"FractalPanel" -> "GameWorld\n(Client)" [label="View\n(PlayerID)"]
+		"ViewCTX" -> "FractalPanel" [label="Draw"]
+		"GUI" -> "FractalPanel" [label="Has"]
+		"GUI" -> "FractalPanel" [label="World\ndata"]
+		"GUI" -> "FractalPanel" [label="Mouse and\nkeyboard\nsignals"]
+		"FractalPanel" -> "GUI" [label="Action\nSignals"]
+		"GUI" -> "ViewCTX" [label="Use"]
+		"GUI" -> "GameWorld\n(Server)" [label="Action\nSignals\n(PlayerID)"]
+		"GameWorld\n(Client)" -> "Players" [label="Has"]
+		"GameWorld\n(Client)" -> "Monsters" [label="Has"]
+		"GameWorld\n(Client)" -> "Map" [label="Has"]
+		"GameWorld\n(Client)" -> "MapObjects" [label="Has"]
+		"GameWorld\n(Client)" -> "Items" [label="Has"]
+		"GameWorld\n(Client)" -> "NPCs" [label="Has"]
+		"GameWorld\n(Client)" -> "Effects" [label="Has"]
+		"GameWorld\n(Client)" -> "GUI" [label="Redraw\nSignal"]
+		"GameWorld\n(Client)" -> "GUI" [label="World\ndata"]
+		"GameWorld\n(Server)" -> "GameWorld\n(Client)" [label="Sync\nData(t)"]
+		"GameWorld\n(Client)" -> "GameWorld\n(Server)" [label="Sync\nRequest(t)"]
+	}
+}

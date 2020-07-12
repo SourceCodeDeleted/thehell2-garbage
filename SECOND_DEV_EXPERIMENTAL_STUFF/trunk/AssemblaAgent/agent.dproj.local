@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.965,=C:\Documents and Settings\Разработчик\Мои документы\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.668,=C:\Documents and Settings\Разработчик\Мои документы\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.930,C:\Documents and Settings\Разработчик\Мои документы\RAD Studio\Projects\Project1.dproj=C:\Documents and Settings\Разработчик\Рабочий стол\вебсервер\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.511,=C:\Documents and Settings\Разработчик\Мои документы\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.059,C:\Documents and Settings\Разработчик\Мои документы\RAD Studio\Projects\Unit1.pas=C:\Documents and Settings\Разработчик\Рабочий стол\вебсервер\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.059,C:\Documents and Settings\Разработчик\Мои документы\RAD Studio\Projects\Unit1.dfm=C:\Documents and Settings\Разработчик\Рабочий стол\вебсервер\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.277,=C:\Documents and Settings\Разработчик\Мои документы\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.376,=C:\Documents and Settings\Разработчик\Мои документы\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.399,C:\Documents and Settings\Разработчик\Рабочий стол\AssemblaAgent\trunk\agent.dproj=C:\Documents and Settings\Разработчик\Рабочий стол\AssemblaAgent\trunk\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.117,C:\Documents and Settings\Разработчик\Рабочий стол\вебсервер\Unit2.pas=C:\Documents and Settings\Разработчик\Рабочий стол\вебсервер\request_frm.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.041,C:\Documents and Settings\Разработчик\Рабочий стол\AssemblaAgent\trunk\Unit2.dfm=C:\Documents and Settings\Разработчик\Рабочий стол\AssemblaAgent\trunk\frm_deploy.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.127,C:\Documents and Settings\Разработчик\Рабочий стол\вебсервер\Unit2.dfm=C:\Documents and Settings\Разработчик\Рабочий стол\вебсервер\request_frm.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.041,C:\Documents and Settings\Разработчик\Рабочий стол\AssemblaAgent\trunk\Unit2.pas=C:\Documents and Settings\Разработчик\Рабочий стол\AssemblaAgent\trunk\frm_deploy.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.543,=C:\Documents and Settings\Разработчик\Рабочий стол\AssemblaAgent\trunk\routine_strings.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.444,=C:\Documents and Settings\Разработчик\Рабочий стол\вебсервер\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.799,=C:\Documents and Settings\Разработчик\Рабочий стол\AssemblaAgent\trunk\Unit2.pas</Transaction>
+    <Transaction>2013.02.20 22:36:40.889,=C:\Documents and Settings\Разработчик\Рабочий стол\Projects\AssemblaAgent\trunk\Unit2.pas</Transaction>
+    <Transaction>2013.02.20 22:36:56.937,C:\Documents and Settings\Разработчик\Рабочий стол\Projects\AssemblaAgent\trunk\thread_builder.pas=C:\Documents and Settings\Разработчик\Рабочий стол\Projects\AssemblaAgent\trunk\Unit2.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,417 @@
+<!doctype html public "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MPQ Archives - StormLib</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1250" />
+  <meta name="keywords" content="Ladislav Zezula; MPQ format; StormLib; MPQ Editor; Storm.dll" />
+  <meta name="description" content="Ladislav Zezula - Web homepage" />
+  <meta name="robots" content="INDEX, FOLLOW" />
+  <link rel="stylesheet" type="text/css" href="../../include/styles.css"h />
+</head>
+
+<script language="Javascript" type="text/javascript">
+function RunMailClient(user, domain, ctry)
+{
+    szMailClient = "mail" + "to" + ":" + user + "@" + domain + "." + ctry;
+    document.location = szMailClient;
+}
+function RunMyMailClient()
+{
+    RunMailClient("ladik", "zezula", "net");
+}
+</script>
+
+<body>
+<div class="navigation">
+<!-- Language switches -->
+  <table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="50%" align="center">
+      <p class="image-and-text"><a href="../../cz/mpq/stormlib.html"h><img src="../../images/czech.gif"s border="0" width="65" height="41" alt="Cesky" /></a>
+      <a href="../../cz/mpq/stormlib.html"h>Czech</a></p>
+    </td>
+    <td width="50%" align="center">
+      <p class="image-and-text"><a href="../../en/mpq/stormlib.html"h><img src="../../images/english.gif"s border="0" width="65" height="41" alt="English" /></a>
+      <a href="../../en/mpq/stormlib.html"h>English</a></p>
+    </td>
+  </tr>
+  </table>
+
+  <p class="menuitem">Utilities</p>
+  <p class="submenuitem"><a href="../../en/fstools/filespy.html"h>FileSpy</a></p>
+  <p class="submenuitem"><a href="../../en/fstools/filetest.html"h>FileTest</a></p>
+  <p class="submenuitem"><a href="../../en/fstools/ioctl.html"h>IOCTL Decoder</a></p>
+  <p class="submenuitem"><a href="../../en/fstools/winsafer.html"h>WinSafer</a></p>
+  <p class="submenuitem"><a href="../../en/fstools/bcdeditor.html"h>BCD Editor</a></p>
+  <p class="submenuitem"><a href="../../en/fstools/bellavista.html"h>BellaVista</a></p>
+  <p class="submenuitem"><a href="../../en/fstools/gamelauncher.html"h>Game Launcher</a></p>
+  <p class="submenuitem"><a href="../../en/fstools/runass.html"h>RunAss</a></p>
+  <p class="submenuitem"><a href="../../en/fstools/kdvmware.html"h>KDVMWARE</a></p>
+  
+  <p class="menuitem">MPQ Archives</p>
+  <p class="submenuitem"><a href="../../en/mpq/main.html"h>Overview</a></p>
+  <p class="submenuitem"><a href="../../en/mpq/mpqformat.html"h>MPQ Format</a></p>
+  <p class="submenuitem"><a href="../../en/mpq/partialmpq.html"h>Partial MPQs</a></p>
+  <p class="submenuitem"><a href="../../en/mpq/patchfiles.html"h>Patches</a></p>
+  <p class="submenuitem"><a href="../../en/mpq/stormdll.html"h>Storm.dll</a></p>
+  <p class="submenuitem"><a href="../../en/mpq/stormlib.html"h>StormLib</a></p>
+  <p class="submenuitem"><a href="../../en/mpq/namebreak.html"h>Name Breaking</a></p>
+  <p class="submenuitem"><a href="../../en/mpq/download.html"h>Download</a></p>
+  <p class="submenuitem"><a href="../../en/mpq/links.html"h>Links</a></p>
+
+  <p class="menuitem">Programming</p>
+  <p class="submenuitem"><a href="../../en/prog/main.html"h>Articles</a></p>
+
+  <p class="menuitem">Contact</p>
+  <p class="submenuitem"><a href="javascript:RunMyMailClient()"h>E-mail</a></p>
+  <p class="submenuitem"><a href="http://www.icq.com/153292074"h>ICQ</a></p>
+    
+</div>
+
+<div class="body">
+<!-- Title -->
+<p class="title">MPQ Archives</p>
+<p class="subtitle">The StormLib library</p>
+
+<!-- Page content -->
+<h2>History</h2>
+<p>When Diablo I was released, many people were looking for a way how to play the music
+and sounds from the game. Soon, tools started to appear, that used Storm.dll library
+(shipped with the game) for reading data from the game MPQs. Blizzard was aware of that
+and since version 1.04 of Diablo, Storm.dll contained tricks to prevent people
+from using it to read game archives. Althought these tricks can be overcame, people
+started to look for an alternative how to read (and also to write) MPQ archives without
+relying on Blizzard library.</p>
+<p>The first library that was able to write MPQ archives was LMPQAPI, created by Russian
+programmer <a href="mailto:lelik_@hotmail.com">Andrej Lelikov</a>. The library utilized StarEdit.exe
+and allowed to call internal functions that were able to create MPQs and add files to them.</p>
+<p><a href="mailto:tomamigo@apexmail.com">Tom Amigo</a> was the first guy who released
+a <a href="http://www.angelfire.com/sc/mpq/">Stormless MPQ Editor</a>,
+which was able to read (and also write later) MPQ archives without using Storm.dll.
+At about the same time, (year 2000), I started to reverse Storm.dll in order to
+get a working, public C++ code that is able to read MPQ archives. As a result,
+StormLib v 1.0 was released. As of today (year 2010), StormLib is still being maintained and
+is currently able to read files and add files to MPQ archives.</p>
+
+<h2>The StormLib library</h2>
+<p>The StormLib library is a pack of modules, written in C++, which are able to read and also to write
+files from/to the MPQ archives. The original version was written for the Win32 platform. There is also
+a Linux port, made by <a href="mailto:marko.friedemann@informatik.tu-chemnitz.de">Marko Friedemann</a>
+and a Mac port, made by <a href="mailto:swilkins1337@gmail.com">Sam Wilkins</a>.
+The library is free, no license is needed to use it in your projects. You can download it
+from the <a href="download.html#StormLib">Downloads</a> section. Should you find any problems
+or or malfunctions, please, let me know and also send me the MPQ archive that caused the problem.</p>
+
+<a name="functions"></a>
+<h2>StormLib funtions</h2>
+<p>All StormLib functions are defined in StormLib.h header file. You can also
+<a href="../../download/stormlib_doc.zip">download</a> the entire documentation for offline browsing.</p>
+
+<h2>Manipulating MPQ archives</h2>
+<table width="100%" border="1" cellspacing="0" cellpadding="2">
+<tr valign="top">
+  <th align="left" width="32%">Function</th>
+  <th align="left" width="68%">Description</th>
+</tr>
+<tr>
+  <td><a href="stormlib/sfileopenarchive.html">SFileOpenArchive</a></td>
+  <td>Opens a MPQ archive</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfilecreatearchive.html">SFileCreateArchive</a></td>
+  <td>Creates a new MPQ archive</td>
+</tr>
+<tr>
+  <td>SFileCreateArchiveEx</td>
+  <td>Removed</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfileaddlistfile.html">SFileAddListFile</a></td>
+  <td>Adds another list file to the open archive in order to improve searching</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfilesetlocale.html">SFileSetLocale</a></td>
+  <td>Changes default locale ID for adding new files</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfilegetlocale.html">SFileGetLocale</a></td>
+  <td>Returns current locale ID for adding new files</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfileflusharchive.html">SFileFlushArchive</a></td>
+  <td>Flushes all unsaved data to the disk</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfileclosearchive.html">SFileCloseArchive</a></td>
+  <td>Closes an open archive</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfilesetmaxfilecount.html">SFileSetMaxFileCount</a></td>
+  <td>Changes hash table size of an archive</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfilecompactarchive.html">SFileCompactArchive</a></td>
+  <td>Compacts (rebuilds) the archive, freeing all gaps that were created by write operations</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfilesetcompactcallback.html">SFileSetCompactCallback</a></td>
+  <td>Allows to set a callback function for archive compacting</td>
+</tr>
+</table>
+
+<h2>Using patched archives</h2>
+<table width="100%" border="1" cellspacing="0" cellpadding="2">
+<tr valign="top">
+  <th align="left" width="32%">Function</th>
+  <th align="left" width="68%">Description</th>
+</tr>
+<tr>
+  <td><a href="stormlib/sfileopenpatcharchive.html">SFileOpenPatchArchive</a></td>
+  <td>Adds a patch archive for an existing open archive</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfileispatcharchive.html">SFileIsPatchedArchive</a></td>
+  <td>Determines if the open MPQ has patches</td>
+</tr>
+</table>
+
+<h2>Reading files</h2>
+<table width="100%" border="1" cellspacing="0" cellpadding="2">
+<tr valign="top">
+  <th align="left" width="32%">Function</th>
+  <th align="left" width="68%">Description</th>
+</tr>
+<tr>
+  <td><a href="stormlib/sfileopenfileex.html">SFileOpenFileEx</a></td>
+  <td>Opens a file from MPQ archive</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfilegetfilesize.html">SFileGetFileSize</a></td>
+  <td>Retrieves a size of the file within archive</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfilesetfilepointer.html">SFileSetFilePointer</a></td>
+  <td>Sets a new position within archive file</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfilereadfile.html">SFileReadFile</a></td>
+  <td>Reads data from the file</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfileclosefile.html">SFileCloseFile</a></td>
+  <td>Closes an open file</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfilehasfile.html">SFileHasFile</a></td>
+  <td>Quick check if the file exists within MPQ archive, without opening it</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfilegetfilename.html">SFileGetFileName</a></td>
+  <td>Retrieves name of an open file</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfilegetfileinfo.html">SFileGetFileInfo</a></td>
+  <td>Retrieves an information about open file or archive</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfileverifyfile.html">SFileVerifyFile</a></td>
+  <td>Verifies a file against its extended attributes</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfileverifyarchive.html">SFileVerifyArchive</a></td>
+  <td>Verifies the digital signature of an archive</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfileextractfile.html">SFileExtractFile</a></td>
+  <td>Extracts a file from MPQ to the local drive</td>
+</tr>
+</table>
+
+<h2>File searching</h2>
+<table width="100%" border="1" cellspacing="0" cellpadding="2">
+<tr valign="top">
+  <th align="left" width="32%">Function</th>
+  <th align="left" width="68%">Description</th>
+</tr>
+<tr>
+  <td><a href="stormlib/sfilefindfirstfile.html">SFileFindFirstFile</a></td>
+  <td>Finds a first file matching the specification</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfilefindnextfile.html">SFileFindNextFile</a></td>
+  <td>Finds a next file matching the specification</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfilefindclose.html">SFileFindClose</a></td>
+  <td>Stops searching in MPQ</td>
+</tr>
+<tr>
+  <td><a href="stormlib/slistfilefindfirstfile.html">SListFileFindFirstFile</a></td>
+  <td>Finds a first line in the listfile that matches the specification</td>
+</tr>
+<tr>
+  <td><a href="stormlib/slistfilefindnextfile.html">SListFileFindNextFile</a></td>
+  <td>Finds a next line in the listfile that matches the specification</td>
+</tr>
+<tr>
+  <td><a href="stormlib/slistfilefindclose.html">SListFileFindClose</a></td>
+  <td>Stops searching in the listfile</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfileenumlocales.html">SFileEnumLocales</a></td>
+  <td>Enumerates all locales for a given file that are in the archive</td>
+</tr>
+</table>
+
+<h2>Adding files to MPQ</h2>
+<table width="100%" border="1" cellspacing="0" cellpadding="2">
+<tr valign="top">
+  <th align="left" width="32%">Function</th>
+  <th align="left" width="68%">Description</th>
+</tr>
+<tr>
+  <td><a href="stormlib/sfilecreatefile.html">SFileCreateFile</a></td>
+  <td>Creates a new file in MPQ and prepares it for writing data</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfilewritefile.html">SFileWriteFile</a></td>
+  <td>Writes data to the file within MPQ</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfilefinishfile.html">SFileFinishFile</a></td>
+  <td>Finalizes writing file to the MPQ</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfileaddfileex.html">SFileAddFileEx</a></td>
+  <td>Adds a file to the archive</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfileaddfile.html">SFileAddFile</a></td>
+  <td>Adds a data file to the archive (obsolete)</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfileaddwave.html">SFileAddWave</a></td>
+  <td>Adds a WAVE file to the archive (obsolete)</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfileremovefile.html">SFileRemoveFile</a></td>
+  <td>Deletes a file from MPQ archive</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfilerenamefile.html">SFileRenameFile</a></td>
+  <td>Renames a file within MPQ archive</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfilesetfilelocale.html">SFileSetFileLocale</a></td>
+  <td>Changes locale of a file in MPQ archive</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfilesetdatacompression.html">SFileSetDataCompression</a></td>
+  <td>Sets default compression method for adding a data file using SFileAddFile</td>
+</tr>
+<tr>
+  <td><a href="stormlib/sfilesetaddfilecallback.html">SFileSetAddFileCallback</a></td>
+  <td>Sets callback function that is called to inform the calling application about progress of adding file to the archive</td>
+</tr>
+</table>
+
+<h2>Compression functions</h2>
+<table width="100%" border="1" cellspacing="0" cellpadding="2">
+<tr valign="top">
+  <th align="left" width="32%">Function</th>
+  <th align="left" width="68%">Description</th>
+</tr>
+<tr>
+  <td><a href="stormlib/scompimplode.html">SCompImplode</a></td>
+  <td>Compresses a data buffer using IMPLODE method (Pkware Data Compression Library)</td>
+</tr>
+<tr>
+  <td><a href="stormlib/scompexplode.html">SCompExplode</a></td>
+  <td>Decompresses a buffer that has been imploded by SCompImplode</td>
+</tr>
+<tr>
+  <td><a href="stormlib/scompcompress.html">SCompCompress</a></td>
+  <td>Compresses a data buffer using any of the supported MPQ compressions</td>
+</tr>
+<tr>
+  <td><a href="stormlib/scompdecompress.html">SCompDecompress</a></td>
+  <td>Decompresses a data buffer that has been compressed by SCompCompress</td>
+</tr>
+</table>
+
+<!-- Example -->
+<a name="Example"></a>
+<h2>Example</h2>
+<p align="left">Here is an example of a function, which extracts one file from the archive.</p>
+<pre>
+//-----------------------------------------------------------------------------
+// Extracts an archived file and saves it to the disk.
+//
+// Parameters :
+//
+//   char * szArchiveName  - Archive file name
+//   char * szArchivedFile - Name/number of archived file.
+//   char * szFileName     - Name of the target disk file.
+
+static int ExtractFile(char * szArchiveName, char * szArchivedFile, char * szFileName)
+{
+    HANDLE hMpq   = NULL;          // Open archive handle
+    HANDLE hFile  = NULL;          // Archived file handle
+    HANDLE handle = NULL;          // Disk file handle
+    int    nError = ERROR_SUCCESS; // Result value
+
+    // Open an archive, e.g. "d2music.mpq"
+    if(nError == ERROR_SUCCESS)
+    {
+        if(!SFileOpenArchive(szArchiveName, 0, 0, &amp;hMpq))
+            nError = GetLastError();
+    }
+    
+    // Open a file in the archive, e.g. "data\global\music\Act1\tristram.wav"
+    if(nError == ERROR_SUCCESS)            
+    {
+        if(!SFileOpenFileEx(hMpq, szArchivedFile, 0, &amp;hFile))
+            nError = GetLastError()
+    }
+
+    // Create the target file
+    if(nError == ERROR_SUCCESS)
+    {
+        handle = CreateFile(szFileName, GENERIC_WRITE, 0, NULL, CREATE_ALWAYS, 0, NULL);
+        if(handle == INVALID_HANDLE_VALUE)
+            nError = GetLastError();
+    }
+
+    // Read the file from the archive
+    if(nError == ERROR_SUCCESS)
+    {
+        char  szBuffer[0x10000];
+        DWORD dwBytes = 1;
+
+        while(dwBytes &gt; 0)
+        {
+            SFileReadFile(hFile, szBuffer, sizeof(szBuffer), &amp;dwBytes, NULL);
+            if(dwBytes &gt; 0)
+                WriteFile(handle, szBuffer, dwBytes, &amp;dwBytes, NULL);
+        }
+    }        
+
+    // Cleanup and exit
+    if(handle != NULL)
+        CloseHandle(handle);
+    if(hFile != NULL)
+        SFileCloseFile(hFile);
+    if(hMpq != NULL)
+        SFileCloseArchive(hMpq);
+
+    return nError;
+}
+</pre>
+
+<!-- Page footer -->
+<p class="copyright">Copyright (c) Ladislav Zezula 2003 - 2010</p>
+
+</div>
+
+</body>
+</html>

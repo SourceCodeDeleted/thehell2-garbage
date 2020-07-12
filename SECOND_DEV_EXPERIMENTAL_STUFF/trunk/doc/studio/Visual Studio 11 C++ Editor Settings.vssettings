@@ -1,0 +1,68 @@
+<UserSettings>
+	<ApplicationIdentity version="11.0"/>
+	<ToolsOptions>
+		<ToolsOptionsCategory name="TextEditor" RegisteredName="TextEditor">
+			<ToolsOptionsSubCategory name="C/C++" RegisteredName="C/C++" PackageName="Text Management Package">
+				<PropertyValue name="TabSize">4</PropertyValue>
+				<PropertyValue name="AutoListMembers">true</PropertyValue>
+				<PropertyValue name="IndentStyle">2</PropertyValue>
+				<PropertyValue name="HideAdvancedMembers">true</PropertyValue>
+				<PropertyValue name="ShowNavigationBar">true</PropertyValue>
+				<PropertyValue name="VirtualSpace">false</PropertyValue>
+				<PropertyValue name="InsertTabs">true</PropertyValue>
+				<PropertyValue name="WordWrapGlyphs">true</PropertyValue>
+				<PropertyValue name="EnableLeftClickForURLs">true</PropertyValue>
+				<PropertyValue name="ShowLineNumbers">false</PropertyValue>
+				<PropertyValue name="WordWrap">false</PropertyValue>
+				<PropertyValue name="IndentSize">4</PropertyValue>
+				<PropertyValue name="CutCopyBlankLines">true</PropertyValue>
+				<PropertyValue name="AutoListParams">true</PropertyValue>
+			</ToolsOptionsSubCategory>
+			<ToolsOptionsSubCategory name="C/C++ Specific" RegisteredName="C/C++ Specific" PackageName="Visual C++ Language Manager Package">
+				<PropertyValue name="MaximumCachedTranslationUnits">2</PropertyValue>
+				<PropertyValue name="DisableAggressiveMemberList">false</PropertyValue>
+				<PropertyValue name="RecreateDatabase">false</PropertyValue>
+				<PropertyValue name="DisablePreLoadNavigateToCache">false</PropertyValue>
+				<PropertyValue name="EnterOutliningModeWhenFilesOpen">false</PropertyValue>
+				<PropertyValue name="MemberListCommitCharacters">{}[]().,:;+-*/%&amp;|^!=&lt;&gt;?@#\</PropertyValue>
+				<PropertyValue name="DisableReferenceHighlighting">true</PropertyValue>
+				<PropertyValue name="DoNotWarnIfFallbackLocationUsed">false</PropertyValue>
+				<PropertyValue name="DisableDatabaseImplicitAutoCleanup">false</PropertyValue>
+				<PropertyValue name="UseForwardSlashForIncludeAutoComplete">false</PropertyValue>
+				<PropertyValue name="DisableInactiveCodeOpacity">false</PropertyValue>
+				<PropertyValue name="HighlightMatchingTokens">true</PropertyValue>
+				<PropertyValue name="DisableDatabaseUpdates">false</PropertyValue>
+				<PropertyValue name="DisableIntelliSenseUpdating">false</PropertyValue>
+				<PropertyValue name="FallbackLocation"/>
+				<PropertyValue name="DisableErrorReporting">false</PropertyValue>
+				<PropertyValue name="DisableDatabaseImplicitFiles">false</PropertyValue>
+				<PropertyValue name="DisableReferencesResolving">false</PropertyValue>
+				<PropertyValue name="DisableExternalDependenciesFolders">false</PropertyValue>
+				<PropertyValue name="DisableIntelliSense">false</PropertyValue>
+				<PropertyValue name="AutomaticOutliningOfStatementBlocks">false</PropertyValue>
+				<PropertyValue name="LoggingLevel">5</PropertyValue>
+				<PropertyValue name="MemberListFilterMode">3</PropertyValue>
+				<PropertyValue name="ColorizeInactiveBlocksDifferently">true</PropertyValue>
+				<PropertyValue name="RescanSolutionInterval">60</PropertyValue>
+				<PropertyValue name="AlwaysUseFallbackLocation">false</PropertyValue>
+				<PropertyValue name="DisableDatabaseAutoUpdates">false</PropertyValue>
+				<PropertyValue name="DisableSquiggles">false</PropertyValue>
+				<PropertyValue name="EnableQuickInfoToolTips">true</PropertyValue>
+				<PropertyValue name="InactiveCodeOpacityPercent">65</PropertyValue>
+				<PropertyValue name="DisableSemanticColoring">false</PropertyValue>
+				<PropertyValue name="IndentBraces">false</PropertyValue>
+				<PropertyValue name="HideUnconfirmedReferencesResults">false</PropertyValue>
+				<PropertyValue name="AutoIndentOnTab">false</PropertyValue>
+				<PropertyValue name="DisableMemberListKeywords">false</PropertyValue>
+				<PropertyValue name="EnumerateCommentTasks">true</PropertyValue>
+				<PropertyValue name="AutomaticOutliningOfPragmaRegions">true</PropertyValue>
+				<PropertyValue name="LoggingFilter">0</PropertyValue>
+				<PropertyValue name="DisableMemberListExpansions">true</PropertyValue>
+				<PropertyValue name="RescanSolution">false</PropertyValue>
+				<PropertyValue name="DisableDatabase">false</PropertyValue>
+				<PropertyValue name="DisableIncludeAutoComplete">false</PropertyValue>
+				<PropertyValue name="EnableLogging">false</PropertyValue>
+			</ToolsOptionsSubCategory>
+		</ToolsOptionsCategory>
+	</ToolsOptions>
+</UserSettings>

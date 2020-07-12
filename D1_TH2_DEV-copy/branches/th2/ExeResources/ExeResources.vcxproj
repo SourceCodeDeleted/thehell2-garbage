@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{358E7308-8378-4A30-A7ED-8CC19DBC2788}</ProjectGuid>
+    <RootNamespace>ExeResources</RootNamespace>
+    <ProjectName>ExeResources</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\lib\TH.exe">
+      <FileType>Document</FileType>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)src\BaseItems.cpp;$(SolutionDir)src\BaseMonster.cpp;$(SolutionDir)src\UniqueItems.cpp;$(SolutionDir)src\UniqueMonsters.cpp;$(SolutionDir)src\Affixes.cpp;$(SolutionDir)src\Spells.cpp;$(SolutionDir)src\CastSprites.cpp;$(SolutionDir)src\BaseQuests.cpp;$(SolutionDir)src\struct_sounds.cpp;$(SolutionDir)src\BaseObjectsOnMap.cpp;$(SolutionDir)src\structs_speech.cpp;$(SolutionDir)src\SpellCasts.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)src\BaseItems.cpp;$(SolutionDir)src\BaseMonster.cpp;$(SolutionDir)src\UniqueItems.cpp;$(SolutionDir)src\UniqueMonsters.cpp;$(SolutionDir)src\Affixes.cpp;$(SolutionDir)src\Spells.cpp;$(SolutionDir)src\CastSprites.cpp;$(SolutionDir)src\BaseQuests.cpp;$(SolutionDir)src\struct_sounds.cpp;$(SolutionDir)src\BaseObjectsOnMap.cpp;$(SolutionDir)src\structs_speech.cpp;$(SolutionDir)src\SpellCasts.cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd "$(SolutionDir)$(Configuration)"
+LoadExeData cpp BaseItem 0x00905000 401 1 &gt;"$(SolutionDir)src\BaseItems.cpp"
+LoadExeData cpp BaseMonster 0x009332F0 218 1 &gt;"$(SolutionDir)src\BaseMonster.cpp"
+LoadExeData cpp UniqueItem 0x00805000 843 1 &gt;"$(SolutionDir)src\UniqueItems.cpp"
+LoadExeData cpp UniqueMonster 0x00A13400 591 1 &gt;"$(SolutionDir)src\UniqueMonsters.cpp"
+LoadExeData cpp Affix 0x0048B820 186 1 &gt;"$(SolutionDir)src\Affixes.cpp"
+LoadExeData cpp Spell 0x004B75E8 52 1 &gt;"$(SolutionDir)src\Spells.cpp"
+LoadExeData cpp MissileSprite 0x004A8538 60 1 &gt;"$(SolutionDir)src\CastSprites.cpp"
+LoadExeData cpp BaseQuest 0x004B6908 24 1 &gt;"$(SolutionDir)src\BaseQuests.cpp"
+LoadExeData cpp SoundFile 0x00A09DD0 1085 1 &gt;"$(SolutionDir)src\structs_sounds.cpp"
+LoadExeData cpp BaseObject 0x00A3A988 100 1 &gt;"$(SolutionDir)src\BaseObjectsOnMap.cpp"
+LoadExeData cpp Speech 0x00823400 400 1 &gt;"$(SolutionDir)src\structs_speech.cpp"
+LoadExeData cpp BaseMissile 0x004A7968 108 1 &gt;"$(SolutionDir)src\SpellCasts.cpp"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd "$(SolutionDir)$(Configuration)"
+LoadExeData cpp BaseItem 0x00905000 401 1 &gt;"$(SolutionDir)src\BaseItems.cpp"
+LoadExeData cpp BaseMonster 0x009332F0 218 1 &gt;"$(SolutionDir)src\BaseMonster.cpp"
+LoadExeData cpp UniqueItem 0x00805000 843 1 &gt;"$(SolutionDir)src\UniqueItems.cpp"
+LoadExeData cpp UniqueMonster 0x00A13400 591 1 &gt;"$(SolutionDir)src\UniqueMonsters.cpp"
+LoadExeData cpp Affix 0x0048B820 186 1 &gt;"$(SolutionDir)src\Affixes.cpp"
+LoadExeData cpp Spell 0x004B75E8 52 1 &gt;"$(SolutionDir)src\Spells.cpp"
+LoadExeData cpp MissileSprite 0x004A8538 60 1 &gt;"$(SolutionDir)src\CastSprites.cpp"
+LoadExeData cpp BaseQuest 0x004B6908 24 1 &gt;"$(SolutionDir)src\BaseQuests.cpp"
+LoadExeData cpp SoundFile 0x00A09DD0 1085 1 &gt;"$(SolutionDir)src\structs_sounds.cpp"
+LoadExeData cpp BaseObject 0x00A3A988 100 1 &gt;"$(SolutionDir)src\BaseObjectsOnMap.cpp"
+LoadExeData cpp Speech 0x00823400 400 1 &gt;"$(SolutionDir)src\structs_speech.cpp"
+LoadExeData cpp BaseMissile 0x004A7968 108 1 &gt;"$(SolutionDir)src\SpellCasts.cpp"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\lib\TH_exe_data_map.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\lib\TextArrays.xls" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,265 @@
+<!doctype html public "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MPQ Archives - StormLib</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1250" />
+  <meta name="keywords" content="Ladislav Zezula; MPQ format; StormLib; MPQ Editor; Storm.dll" />
+  <meta name="description" content="Ladislav Zezula - Web homepage" />
+  <meta name="robots" content="INDEX, FOLLOW" />
+  <link rel="stylesheet" type="text/css" href="../../../include/styles.css"h />
+</head>
+
+<script language="Javascript" type="text/javascript">
+function RunMailClient(user, domain, ctry)
+{
+    szMailClient = "mail" + "to" + ":" + user + "@" + domain + "." + ctry;
+    document.location = szMailClient;
+}
+function RunMyMailClient()
+{
+    RunMailClient("ladik", "zezula", "net");
+}
+</script>
+
+<body>
+<div class="navigation">
+<!-- Language switches -->
+  <table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="50%" align="center">
+      <p class="image-and-text"><a href="../../../cz/mpq/stormlib/sfilegetfileinfo.html"h><img src="../../../images/czech.gif"s border="0" width="65" height="41" alt="Cesky" /></a>
+      <a href="../../../cz/mpq/stormlib/sfilegetfileinfo.html"h>Czech</a></p>
+    </td>
+    <td width="50%" align="center">
+      <p class="image-and-text"><a href="../../../en/mpq/stormlib/sfilegetfileinfo.html"h><img src="../../../images/english.gif"s border="0" width="65" height="41" alt="English" /></a>
+      <a href="../../../en/mpq/stormlib/sfilegetfileinfo.html"h>English</a></p>
+    </td>
+  </tr>
+  </table>
+
+  <p class="menuitem">Utilities</p>
+  <p class="submenuitem"><a href="../../../en/fstools/filespy.html"h>FileSpy</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/filetest.html"h>FileTest</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/ioctl.html"h>IOCTL Decoder</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/winsafer.html"h>WinSafer</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/bcdeditor.html"h>BCD Editor</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/bellavista.html"h>BellaVista</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/gamelauncher.html"h>Game Launcher</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/runass.html"h>RunAss</a></p>
+  <p class="submenuitem"><a href="../../../en/fstools/kdvmware.html"h>KDVMWARE</a></p>
+  
+  <p class="menuitem">MPQ Archives</p>
+  <p class="submenuitem"><a href="../../../en/mpq/main.html"h>Overview</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/mpqformat.html"h>MPQ Format</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/partialmpq.html"h>Partial MPQs</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/patchfiles.html"h>Patches</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/stormdll.html"h>Storm.dll</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/stormlib.html"h>StormLib</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/namebreak.html"h>Name Breaking</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/download.html"h>Download</a></p>
+  <p class="submenuitem"><a href="../../../en/mpq/links.html"h>Links</a></p>
+
+  <p class="menuitem">Programming</p>
+  <p class="submenuitem"><a href="../../../en/prog/main.html"h>Articles</a></p>
+
+  <p class="menuitem">Contact</p>
+  <p class="submenuitem"><a href="javascript:RunMyMailClient()"h>E-mail</a></p>
+  <p class="submenuitem"><a href="http://www.icq.com/153292074"h>ICQ</a></p>
+    
+</div>
+
+<div class="body">
+<!-- Title -->
+<p class="title">StormLib API Reference</p>
+<p class="subtitle">SFileGetFileInfo</p>
+
+<h2>Description</h2>
+<pre><b>bool WINAPI SFileGetFileInfo(</b>
+  <b>HANDLE</b> <i>hMpqOrFile</i>,                // Handle to a file or archive
+  <b>DWORD</b> <i>dwInfoType</i>,                 // Type of information to retrieve
+  <b>void *</b> <i>pvFileInfo</i>,                // Pointer to the buffer where to store the result information
+  <b>DWORD</b> <i>cbFileInfo</i>,                 // Size of the buffer pointed by pvFileInfo
+  <b>LPDWORD</b> <i>pcbLengthNeeded</i>           // Size, in bytes, required to store information to pvFileInfo
+<b>);</b></pre>
+<p>Function <b>SFileGetFileInfo</b> retrieves an information about an open MPQ archive or a file.</p>
+
+<h2>Parameters</h2>
+<dl>
+  <dt>hMpqOrFile</dt>
+    <dd>[in] Handle to an open file or to an open MPQ archive, depending on the value of <i>dwInfoType</i>.</dd>
+  <dt>dwInfoType</dt>
+    <dd>[in] Type of information to retrieve. See Return Value for more information.</dd>
+  <dt>pvFileInfo</dt>
+    <dd>[in, out] Pointer to buffer where to store the required information.</dd>
+  <dt>cbFileInfo</dt>
+    <dd>[in] Size of the buffer pointed by <i>pvFileInfo</i>.</dd>
+  <dt>pcbLengthNeeded</dt>
+    <dd>[in] Size, in bytes, needed to store the information into <i>pvFileInfo</i>.</dd>
+</dl>
+
+<h2>Return Value</h2>
+<p>When the function succeeds, it returns true. On an error, the function returns false
+and <b>GetLastError</b> returns error code. Possible error codes may be ERROR_INVALID_PARAMETER
+(unknown file info type) or ERROR_INSUFFICIENT_BUFFER (not enough space in the supplied buffer).
+The following table shows the possible type of information that are obtainable by <b>SFileGetFileInfo</b>:</p>
+<table width="100%" border="1" cellspacing="0" cellpadding="2">
+<tr valign="top">
+  <th align="left" width="20%">Value of <i>dwInfoType</i></th>
+  <th align="left" width="20%">Value of <i>hMpqOrFile</i></th>
+  <th align="left" width="20%">pvFileInfo points to</th>
+  <th align="left" width="40%">Returned information</th>
+</tr>
+<tr>
+  <td>SFILE_INFO_ARCHIVE_NAME</td>
+  <td>MPQ archive handle</td>
+  <td>Array of ANSI characters</td>
+  <td>Full path name of the MPQ archive</td>
+</tr>
+<tr>
+  <td>SFILE_INFO_ARCHIVE_SIZE</td>
+  <td>MPQ archive handle</td>
+  <td>32-bit integer</td>
+  <td>Size of the archive, as written in the archive header.</td>
+</tr>
+<tr>
+  <td>SFILE_INFO_HASH_TABLE_SIZE</td>
+  <td>MPQ archive handle</td>
+  <td>32-bit integer</td>
+  <td>Size of the hash table, in entries.</td>
+</tr>
+<tr>
+  <td>SFILE_INFO_BLOCK_TABLE_SIZE</td>
+  <td>MPQ archive handle</td>
+  <td>32-bit integer</td>
+  <td>Size of the block table, in entries.</td>
+</tr>
+<tr>
+  <td>SFILE_INFO_SECTOR_SIZE</td>
+  <td>MPQ archive handle</td>
+  <td>32-bit integer</td>
+  <td>Size of one file sector, in bytes.</td>
+</tr>
+<tr>
+  <td>SFILE_INFO_HASH_TABLE</td>
+  <td>MPQ archive handle</td>
+  <td>Array of TMPQHash</td>
+  <td>Copy of the hash table.</td>
+</tr>
+<tr>
+  <td>SFILE_INFO_BLOCK_TABLE</td>
+  <td>MPQ archive handle</td>
+  <td>Array of TMPQBlock</td>
+  <td>Copy of the block table.</td>
+</tr>
+<tr>
+  <td>SFILE_INFO_NUM_FILES</td>
+  <td>MPQ archive handle</td>
+  <td>32-bit integer</td>
+  <td>Number of file in the MPQ archive.</td>
+</tr>
+<tr>
+  <td>SFILE_INFO_STREAM_FLAGS</td>
+  <td>MPQ archive handle</td>
+  <td>32-bit integer</td>
+  <td>Combination of STREAM_FLAG_XXX values for the archive.</td>
+</tr>
+<tr>
+  <td>SFILE_INFO_HASH_INDEX</td>
+  <td>MPQ file handle</td>
+  <td>32-bit integer</td>
+  <td>Hash index of the open file.</td>
+</tr>
+<tr>
+  <td>SFILE_INFO_CODENAME1</td>
+  <td>MPQ file handle</td>
+  <td>32-bit integer</td>
+  <td>The first part of 64-bit code name from the hash table entry.</td>
+</tr>
+<tr>
+  <td>SFILE_INFO_CODENAME2</td>
+  <td>MPQ file handle</td>
+  <td>32-bit integer</td>
+  <td>The second part of 64-bit code name from the hash table entry.</td>
+</tr>
+<tr>
+  <td>SFILE_INFO_LOCALEID</td>
+  <td>MPQ file handle</td>
+  <td>32-bit integer</td>
+  <td>Locale ID of the file. For list of locale IDs, see <a href="sfilesetlocale.html">SFileSetLocale</a>.</td>
+</tr>
+<tr>
+  <td>SFILE_INFO_BLOCKINDEX</td>
+  <td>MPQ file handle</td>
+  <td>32-bit integer</td>
+  <td>Block index of the file in the block table.</td>
+</tr>
+<tr>
+  <td>SFILE_INFO_FILE_SIZE</td>
+  <td>MPQ file handle</td>
+  <td>32-bit integer</td>
+  <td>Size of uncompressed file, as saved in the block table.</td>
+</tr>
+<tr>
+  <td>SFILE_INFO_COMPRESSED_SIZE</td>
+  <td>MPQ file handle</td>
+  <td>32-bit integer</td>
+  <td>Size of compressed file, as saved in the block table.</td>
+</tr>
+<tr>
+  <td>SFILE_INFO_FLAGS</td>
+  <td>MPQ file handle</td>
+  <td>32-bit integer</td>
+  <td>Flags of the file from the block table.</td>
+</tr>
+<tr>
+  <td>SFILE_INFO_POSITION</td>
+  <td>MPQ file handle</td>
+  <td>32-bit integer</td>
+  <td>Position of the file data in the MPQ archive, relative to the begin of the MPQ file.</td>
+</tr>
+<tr>
+  <td>SFILE_INFO_KEY</td>
+  <td>MPQ file handle</td>
+  <td>32-bit integer</td>
+  <td>Encryption key of the file. If MPQ_FILE_FIX_KEY is set in the file flags, this is the key value after adjustment.</td>
+</tr>
+<tr>
+  <td>SFILE_INFO_KEY_UNFIXED</td>
+  <td>MPQ file handle</td>
+  <td>32-bit integer</td>
+  <td>Encryption key of the file. If MPQ_FILE_FIX_KEY is set in the file flags, this is the key value before adjustment.</td>
+</tr>
+<tr>
+  <td>SFILE_INFO_FILETIME</td>
+  <td>MPQ file handle</td>
+  <td>64-bit integer</td>
+  <td>File time of the file in the MPQ.</td>
+</tr>
+</table>
+
+<h2>Remarks</h2>
+<p>This function doesn't support local files open by <a href="sfileopenfileex.html">SFileOpenFileEx</a>.</p>
+
+<h2>Availability in Storm.dll</h2>
+<table width="50%" cellspacing="0" border="1">
+<tr valign="top">
+  <td align="left" width="60%">Available in Storm.dll</td>
+  <td align="left" width="40%">No</td>
+</tr>
+<tr>
+  <td align="left">Ordinal number in Storm.dll 1.00</td>
+  <td align="left">N/A</td>
+</tr>
+<tr>
+  <td align="left">Ordinal number in Storm.dll 1.09</td>
+  <td align="left">N/A</td>
+</tr>
+</table>
+
+<!-- Page footer -->
+<p class="copyright">Copyright (c) Ladislav Zezula 2003 - 2010</p>
+
+</div>
+
+</body>
+</html>

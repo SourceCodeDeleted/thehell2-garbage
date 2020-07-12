@@ -1,0 +1,598 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\src\automap.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CodeSave.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Draw.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Engine.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Entry.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Error.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Exception.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Exemap.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\File.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GenerateMap.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GenerateQuestFloor.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Halls.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Help.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Item.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Lights.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\LoadingScreen.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MainMenu.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\menu.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MenuEngine.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Missile.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Monster.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MpqSave.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Net.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\NetSync.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Object.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\palette.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Panel.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Path.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Player.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PlayersSync.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PlayerTrade.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PopupScreens.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Quests.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Room.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SaveInfo.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Saving.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SHA.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SomeSpell.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SoundBuffer.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SoundCache.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Speeches.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Stash.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tests.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\th2_proposals.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thehell2.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\thread.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TownMap.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\UberDiabloQuest.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Warp.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Windows.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\IniFile.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\BaseMonster.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\BaseObjectsOnMap.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\BaseQuests.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CastSprites.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SpellCasts.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Spells.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\structs_sounds.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\structs_speech.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\UniqueMonsters.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\pklib\explode.cpp">
+      <Filter>StormLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\pklib\implode.cpp">
+      <Filter>StormLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CharSlots.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Config.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\dataseg.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\dx.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\dx_utility.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Hell.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\InjectLib.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\th1_stdafx.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\serialize.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TH1dll.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\th1data.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\th1_Item.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{006b2333-3743-4cc7-80da-1f8a7435ae91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{381eafd9-41fe-4490-b695-96e965df97a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{4658e694-0e04-4a71-8f7f-cd31911f8a0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fromdlls">
+      <UniqueIdentifier>{204f1e77-d334-4ecc-9409-ee683c1306d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StormLib">
+      <UniqueIdentifier>{5919675c-058e-4133-8d12-74a106c2ef3a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\lib\bzip2\bzlib.h">
+      <Filter>StormLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\bzip2\bzlib_private.h">
+      <Filter>StormLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\zlib\deflate.h">
+      <Filter>StormLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\huffman\huff.h">
+      <Filter>StormLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\zlib\inffast.h">
+      <Filter>StormLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\zlib\inflate.h">
+      <Filter>StormLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\zlib\inftrees.h">
+      <Filter>StormLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\misc\md5.h">
+      <Filter>StormLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\misc\misc_crc32.h">
+      <Filter>StormLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\pklib\pklib.h">
+      <Filter>StormLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\BitsBytes.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\codec.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\enums.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\funcs.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\IniFile.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\InjectLib.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\rad.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\reflect.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\resource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\storm_api.h">
+      <Filter>fromdlls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\smack.h">
+      <Filter>fromdlls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\SCommon.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\th1_stdafx.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\structs.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\serialize.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\thehell2.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\StormPort.h">
+      <Filter>StormLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\StormLib.h">
+      <Filter>StormLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\hell.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\storm.h">
+      <Filter>fromdlls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\th2_proposals.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\zlib\trees.h">
+      <Filter>StormLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\vars.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tools\version.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\zlib\zlib.h">
+      <Filter>StormLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\zlib\zutil.h">
+      <Filter>StormLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\zlib\zconf.h">
+      <Filter>StormLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\wave\wave.h">
+      <Filter>StormLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\th1_structs.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\th1_enums.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(GameFolder)config.ini" />
+    <None Include="$(GameFolder)th2valid.cmd" />
+    <None Include="..\lib\zlib\adler32.cpp">
+      <Filter>StormLib</Filter>
+    </None>
+    <None Include="..\lib\bzip2\blocksort.cpp">
+      <Filter>StormLib</Filter>
+    </None>
+    <None Include="..\lib\bzip2\bzlib.cpp">
+      <Filter>StormLib</Filter>
+    </None>
+    <None Include="..\lib\bzip2\compress.cpp">
+      <Filter>StormLib</Filter>
+    </None>
+    <None Include="..\lib\pklib\crc32.cpp">
+      <Filter>StormLib</Filter>
+    </None>
+    <None Include="..\lib\bzip2\crctable.cpp">
+      <Filter>StormLib</Filter>
+    </None>
+    <None Include="..\lib\bzip2\decompress.cpp">
+      <Filter>StormLib</Filter>
+    </None>
+    <None Include="..\lib\zlib\deflate.cpp">
+      <Filter>StormLib</Filter>
+    </None>
+    <None Include="..\lib\huffman\huff.cpp">
+      <Filter>StormLib</Filter>
+    </None>
+    <None Include="..\lib\bzip2\huffman.cpp">
+      <Filter>StormLib</Filter>
+    </None>
+    <None Include="..\lib\zlib\inffast.cpp">
+      <Filter>StormLib</Filter>
+    </None>
+    <None Include="..\lib\zlib\inflate.cpp">
+      <Filter>StormLib</Filter>
+    </None>
+    <None Include="..\lib\zlib\inftrees.cpp">
+      <Filter>StormLib</Filter>
+    </None>
+    <None Include="..\lib\misc\md5.cpp">
+      <Filter>StormLib</Filter>
+    </None>
+    <None Include="..\lib\misc\misc_crc32.cpp">
+      <Filter>StormLib</Filter>
+    </None>
+    <None Include="..\src\dataseg.asm">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\res\diablo_a.cur">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\res\diablo_l.cur">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\res\diablocu.cur">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\res\diabloib.cur">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\lib\SFileCompactArchive.cpp">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\lib\SFileCreateArchiveEx.cpp">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\lib\SFileExtractFile.cpp">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\lib\SFileFindFile.cpp">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\lib\SFileOpenArchive.cpp">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\lib\SFileOpenFileEx.cpp">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\lib\SFileReadFile.cpp">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\lib\SListFile.cpp">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\src\Storm.cpp">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\src\storm_sblt.cpp">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\src\storm_sbmp.cpp">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\src\storm_scmd.cpp">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\src\storm_scode.cpp">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\src\storm_sdlg.cpp">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\src\storm_sdraw.cpp">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\src\storm_sevt.cpp">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\src\storm_serr.cpp">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\src\storm_sfile.cpp">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\src\storm_smem.cpp">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\src\storm_sgdi.cpp">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\src\storm_snet.cpp">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\src\storm_api.cpp">
+      <Filter>fromdlls</Filter>
+    </None>
+    <None Include="..\lib\storm_api.def">
+      <Filter>fromdlls</Filter>
+    </None>
+    <None Include="..\lib\hell.def">
+      <Filter>fromdlls</Filter>
+    </None>
+    <None Include="..\lib\SAttrFile.cpp">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\lib\SCommon.cpp">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\lib\SCompression.cpp">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\src\StormData.asm">
+      <Filter>fromdlls</Filter>
+    </None>
+    <None Include="..\src\storm_smsg.cpp">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\src\storm_sreg.cpp">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\src\storm_strans.cpp">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\src\storm_svid.cpp">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\lib\bzip2\randtable.cpp">
+      <Filter>StormLib</Filter>
+    </None>
+    <None Include="..\lib\GfxDecode.cpp">
+      <Filter>StormLib</Filter>
+    </None>
+    <None Include="..\lib\zlib\trees.cpp">
+      <Filter>StormLib</Filter>
+    </None>
+    <None Include="..\src\Storm.inc">
+      <Filter>fromdlls</Filter>
+    </None>
+    <None Include="..\lib\storm.def">
+      <Filter>fromdlls</Filter>
+    </None>
+    <None Include="..\tools\config.ini">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="$(GameFolder)screen.cmd" />
+    <None Include="..\lib\wave\wave.cpp">
+      <Filter>StormLib</Filter>
+    </None>
+    <None Include="..\lib\zlib\zlib_compress.cpp">
+      <Filter>StormLib</Filter>
+    </None>
+    <None Include="..\lib\zlib\zlib_crc32.cpp">
+      <Filter>StormLib</Filter>
+    </None>
+    <None Include="..\lib\zlib\zutil.cpp">
+      <Filter>StormLib</Filter>
+    </None>
+    <None Include="..\lib\th.idc">
+      <Filter>fromdlls</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\res\support1.txt">
+      <Filter>Resource</Filter>
+    </Text>
+    <Text Include="..\res\credits1.txt">
+      <Filter>Resource</Filter>
+    </Text>
+    <Text Include="..\lib\THChangesLog.txt">
+      <Filter>fromdlls</Filter>
+    </Text>
+    <Text Include="..\bin\TH_HD_ChangesLog.txt" />
+    <Text Include="..\bin\TH_HD_ChangesLog_ru.txt" />
+    <Text Include="..\bin\TH_HD_ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\src\thehell1.rc">
+      <Filter>Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="$(SolutionDir)..\.svn\wc.db">
+      <Filter>fromdlls</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\res\ico101.ico">
+      <Filter>Resource</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
